@@ -1,0 +1,41 @@
+# The Concordentary — Standard File Header
+
+Every file in this repository carries the following attribution 
+in its YAML frontmatter. This header must remain intact in any 
+redistribution or derivative work per the LICENSE terms.
+
+## Original Source Header (Charles Wohlers, Satucket Software)
+
+You may redistribute this document electronically provided no fee is 
+charged and this header remains part of the document. While every 
+attempt was made to ensure accuracy, certain errors may exist in the 
+text.
+
+This document was created as a service to the community by 
+Satucket Software.
+
+Charles Wohlers
+P. O. Box 227
+East Bridgewater, Mass. 02333 USA
+chadwohl@satucket.com
+http://satucket.com
+
+## Concordentary Curation Layer
+
+Structured Markdown edition, YAML schema, provenance apparatus, 
+calendar tables, and editorial notes by:
+
+Alex Nutting
+The Strategic Disciple, LLC & DBA Liturgic Labs Studio
+thestrategicdisciple@gmail.com
+concordentary.org
+
+## Standard YAML Attribution Block
+
+transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
+transcriber: "Charles Wohlers, Satucket Software"
+markdown_curation: "Alex Nutting, Liturgic Labs Studio"
+license: CC BY-NC-SA 4.0
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+source_terms: "Non-commercial redistribution permitted with header 
+intact — Charles Wohlers, Satucket Software"
