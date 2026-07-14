@@ -1,4 +1,4 @@
-# AGENTS.md — The Concordentary
+# Agents.md — The Concordentary
 
 > A version-controlled, schema-structured Markdown archive of the Book of Common Prayer across major editions. This file tells any AI agent how to read, navigate, and work within this repository.
 
