@@ -122,55 +122,39 @@ LUCIEN MOORE ROBINSON,
 
 ### Table of Contents
 
-| The Ratification of the Book of Common Prayer                                                                                                                     | iv   |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---- |
-| The Preface                                                                                                                                                       | v    |
-| Concerning the Service of the Church, Including the use of<br>the Psalter, and the order how the rest of the Holy Scripture is appointed to be read               | vii  |
-| Psalms and Lessons for the Christian Year                                                                                                                         | x    |
-| The Calendar                                                                                                                                                      | xlvi |
-| Tables and Rules for the Movable and Immovable Feasts, Together with the Days of Fasting and Abstinence Through out the Year, and the Days of Solemn Supplication | l    |
-| Tables of Precedence                                                                                                                                              | li   |
-| Tables for finding Holy Days                                                                                                                                      | lii  |
-| [[1928 Rectified/Old/07 Morning Prayer_1928\|The Order for Daily Morning Prayer]]                                                                                                    | 3    |
-| [[1928 Rectified/Old/08 Evening Prayer_1928\|The Order for Daily Evening Prayer]]                                                                                                    | 21   |
-| [[1928 Rectified/Old/09 Prayers and Thanksgivings 1928\|Prayers and Thanksgivings]]                                                                                                  | 35   |
-| [[1928 Rectified/Old/10 The Litany_1928\|The Litany]]                                                                                                                                | 54   |
-| [[1928 Rectified/Old/11 A Penetential Office for Ash Wednesday 1928\| A Penetential Office for Ash Wednesday]]                                                                       | 60   |
-| [[1928 Rectified/Old/12 Holy Communion 1928\|The Order for the Administration of the Lord's Supper, or Holy Communion]]                                                              | 67   |
-| [[1928 Rectified/Old/13 --The Collects, Epistles, and Gospels 1928\| The Collects, Epistles, and Gospels]]                                                                             | 90   |
-| [[1928 Rectified/Old/14 Baptism 1928\|The Ministration of Holy Baptism]]                                                                                                             | 273  |
-| [[1928 Rectified/Old/15 Offices of Instruction 1928\|Offices of Instruction]]                                                                                                        | 283  |
-| [[1928 Rectified/Old/16 Confirmation 1928\|The Order of Confirmation]]                                                                                                               | 296  |
-| [[1928 Rectified/Old/17 The Form of Solemnization of Matrimony 1928\|The Solemnization of Matrimony]]                                                                                | 300  |
-| [[1928 Rectified/Old/18 Thanksgiving of Women after Child-birth 1928\|The Thanksgiving of Women after Child-birth]]                                                                  | 305  |
-| [[1928 Rectified/Old/19 Visitation of the Sick 1928\|The Order for the Visitation of the Sick]]                                                                                      | 308  |
-| [[1928 Rectified/Old/20 The Communion of the Sick 1928\|The Communion of the Sick]]                                                                                                  | 321  |
-| [[1928 Rectified/Old/21 The Order for the Burial of the Dead 1928\|The Order for the Burial of the Dead]]                                                                            | 324  |
-| [[1928 Rectified/Old/22 At The Burial Of A Child 1928\|At The Burial of A Child]]                                                                                                    | 338  |
-| [[1928 Rectified/Old/23 Psalms 1928\|The Psalter, or Psalms of David]]                                                                                                               | 345  |
-
-
-. . . . .
-
-| [[1928 Rectified/Old/24 The Ordinal 1928\|The Form and Manner of Making, Ordaining, and Consecrating Bishops, Priests, and Deacons]] | 529 |
-| ----------------------------------------------------------------------------------------------------------------- | --- |
-| [[1928 Rectified/Old/24 The Ordinal 1928\|The Litany and Suffrages for Ordinations]]                                                 | 554 |
-| [[1928 Rectified/Old/25 Consecration of A Church 1928\|The Form of Consecration of a Church or Chapel]]                              | 556 |
-| [[26 Institution of Ministers 1928 -\|An Office of Institution of Ministers into Parishes or Churches]]             | 569 |
-
-. . . . .
-
-| [[1928 Rectified/Old/27 Catechism 1928\|A Catechism]]                                | 577 |
-| ----------------------------------------------------------------- | --- |
-| [[1928 Rectified/Old/28 Family Prayer 1928\|Forms of Prayer to be used in Families]] | 587 |
-
-
-. . . . .
-
-| [[1928 Rectified/Old/29 Articles of Religion 1928\|Articles of Religion]] | 603 |
-| ------------------------------------------------------ | --- |
-
-
+| | Page |
+|---|---|
+| The Ratification of the Book of Common Prayer | iv |
+| The Preface | v |
+| [[02_concerning-the-service\|Concerning the Service of the Church]] | vii |
+| [[03_psalms-and-lessons-tables\|Psalms and Lessons for the Christian Year]] | x |
+| [[04_lectionary-christian-year\|Lectionary for the Christian Year]] | xxvi |
+| [[05_calendar\|The Calendar]] | xlvi |
+| [[06_tables-and-rules\|Tables and Rules for the Movable and Immovable Feasts]] | l |
+| [[07_morning-prayer\|The Order for Daily Morning Prayer]] | 3 |
+| [[08_evening-prayer\|The Order for Daily Evening Prayer]] | 21 |
+| [[09_prayers-and-thanksgivings\|Prayers and Thanksgivings]] | 35 |
+| [[10_the-litany\|The Litany]] | 54 |
+| [[11_penitential-office\|A Penitential Office for Ash Wednesday]] | 60 |
+| [[12_holy-communion\|The Order for the Administration of the Lord's Supper, or Holy Communion]] | 67 |
+| [[13_collects-epistles-gospels\|The Collects, Epistles, and Gospels]] | 90 |
+| [[14_baptism\|The Ministration of Holy Baptism]] | 273 |
+| [[15_offices-of-instruction\|Offices of Instruction]] | 283 |
+| [[16_confirmation\|The Order of Confirmation]] | 296 |
+| [[17_matrimony\|The Solemnization of Matrimony]] | 300 |
+| [[18_churching-of-women\|The Thanksgiving of Women after Child-birth]] | 305 |
+| [[19_visitation-of-the-sick\|The Order for the Visitation of the Sick]] | 308 |
+| [[20_communion-of-the-sick\|The Communion of the Sick]] | 321 |
+| [[21_burial-of-the-dead\|The Order for the Burial of the Dead]] | 324 |
+| [[22_burial-of-a-child\|At The Burial of A Child]] | 338 |
+| [[23_psalter\|The Psalter, or Psalms of David]] | 345 |
+| [[24_the-ordinal\|The Form and Manner of Making, Ordaining, and Consecrating Bishops, Priests, and Deacons]] | 529 |
+| [[24_the-ordinal\|The Litany and Suffrages for Ordinations]] | 554 |
+| [[25_consecration-of-a-church\|The Form of Consecration of a Church or Chapel]] | 556 |
+| [[26_institution-of-ministers\|An Office of Institution of Ministers into Parishes or Churches]] | 569 |
+| [[27_catechism\|A Catechism]] | 577 |
+| [[28_family-prayer\|Forms of Prayer to be used in Families]] | 587 |
+| [[29_articles-of-religion\|Articles of Religion]] | 603 |
 
 ### THE RATIFICATION OF THE BOOK OF COMMON PRAYER.
 
