@@ -216,7 +216,13 @@ DAILY_PSALMS = {
 # 1979 Proper numbers (by Easter date offset, Trinity season)
 # Proper 1 begins the Sunday closest to May 11
 # We map Trinity Sundays to Propers
-TRINITY_TO_PROPER = {
+def proper_for_sunday(sunday_date):
+    proper_1_base = datetime.date(sunday_date.year, 5, 11)
+    days_from_base = (sunday_date - proper_1_base).days
+    proper_num = round(days_from_base / 7) + 1
+    return max(1, min(29, proper_num))
+
+TRINITY_TO_PROPER_UNUSED = {
     1: 4, 2: 5, 3: 6, 4: 7, 5: 8, 6: 9, 7: 10, 8: 11,
     9: 12, 10: 13, 11: 14, 12: 15, 13: 16, 14: 17, 15: 18,
     16: 19, 17: 20, 18: 21, 19: 22, 20: 23, 21: 24, 22: 25,
@@ -299,6 +305,21 @@ def advent_sunday_1(year: int) -> datetime.date:
     days_back = (christmas.weekday() + 1) % 7
     advent_4 = christmas - datetime.timedelta(days=days_back)
     return advent_4 - datetime.timedelta(weeks=3)
+
+
+def rcl_year(date: datetime.date) -> str:
+    """
+    Revised Common Lectionary year (A, B, or C).
+    The RCL year begins on the First Sunday of Advent.
+    Year A: Advent 2022, 2025, 2028... (advent year % 3 == 0)
+    Year B: Advent 2023, 2026, 2029... (advent year % 3 == 1)
+    Year C: Advent 2024, 2027, 2030... (advent year % 3 == 2)
+    """
+    year = date.year
+    advent_1 = advent_sunday_1(year)
+    advent_year = year if date >= advent_1 else year - 1
+    cycle = advent_year % 3
+    return {0: 'Year A', 1: 'Year B', 2: 'Year C'}[cycle]
 
 
 def liturgical_position(date: datetime.date) -> dict:
@@ -454,7 +475,10 @@ def liturgical_position(date: datetime.date) -> dict:
         elif weeks > 0 and weeks <= len(ordinals):
             pos['name_1928'] = f"{ordinals[weeks-1]} Sunday after Trinity"
             pos['trinity_number'] = weeks
-            proper = TRINITY_TO_PROPER.get(weeks, weeks + 3)
+            # Find most recent Sunday for 1979 Proper lookup
+            days_back = (date.weekday() + 1) % 7 if date.weekday() != 6 else 0
+            last_sun = date - datetime.timedelta(days=days_back)
+            proper = proper_for_sunday(last_sun)
             pos['name_1979'] = f"Ordinary Time — Proper {proper}"
 
     # Advent (current year)
@@ -635,6 +659,7 @@ def describe_day(date: datetime.date) -> str:
     lines.append(f"**Paschal Full Moon:** {pfm.strftime('%B %-d, %Y')}")
     lines.append(f"**Easter {year}:** {e.strftime('%B %-d, %Y')}")
     lines.append(f"**Method:** BCP 1928, TABLE I and TABLE II — 06_tables-and-rules.md")
+    lines.append(f"**RCL Year:** {rcl_year(date)} (Revised Common Lectionary)")
 
     return '\n'.join(lines)
 
