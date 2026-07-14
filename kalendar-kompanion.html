@@ -567,8 +567,8 @@
     if(before(date,pent))              return {s:'Eastertide',c:'#B8972A',n:'Eastertide'};
     if(sameDay(date,pent))             return {s:'Whitsunday',c:'#9B2335',n:'Whitsunday'};
     if(onOrBefore(date,trin))          return {s:'Whitsuntide',c:'#9B2335',n:'Whitsuntide'};
-    if(ms<a1) {
-      const wks=Math.floor((ms-trin)/(7*864e5));
+    if(before(date,a1)) {
+      const wks=Math.floor(daysBetween(trin,date)/7);
       const ords=['First','Second','Third','Fourth','Fifth','Sixth','Seventh',
         'Eighth','Ninth','Tenth','Eleventh','Twelfth','Thirteenth','Fourteenth',
         'Fifteenth','Sixteenth','Seventeenth','Eighteenth','Nineteenth','Twentieth',
@@ -576,7 +576,7 @@
       return {s:'Trinity Season',c:'#4a7c4e',
         n: wks>0&&wks<=ords.length?`${ords[wks-1]} Sunday after Trinity`:'Trinity Season'};
     }
-    if(ms<new Date(y,11,25))       return {s:'Advent',c:'#5B4B8A',n:'Advent'};
+    if(before(date,new Date(y,11,25))) return {s:'Advent',c:'#5B4B8A',n:'Advent'};
     return {s:'Christmastide',c:'#B8972A',n:'Christmastide'};
   }
 
@@ -610,8 +610,9 @@
     errEl.style.display='none';
 
     if(!val){
-      document.getElementById('out').style.display='none';
-      document.getElementById('empty').style.display='block';
+      document.getElementById('out').style.display = 'none';
+      document.getElementById('empty').style.display = 'block';
+      document.getElementById('err').style.display = 'none';
       return;
     }
     const [y,m,d]=val.split('-').map(Number);
@@ -775,7 +776,10 @@
       document.getElementById('season-line').style.background = '#4a7c4e';
     }
   });
-  document.getElementById('date-input').value=today();
+  // Pre-fill with today and auto-run on page load
+  const _todayVal = today();
+  document.getElementById('date-input').value = _todayVal;
+  if (_todayVal) run();
 </script>
 </body>
 </html>
