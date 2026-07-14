@@ -665,18 +665,21 @@
   }
 
   // ── Fetch today.md ─────────────────────────────────────────────
-  const RAW_URL = 'https://raw.githubusercontent.com/TheStrategicDisciple/book-of-common-prayer-concordentary/main/today.md';
+  // GitHub Contents API supports CORS; raw.githubusercontent.com does not
+  const API_URL = 'https://api.github.com/repos/TheStrategicDisciple/book-of-common-prayer-concordentary/contents/today.md';
 
   async function loadToday() {
     try {
-      const res = await fetch(RAW_URL);
+      const res = await fetch(API_URL, {
+        headers: { 'Accept': 'application/vnd.github.v3.raw' }
+      });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const text = await res.text();
       const data = parseTodayMd(text);
       render(data);
     } catch (e) {
       document.getElementById('today-loading').textContent =
-        `Could not load today's office. ` + e.message;
+        `Could not load today's office: ` + e.message;
     }
   }
 
