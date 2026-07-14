@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Office — The Concordentary</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-mid: #4a4a4a;
+      --ink-light: #8a8a8a;
+      --page: #fafafa;
+      --rule: #e4e4e4;
+      --accent: #4a7c4e; /* green default — overridden by JS */
+      --accent-pale: rgba(74,124,78,0.08);
+      --tab-inactive: #f0f0f0;
+      --sans: 'Inter', system-ui, sans-serif;
+      --serif: 'IM Fell English', Georgia, serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--page);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 0;
+    }
+
+    .site-wordmark {
+      font-family: var(--serif);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .date-heading {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    /* The signature element: season-colored rule */
+    .season-rule {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .season-rule-line {
+      height: 2px;
+      width: 2.5rem;
+      background: var(--accent);
+      flex-shrink: 0;
+      border-radius: 1px;
+    }
+
+    .season-label {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .edition-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.25rem;
+      margin-top: 0.75rem;
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .edition-pill {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.06em;
+      color: var(--ink-mid);
+    }
+
+    .edition-pill span {
+      color: var(--ink-light);
+      margin-right: 0.3rem;
+    }
+
+    /* ── Tabs ── */
+    .tab-bar {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .tab {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      background: none;
+      border: none;
+      border-bottom: 2px solid transparent;
+      padding: 0.75rem 1rem;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s;
+      margin-bottom: -1px;
+    }
+
+    .tab:hover { color: var(--ink-mid); }
+
+    .tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .tab.unavailable {
+      color: var(--rule);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ── Content ── */
+    .main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    .tab-panel { display: none; padding: 2.5rem 0; }
+    .tab-panel.active { display: block; }
+
+    /* Today panel */
+    .today-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+
+    @media (max-width: 540px) {
+      .today-grid { grid-template-columns: 1fr; gap: 1.5rem; }
+    }
+
+    .today-block h3 {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .today-block p {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+      line-height: 1.5;
+    }
+
+    .coming-up-list {
+      list-style: none;
+      border-top: 1px solid var(--rule);
+      padding-top: 1.5rem;
+    }
+
+    .coming-up-list li {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      font-size: 0.875rem;
+    }
+
+    .coming-up-list .feast-name {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink);
+    }
+
+    .coming-up-list .feast-meta {
+      font-size: 0.72rem;
+      color: var(--ink-light);
+      text-align: right;
+      flex-shrink: 0;
+      margin-left: 1rem;
+    }
+
+    .computus-block {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--rule);
+    }
+
+    .computus-block h3 {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+    }
+
+    .computus-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+      gap: 1rem;
+    }
+
+    .computus-item label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.2rem;
+    }
+
+    .computus-item value {
+      display: block;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    /* Office panels */
+    .office-unavailable {
+      text-align: center;
+      padding: 4rem 0;
+      color: var(--ink-light);
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 1rem;
+    }
+
+    .office-section {
+      margin-bottom: 2.5rem;
+    }
+
+    .office-section h3 {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .psalm-row {
+      display: flex;
+      gap: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .psalm-row span:first-child {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      min-width: 4rem;
+      padding-top: 0.1rem;
+    }
+
+    .psalm-row span:last-child {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+    }
+
+    .psalm-source {
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      font-style: italic;
+      margin-top: 0.5rem;
+    }
+
+    /* Prayer Lookup */
+    .prayer-search {
+      display: flex;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .prayer-search input {
+      flex: 1;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--rule);
+      background: white;
+      color: var(--ink);
+      outline: none;
+      border-radius: 2px;
+    }
+
+    .prayer-search input:focus {
+      border-color: var(--accent);
+    }
+
+    .prayer-search button {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      border-radius: 2px;
+    }
+
+    .prayer-placeholder {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-light);
+      font-size: 0.95rem;
+    }
+
+    /* Loading / error */
+    .loading {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-light);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    /* Footer */
+    .site-footer {
+      max-width: 720px;
+      margin: 4rem auto 2rem;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid var(--rule);
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    .site-footer a {
+      color: var(--ink-light);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover { color: var(--accent); }
+  .edition-switcher {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .edition-switcher-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-right: 0.25rem;
+    }
+
+    .edition-btn {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: none;
+      color: var(--ink-light);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .edition-btn:hover { color: var(--ink-mid); border-color: var(--ink-mid); }
+
+    .edition-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-pale);
+    }
+
+    .edition-btn.unavailable {
+      color: var(--rule);
+      border-color: var(--rule);
+      cursor: default;
+      pointer-events: none;
+    }
+
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+
+  <div class="edition-switcher">
+    <span class="edition-switcher-label">Edition</span>
+    <a class="edition-btn unavailable" title="Coming soon">1662</a>
+    <a class="edition-btn unavailable" title="Coming soon">1789</a>
+    <a class="edition-btn unavailable" title="Coming soon">1892</a>
+    <a class="edition-btn active" href="today.html">1928</a>
+    <a class="edition-btn unavailable" title="Pending copyright">1979</a>
+  </div>
+
+  <p class="site-wordmark">The Concordentary — Daily Office</p>
+  <h1 class="date-heading" id="date-heading">Loading…</h1>
+  <div class="season-rule">
+    <div class="season-rule-line" id="season-line"></div>
+    <span class="season-label" id="season-label"></span>
+  </div>
+  <div class="edition-row" id="edition-row" style="display:none"></div>
+</header>
+
+<nav class="tab-bar" role="tablist">
+  <button class="tab active" role="tab" data-panel="today">Today</button>
+  <button class="tab" role="tab" data-panel="morning">Morning Prayer</button>
+  <button class="tab unavailable" role="tab" data-panel="midday" title="Not in 1928 BCP">Midday</button>
+  <button class="tab" role="tab" data-panel="evening">Evening Prayer</button>
+  <button class="tab unavailable" role="tab" data-panel="compline" title="Not in 1928 BCP">Compline</button>
+  <button class="tab" role="tab" data-panel="family">Family Prayer</button>
+  <button class="tab" role="tab" data-panel="readings">Readings</button>
+  <button class="tab" role="tab" data-panel="hymn">Hymn</button>
+  <button class="tab" role="tab" data-panel="lookup">Prayer Lookup</button>
+</nav>
+
+<main class="main">
+
+  <!-- TODAY -->
+  <section class="tab-panel active" id="panel-today">
+    <div class="loading" id="today-loading">Consulting the tables…</div>
+    <div id="today-content" style="display:none">
+      <div class="today-grid">
+        <div class="today-block">
+          <h3>1928 BCP</h3>
+          <p id="name-1928"></p>
+        </div>
+        <div class="today-block" id="today-feast-block" style="display:none">
+          <h3>Feast</h3>
+          <p id="today-feast"></p>
+        </div>
+        <div class="today-block">
+          <h3>Psalms — Morning</h3>
+          <p id="psalms-morning"></p>
+        </div>
+        <div class="today-block">
+          <h3>Psalms — Evening</h3>
+          <p id="psalms-evening"></p>
+        </div>
+      </div>
+
+      <ul class="coming-up-list" id="coming-up-list"></ul>
+
+      <div class="computus-block">
+        <h3>Computus</h3>
+        <div class="computus-grid" id="computus-grid"></div>
+        <p style="margin-top:1.25rem;font-size:0.75rem;color:var(--ink-light);line-height:1.6;">
+          Curious how these dates are calculated? The
+          <a href="kalendar-kompanion.html" target="_blank" rel="noopener"
+             style="color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;">Kalendar Kompanion</a>
+          walks through every step — Golden Number, Dominical Letter, Paschal Full Moon,
+          and Easter — using the BCP's own tables, so you can follow the logic behind
+          every date shown here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MORNING PRAYER -->
+  <section class="tab-panel" id="panel-morning">
+    <div class="office-section">
+      <h3>Appointed Psalms</h3>
+      <div class="psalm-row">
+        <span>Morning</span>
+        <span id="mp-psalms-morning">—</span>
+      </div>
+      <p class="psalm-source" id="mp-psalm-source"></p>
+    </div>
+    <div class="office-section">
+      <h3>The Order for Morning Prayer</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        Full text available in the 1928 BCP repository —
+        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/07_morning-prayer.md"
+           style="color:var(--accent);" target="_blank" rel="noopener">07_morning-prayer.md</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- MIDDAY -->
+  <section class="tab-panel" id="panel-midday">
+    <div class="office-unavailable">
+      Midday Prayer is not part of the 1928 BCP.<br>
+      <span style="font-size:0.8rem;font-style:normal;font-family:var(--sans);color:var(--ink-light);margin-top:0.5rem;display:block;">
+        Available in the 1979 BCP when that edition comes online.
+      </span>
+    </div>
+  </section>
+
+  <!-- EVENING PRAYER -->
+  <section class="tab-panel" id="panel-evening">
+    <div class="office-section">
+      <h3>Appointed Psalms</h3>
+      <div class="psalm-row">
+        <span>Evening</span>
+        <span id="ep-psalms-evening">—</span>
+      </div>
+      <p class="psalm-source" id="ep-psalm-source"></p>
+    </div>
+    <div class="office-section">
+      <h3>The Order for Evening Prayer</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        Full text available in the 1928 BCP repository —
+        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/08_evening-prayer.md"
+           style="color:var(--accent);" target="_blank" rel="noopener">08_evening-prayer.md</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- COMPLINE -->
+  <section class="tab-panel" id="panel-compline">
+    <div class="office-unavailable">
+      Compline is not part of the 1928 BCP.<br>
+      <span style="font-size:0.8rem;font-style:normal;font-family:var(--sans);color:var(--ink-light);margin-top:0.5rem;display:block;">
+        Available in the 1979 BCP when that edition comes online.
+      </span>
+    </div>
+  </section>
+
+  <!-- FAMILY PRAYER -->
+  <section class="tab-panel" id="panel-family">
+    <div class="office-section">
+      <h3>Forms of Prayer to be used in Families</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        Full text available in the 1928 BCP repository —
+        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/28_family-prayer.md"
+           style="color:var(--accent);" target="_blank" rel="noopener">28_family-prayer.md</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- READINGS -->
+  <section class="tab-panel" id="panel-readings">
+    <div class="office-section">
+      <h3>Daily Lectionary</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        Daily readings will appear here once the lectionary atomic layer is complete.
+        <br><br>
+        Source: <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/04_lectionary-christian-year.md"
+           style="color:var(--accent);" target="_blank" rel="noopener">04_lectionary-christian-year.md</a>
+        (1945 revision)
+      </p>
+    </div>
+  </section>
+
+  <!-- HYMN -->
+  <section class="tab-panel" id="panel-hymn">
+    <div class="office-section">
+      <h3>Hymn of the Day</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        The daily hymn layer is coming — a 365-day curated sequence drawn from the
+        Hymnal 1940, Hymnal 1982, and LEVAS, linked to Hymnary.org and Spotify.<br><br>
+        Source file: <code style="font-style:normal;font-size:0.8rem;">_data/hymns-365.csv</code>
+      </p>
+    </div>
+  </section>
+
+  <!-- PRAYER LOOKUP -->
+  <section class="tab-panel" id="panel-lookup">
+    <div class="prayer-search">
+      <input type="text" id="prayer-query" placeholder="Search by feast, season, or occasion…">
+      <button onclick="prayerSearch()">Search</button>
+    </div>
+    <p class="prayer-placeholder" id="lookup-placeholder">
+      Prayer lookup will search the atomic collect and prayer layers once they are built.
+    </p>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>
+    The Concordentary — BCP 1928 (PECUSA) &nbsp;·&nbsp;
+    Engine: <em>computus.py</em>, BCP TABLE I &amp; TABLE II &nbsp;·&nbsp;
+    <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary" target="_blank" rel="noopener">GitHub</a>
+    &nbsp;·&nbsp; CC BY-NC-SA 4.0
+  </p>
+  <p style="margin-top:0.4rem;">
+    Text: Charles Wohlers, Satucket Software &nbsp;·&nbsp;
+    Markdown, schema &amp; engine: Alex Nutting, The Strategic Disciple LLC
+  </p>
+</footer>
+
+<script>
+  // ── Season colors ──────────────────────────────────────────────
+  const SEASON_COLORS = {
+    'Advent':        '#5B4B8A',   // violet
+    'Christmastide': '#B8972A',   // gold
+    'Epiphany':      '#4a7c4e',   // green
+    'Pre-Lent':      '#4a7c4e',   // green
+    'Lent':          '#5B4B8A',   // violet
+    'Holy Week':     '#8B1A1A',   // crimson
+    'Eastertide':    '#B8972A',   // gold/white
+    'Whitsunday':    '#9B2335',   // red
+    'Whitsuntide':   '#9B2335',   // red
+    'Trinity Season':'#4a7c4e',   // green
+  };
+
+  // ── Parse today.md ─────────────────────────────────────────────
+  function parseTodayMd(text) {
+    const lines = text.split('\n');
+    const data = {};
+
+    for (const line of lines) {
+      if (line.startsWith('# '))        data.date = line.slice(2).trim();
+      if (line.startsWith('## '))       { const m = line.slice(3).trim(); data.season = m.split(' — ')[0]; data.color_label = m.split(' — ')[1]; }
+      if (line.startsWith('**1928:**')) data.name1928 = line.replace('**1928:**','').trim();
+      if (line.startsWith('**1979:**')) data.name1979 = line.replace('**1979:**','').trim();
+      if (line.startsWith('**Morning:**')) data.psalmsMorning = line.replace('**Morning:**','').trim();
+      if (line.startsWith('**Evening:**')) data.psalmsEvening = line.replace('**Evening:**','').trim();
+      if (line.includes('*(') && line.includes('rotation') || line.includes('table'))
+        data.psalmSource = line.replace(/\*\(/,'').replace(/\)\*/,'').trim();
+      if (line.startsWith('**Golden Number:**'))    data.gn = line.replace('**Golden Number:**','').trim();
+      if (line.startsWith('**Dominical Letter:**')) data.dl = line.replace('**Dominical Letter:**','').trim();
+      if (line.startsWith('**Paschal Full Moon:**'))data.pfm = line.replace('**Paschal Full Moon:**','').trim();
+      if (line.startsWith('**Easter '))            data.easter = line.replace(/\*\*Easter \d+:\*\*/,'').trim();
+      if (line.startsWith('**RCL Year:**'))        data.rcl = line.replace('**RCL Year:**','').trim();
+      if (line.startsWith('**Feast:**'))           data.feast = (data.feast ? data.feast + ' · ' : '') + line.replace('**Feast:**','').trim();
+    }
+
+    // Coming up
+    data.comingUp = [];
+    let inComingUp = false;
+    for (const line of lines) {
+      if (line === '### Coming Up') { inComingUp = true; continue; }
+      if (inComingUp && line.startsWith('---')) { inComingUp = false; break; }
+      if (inComingUp && line.startsWith('**')) {
+        const m = line.match(/\*\*(.+?)\*\* — (.+?) \((\d+) days\)/);
+        if (m) data.comingUp.push({ name: m[1], date: m[2], days: m[3] });
+      }
+    }
+
+    return data;
+  }
+
+  // ── Render ─────────────────────────────────────────────────────
+  function render(data) {
+    // Season color
+    const color = SEASON_COLORS[data.season] || '#4a7c4e';
+    document.documentElement.style.setProperty('--accent', color);
+    document.documentElement.style.setProperty('--accent-pale', color + '14');
+
+    // Header
+    document.getElementById('date-heading').textContent = data.date || '';
+    document.getElementById('season-label').textContent =
+      (data.season || '') + (data.color_label ? ' — ' + data.color_label : '');
+
+    // Edition row
+    const edRow = document.getElementById('edition-row');
+    const pills = [];
+    if (data.name1928) pills.push(`<span class="edition-pill"><span>1928</span>${data.name1928}</span>`);
+    if (data.name1979) pills.push(`<span class="edition-pill"><span>1979</span>${data.name1979}</span>`);
+    // edition-row is hidden; feast shown in today panel
+    edRow.innerHTML = pills.join('');
+    const feastBlock = document.getElementById('today-feast-block');
+    if (feastBlock) {
+      if (data.feast) { feastBlock.style.display = 'block'; document.getElementById('today-feast').textContent = data.feast; }
+      else feastBlock.style.display = 'none';
+    }
+
+    // Today panel
+    document.getElementById('today-loading').style.display = 'none';
+    document.getElementById('today-content').style.display = 'block';
+    document.getElementById('name-1928').textContent = data.name1928 || '—';
+    // 1979 shown in edition tab only
+    // document.getElementById('name-1979').textContent = data.name1979 || '—';
+    document.getElementById('psalms-morning').textContent = data.psalmsMorning || '—';
+    document.getElementById('psalms-evening').textContent = data.psalmsEvening || '—';
+
+    // Coming up
+    const cup = document.getElementById('coming-up-list');
+    cup.innerHTML = data.comingUp.map(e =>
+      `<li>
+        <span class="feast-name">${e.name}</span>
+        <span class="feast-meta">${e.date} &nbsp;·&nbsp; ${e.days}d</span>
+      </li>`
+    ).join('');
+
+    // Computus
+    const cg = document.getElementById('computus-grid');
+    const items = [
+      ['Golden Number', data.gn],
+      ['Dominical Letter', data.dl],
+      ['Paschal Full Moon', data.pfm],
+      ['Easter', data.easter],
+      ['RCL', data.rcl],
+    ];
+    cg.innerHTML = items.filter(i => i[1]).map(([label, val]) =>
+      `<div class="computus-item"><label>${label}</label><value>${val}</value></div>`
+    ).join('');
+
+    // Office panels — populate psalms
+    document.getElementById('mp-psalms-morning').textContent = data.psalmsMorning || '—';
+    document.getElementById('mp-psalm-source').textContent = data.psalmSource || '';
+    document.getElementById('ep-psalms-evening').textContent = data.psalmsEvening || '—';
+    document.getElementById('ep-psalm-source').textContent = data.psalmSource || '';
+
+    // Page title
+    document.title = (data.date || 'Daily Office') + ' — The Concordentary';
+  }
+
+  // ── Fetch today.md ─────────────────────────────────────────────
+  // GitHub Contents API supports CORS; raw.githubusercontent.com does not
+  const API_URL = 'https://api.github.com/repos/TheStrategicDisciple/book-of-common-prayer-concordentary/contents/today.md';
+
+  async function loadToday() {
+    try {
+      const res = await fetch(API_URL, {
+        headers: { 'Accept': 'application/vnd.github.v3.raw' }
+      });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const text = await res.text();
+      const data = parseTodayMd(text);
+      render(data);
+    } catch (e) {
+      document.getElementById('today-loading').textContent =
+        `Could not load today's office: ` + e.message;
+    }
+  }
+
+  // ── Tabs ───────────────────────────────────────────────────────
+  document.querySelectorAll('.tab:not(.unavailable)').forEach(tab => {
+    tab.addEventListener('click', () => {
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+      tab.classList.add('active');
+      document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+    });
+  });
+
+  // ── Prayer search (placeholder) ────────────────────────────────
+  function prayerSearch() {
+    const q = document.getElementById('prayer-query').value.trim();
+    if (!q) return;
+    document.getElementById('lookup-placeholder').textContent =
+      'Search for "' + q + '" — atomic prayer layer coming soon.';
+  }
+
+  document.getElementById('prayer-query').addEventListener('keydown', e => {
+    if (e.key === 'Enter') prayerSearch();
+  });
+
+  // ── Init ───────────────────────────────────────────────────────
+  loadToday();
+</script>
+</body>
+</html>
