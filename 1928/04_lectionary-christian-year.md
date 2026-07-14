@@ -62,7 +62,24 @@ manuscript_sources: []
 file_version: 0.9.0
 last_reviewed:
 reviewed_against:
-review_notes: "PRIORITY VERIFICATION: This file requires careful hardcopy check of all lesson references. Scripture references use BCP notation (v. = verse, end = to end of chapter). Asterisked lessons (*) are optional Ember Day lessons. Dagger lessons (†) may be used on Christmas Eve. First complete digital edition — Charles Wohlers omitted this entirely."
+review_notes: "revision: \"1945\"\r
+
+
+  notes: \"The Sunday lectionary was substantially revised in 1945 by the \r
+
+  \        Standing Liturgical Commission. This file presents the 1945 revision, \r
+
+  \        which is the version found in most physical copies of the 1928 BCP \r
+
+  \        in circulation. The original 1928 lectionary is available in \r
+
+  \        Lectionary_1928.wpd (Charles Wohlers, Satucket Software) and is \r
+
+  \        preserved for future scholarly comparison as a planned addition to \r
+
+  \        the Concordentary. The psalm tables in 03_psalms-and-lessons-tables.md \r
+
+  \        likewise reflect the 1945 revision — both files are internally consistent.\""
 ---
 
 # A Table of Lessons for the Christian Year
