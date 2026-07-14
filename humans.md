@@ -2,7 +2,7 @@
 
 ---
 
-*To all who see these presents, greeting.* 
+*To all who see these presents, greeting.*
 
 ---
 
@@ -80,8 +80,18 @@ You — reading this now
 
 ---
 
+---
+
+## The Standard
+
+*"Someone in the 1990s cared enough to sit down and do that work — probably a priest or a devoted layperson, probably on a machine that took five minutes to boot, probably with no expectation of recognition. Just quietly doing it because the tradition deserved to exist digitally."*
+
+That is the standard this project holds itself to.
+
+---
+
 *To all who come after: the receipts are in the repo.*
-**Go in peace to love and serve the Lord**
+**Go in peace to love and serve the Lord.**
 
 ---
 
