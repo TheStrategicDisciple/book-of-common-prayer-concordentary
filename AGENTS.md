@@ -226,8 +226,6 @@ python _engine/computus.py --date 2026-12-21
 
 Output is identical to the live cron format. Use to verify known dates — Advent, Easter, Christmas, Holy Saturday edge case. Both flags can be combined; either suppresses the NIST call.
 
-When validation passes, commit the output as `_data/validation_YYYY.md` — the passing run becomes part of the repo's audit trail.
-
 ### Daily cron
 
 - Runs at 12:01 AM Eastern (5:01 UTC)
