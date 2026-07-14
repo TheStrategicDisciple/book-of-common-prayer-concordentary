@@ -286,9 +286,9 @@ The Concordentary does not erase absences. It documents them.
 ├── 1789/
 ├── 1892/
 ├── 1928/
-│   ├── 01_morning-prayer.md
-│   ├── 02_evening-prayer.md
-│   └── ... (25 files total)
+│   ├── 01_front-matter.md
+│   ├── 02_concerning-the-service.md
+│   └── ... (29 files total)
 ├── 1979/
 │
 ├── _atomic/
@@ -319,7 +319,7 @@ The Concordentary does not erase absences. It documents them.
 ## Build Sequence
 
 **Phase 1 — 1928 Canonical Files** ← in progress
-25 files. One at a time. Verified 1.0.0 against hardcopy or authoritative scan.
+29 files. One at a time. Verified 1.0.0 against hardcopy or authoritative scan.
 
 **Phase 2 — Supporting Files**
 SOURCES.md, CITE.md, CONTRIBUTING.md, SCHEMA.md
