@@ -392,7 +392,7 @@
     <div class="season-rule-line" id="season-line"></div>
     <span class="season-label" id="season-label"></span>
   </div>
-  <div class="edition-row" id="edition-row"></div>
+  <div class="edition-row" id="edition-row" style="display:none"></div>
 </header>
 
 <nav class="tab-bar" role="tablist">
@@ -420,6 +420,10 @@
         <div class="today-block">
           <h3>1979 BCP</h3>
           <p id="name-1979"></p>
+        </div>
+        <div class="today-block" id="today-feast-block" style="display:none">
+          <h3>Feast</h3>
+          <p id="today-feast"></p>
         </div>
         <div class="today-block">
           <h3>Psalms — Morning</h3>
@@ -621,8 +625,13 @@
     const pills = [];
     if (data.name1928) pills.push(`<span class="edition-pill"><span>1928</span>${data.name1928}</span>`);
     if (data.name1979) pills.push(`<span class="edition-pill"><span>1979</span>${data.name1979}</span>`);
-    if (data.feast)    pills.push(`<span class="edition-pill"><span>Feast</span>${data.feast}</span>`);
+    // edition-row is hidden; feast shown in today panel
     edRow.innerHTML = pills.join('');
+    const feastBlock = document.getElementById('today-feast-block');
+    if (feastBlock) {
+      if (data.feast) { feastBlock.style.display = 'block'; document.getElementById('today-feast').textContent = data.feast; }
+      else feastBlock.style.display = 'none';
+    }
 
     // Today panel
     document.getElementById('today-loading').style.display = 'none';
