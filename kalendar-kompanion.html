@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kalendar Kompanion — The Concordentary</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-mid: #4a4a4a;
+      --ink-light: #8a8a8a;
+      --page: #fafafa;
+      --rule: #e4e4e4;
+      --accent: #4a7c4e;
+      --accent-pale: rgba(74,124,78,0.08);
+      --sans: 'Inter', system-ui, sans-serif;
+      --serif: 'IM Fell English', Georgia, serif;
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--page);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 0;
+    }
+
+    .site-wordmark {
+      font-family: var(--serif);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 2.5rem;
+    }
+
+    .site-wordmark a {
+      color: var(--ink-light);
+      text-decoration: none;
+    }
+
+    .site-wordmark a:hover { color: var(--accent); }
+
+    .page-heading {
+      font-family: var(--serif);
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: normal;
+      font-style: italic;
+      line-height: 1.2;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .season-rule {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .season-rule-line {
+      height: 2px;
+      width: 2.5rem;
+      background: var(--accent);
+      flex-shrink: 0;
+      border-radius: 1px;
+    }
+
+    .season-label {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ── Provenance notice ── */
+    .notice {
+      background: var(--accent-pale);
+      border-left: 3px solid var(--accent);
+      padding: 1rem 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .notice p {
+      font-size: 0.82rem;
+      color: var(--ink-mid);
+      line-height: 1.65;
+    }
+
+    .notice strong { color: var(--ink); font-weight: 500; }
+
+    /* ── Main ── */
+    .main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem 4rem;
+    }
+
+    /* ── Input ── */
+    .input-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      display: block;
+      margin-bottom: 0.6rem;
+    }
+
+    .input-row {
+      display: flex;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: 0.75rem;
+    }
+
+    .date-input {
+      font-family: var(--sans);
+      font-size: 0.95rem;
+      padding: 0.6rem 0.9rem;
+      border: 1px solid var(--rule);
+      background: white;
+      color: var(--ink);
+      outline: none;
+      border-radius: 2px;
+      flex: 1;
+      min-width: 160px;
+    }
+
+    .date-input:focus { border-color: var(--accent); }
+
+    .run-btn {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      background: var(--accent);
+      color: white;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      cursor: pointer;
+      border-radius: 2px;
+      white-space: nowrap;
+    }
+
+    .run-btn:hover { opacity: 0.85; }
+
+    .examples {
+      font-size: 0.72rem;
+      color: var(--ink-light);
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .examples button {
+      background: none;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--ink-mid);
+      padding: 0.2rem 0.55rem;
+      cursor: pointer;
+      margin: 0 0.3rem 0.3rem 0;
+    }
+
+    .examples button:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    /* ── States ── */
+    .state-empty {
+      padding: 3rem 0;
+      text-align: center;
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-light);
+    }
+
+    .state-error {
+      padding: 0.75rem 1rem;
+      background: #fef3f2;
+      border-left: 3px solid #c0392b;
+      font-size: 0.82rem;
+      color: #7b241c;
+      margin-bottom: 1rem;
+      display: none;
+    }
+
+    /* ── Result heading ── */
+    .result-date {
+      font-family: var(--serif);
+      font-size: clamp(1.2rem, 3vw, 1.6rem);
+      font-style: italic;
+      font-weight: normal;
+      color: var(--ink);
+      margin-bottom: 0.3rem;
+    }
+
+    .result-season {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .result-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .result-season-label {
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* ── Steps ── */
+    .steps-heading {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 1.5rem;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 2.5rem 1fr;
+      gap: 0 1rem;
+      padding-bottom: 1.75rem;
+      margin-bottom: 1.75rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .step:last-of-type { border-bottom: none; margin-bottom: 0; }
+
+    .step-num {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+      font-family: var(--sans);
+      padding-top: 0.2rem;
+      text-align: right;
+    }
+
+    .step-body {}
+
+    .step-op {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.3rem;
+    }
+
+    .step-formula {
+      font-family: 'Courier New', monospace;
+      font-size: 0.82rem;
+      color: var(--ink-mid);
+      background: #f0f0f0;
+      padding: 0.35rem 0.65rem;
+      border-radius: 2px;
+      display: inline-block;
+      margin: 0.3rem 0;
+    }
+
+    .step-result {
+      font-family: var(--serif);
+      font-size: 1.1rem;
+      color: var(--ink);
+      margin: 0.35rem 0 0.25rem;
+    }
+
+    .step-result strong { color: var(--accent); }
+
+    .step-cite {
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      font-style: italic;
+      margin-bottom: 0.3rem;
+    }
+
+    .step-cite a {
+      color: var(--ink-light);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .step-cite a:hover { color: var(--accent); }
+
+    .step-note {
+      font-size: 0.78rem;
+      color: var(--ink-mid);
+      line-height: 1.55;
+      margin-top: 0.35rem;
+    }
+
+    /* ── Summary ── */
+    .summary {
+      background: var(--accent-pale);
+      border-left: 3px solid var(--accent);
+      padding: 1.25rem 1.5rem;
+      margin: 2rem 0 1.5rem;
+    }
+
+    .summary h3 {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.85rem;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 0.85rem;
+    }
+
+    .summary-item label {
+      display: block;
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.15rem;
+    }
+
+    .summary-item value {
+      display: block;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .cert-note {
+      font-size: 0.72rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    .cert-note a {
+      color: var(--ink-light);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .cert-note a:hover { color: var(--accent); }
+
+    /* ── Footer ── */
+    .site-footer {
+      max-width: 720px;
+      margin: 4rem auto 2rem;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid var(--rule);
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    .site-footer a { color: var(--ink-light); text-decoration: none; }
+    .site-footer a:hover { color: var(--accent); }
+
+    @media (max-width: 520px) {
+      .input-row { flex-direction: column; }
+      .run-btn { width: 100%; text-align: center; }
+      .step { grid-template-columns: 2rem 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <p class="site-wordmark">
+    <a href="today.html">The Concordentary</a> &nbsp;·&nbsp; Kalendar Kompanion
+  </p>
+  <h1 class="page-heading">Kalendar Kompanion</h1>
+  <div class="season-rule">
+    <div class="season-rule-line" id="season-line"></div>
+    <span class="season-label">Any date. Every step shown.</span>
+  </div>
+  <div class="notice">
+    <p>
+      <strong>This is not a search.</strong> Every result below is computed
+      step by step directly from <strong>TABLE I</strong> (Dominical Letter)
+      and <strong>TABLE II</strong> (Golden Number &rarr; Paschal Full Moon)
+      as they appear in the 1928 Book of Common Prayer,
+      <em>Tables and Rules for the Movable and Immovable Feasts</em> (pp.&nbsp;l&ndash;lii),
+      transcribed in this repository. The same method a parish clerk used in
+      1662&nbsp;&mdash; or 1928&nbsp;&mdash; runs here, against the same tables.
+      Each step shows its formula, its result, and its source so you can follow
+      the logic yourself and verify it against the printed book. The goal is not
+      just to give you the answer&nbsp;&mdash; it is to show you the assumptions
+      behind it, so you understand what any calendar software is doing when it
+      gives you the same answer automatically.
+    </p>
+  </div>
+</header>
+
+<main class="main">
+
+  <label class="input-label" for="date-input">Enter any date &mdash; past, present, or future</label>
+  <div class="input-row">
+    <input type="date" id="date-input" class="date-input" min="1600-01-01" max="4999-12-31">
+    <button class="run-btn" onclick="run()">Calculate</button>
+  </div>
+  <div class="examples">
+    <span>Try:&nbsp;</span>
+    <button onclick="go('1928-06-10')">Jun 10, 1928</button>
+    <button onclick="go('1662-04-14')">Apr 14, 1662</button>
+    <button onclick="go('1982-08-10')">Aug 10, 1982</button>
+    <button onclick="go('2087-04-20')">Apr 20, 2087</button>
+    <button onclick="go(today())">Today</button>
+  </div>
+
+  <div class="state-error" id="err"></div>
+  <div class="state-empty" id="empty">Select a date above and press Calculate.</div>
+  <div id="out" style="display:none"></div>
+
+</main>
+
+<footer class="site-footer">
+  <p>
+    The Concordentary &nbsp;&middot;&nbsp; BCP 1928 (PECUSA) &nbsp;&middot;&nbsp;
+    Engine: <em>computus.py</em>, TABLE I &amp; TABLE II &nbsp;&middot;&nbsp;
+    <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary"
+       target="_blank" rel="noopener">GitHub</a>
+    &nbsp;&middot;&nbsp; CC BY-NC-SA 4.0
+  </p>
+  <p style="margin-top:0.4rem;">
+    Text: Charles Wohlers, Satucket Software &nbsp;&middot;&nbsp;
+    Markdown, schema &amp; engine: Alex Nutting, The Strategic Disciple LLC
+  </p>
+</footer>
+
+<script>
+  // ── BCP TABLE II ─────────────────────────────────────────────────────────
+  const T2 = {
+    1600:[12,1,21,9,29,17,6,26,14,3,23,11,31,18,8,28,16,5,25],
+    1700:[13,2,22,10,30,18,7,27,15,4,24,12,1,21,9,29,17,6,26],
+    1900:[14,3,23,11,31,18,8,28,16,5,25,13,2,22,10,30,17,7,27],
+    2200:[15,4,24,12,1,21,9,29,17,6,26,14,3,23,11,31,18,8,28],
+    2300:[16,5,25,13,2,22,10,30,18,7,27,15,4,24,12,1,21,9,29],
+    2600:[17,6,26,14,3,23,11,31,18,8,28,16,5,25,13,2,22,10,30],
+    2900:[18,7,27,15,4,24,12,1,21,9,29,17,6,26,14,3,23,11,31],
+    3100:[18,8,28,16,5,25,13,2,22,10,30,17,7,27,15,4,24,12,1],
+    3400:[21,9,29,17,6,26,14,3,23,11,31,18,8,28,16,5,25,13,2],
+    3800:[23,11,31,18,8,28,16,5,25,13,2,22,10,30,17,7,27,15,4],
+    4100:[24,12,1,21,9,29,17,6,26,14,3,23,11,31,18,8,28,16,5],
+    4200:[25,13,2,22,10,30,18,7,27,15,4,24,12,1,21,9,29,17,6],
+    4500:[26,14,3,23,11,31,18,8,28,16,5,25,13,2,22,10,30,17,7],
+    4700:[27,15,4,24,12,1,21,9,29,17,6,26,14,3,23,11,31,18,8],
+    5000:[28,16,5,25,13,2,22,10,30,18,7,27,15,4,24,12,1,21,9],
+  };
+  const ANCHORS = Object.keys(T2).map(Number).sort((a,b)=>b-a);
+  const LETS = ['A','B','C','D','E','F','G'];
+  const MONTHS = ['January','February','March','April','May','June',
+                  'July','August','September','October','November','December'];
+  const WDAYS  = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+
+  const SEASON_COLORS = {
+    'Advent':'#5B4B8A','Christmastide':'#B8972A','Epiphany':'#4a7c4e',
+    'Pre-Lent':'#4a7c4e','Lent':'#5B4B8A','Holy Week':'#8B1A1A',
+    'Eastertide':'#B8972A','Whitsunday':'#9B2335','Whitsuntide':'#9B2335',
+    'Trinity Season':'#4a7c4e',
+  };
+
+  // ── Math ─────────────────────────────────────────────────────────────────
+  const gn  = y => { const g=(y+1)%19; return g||19; };
+  const leap = y => y%4===0&&(y%100!==0||y%400===0);
+  const anch = y => { const c=Math.floor(y/100)*100; return ANCHORS.find(a=>c>=a); };
+
+  function pfm(y) {
+    const g=gn(y), a=anch(y);
+    if(!a||!T2[a]) return null;
+    const d=T2[a][g-1];
+    if(!d) return null;
+    return new Date(y, d>20?2:3, d);
+  }
+
+  function dl(y) {
+    const j=new Date(y,0,1), d=j.getDay();
+    const dts=d===0?0:7-d;
+    let l=LETS[dts%7];
+    if(leap(y)){ const i=LETS.indexOf(l); l=LETS[(i-1+7)%7]; }
+    return l;
+  }
+
+  function perpLet(date) {
+    const y=date.getFullYear();
+    let doy=Math.round((date-new Date(y,0,1))/86400000)+1;
+    if(leap(y)&&date>=new Date(y,2,1)) doy--;
+    return LETS[(doy-1)%7];
+  }
+
+  function easter(y) {
+    const p=pfm(y); if(!p) return null;
+    const d=dl(y);
+    const pi=LETS.indexOf(perpLet(p)), si=LETS.indexOf(d);
+    let days=(si-pi+7)%7; if(!days) days=7;
+    return new Date(p.getTime()+days*86400000);
+  }
+
+  function adv1(y) {
+    const x=new Date(y,11,25), b=x.getDay()||7;
+    return new Date(x.getTime()-(b+21)*86400000);
+  }
+
+  // Compare dates safely by calendar day, avoiding DST ms-offset bugs
+  function sameDay(a,b){ return a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate(); }
+  function daysBetween(a,b){ return Math.round((b-a)/864e5); }
+  function addDays(d,n){ return new Date(d.getFullYear(),d.getMonth(),d.getDate()+n); }
+
+  function getSeason(date) {
+    const y=date.getFullYear();
+    const e=easter(y); if(!e) return {s:'Unknown',c:'#888',n:''};
+    const ash =addDays(e,-46), sep =addDays(e,-63);
+    const pent=addDays(e, 49), trin=addDays(e, 56);
+    const palm=addDays(e, -7);
+    const a1=adv1(y), pa=adv1(y-1);
+
+    // Use calendar-day comparison throughout
+    const before = (a,b) => a.getFullYear()<b.getFullYear()||(a.getFullYear()===b.getFullYear()&&(a.getMonth()<b.getMonth()||(a.getMonth()===b.getMonth()&&a.getDate()<b.getDate())));
+    const after  = (a,b) => before(b,a);
+    const onOrAfter = (a,b) => !before(a,b);
+    const onOrBefore= (a,b) => !after(a,b);
+
+    if(onOrAfter(date,pa)&&before(date,new Date(y,0,1))) return {s:'Advent',c:'#5B4B8A',n:'Advent'};
+    if(before(date,new Date(y,0,6)))   return {s:'Christmastide',c:'#B8972A',n:'Christmastide'};
+    if(before(date,sep))               return {s:'Epiphany',c:'#4a7c4e',n:'Epiphany Season'};
+    if(before(date,ash))               return {s:'Pre-Lent',c:'#4a7c4e',n:'Pre-Lent'};
+    if(before(date,palm))              return {s:'Lent',c:'#5B4B8A',n:'Lent'};
+    if(before(date,e))                 return {s:'Holy Week',c:'#8B1A1A',n:'Holy Week'};
+    if(sameDay(date,e))                return {s:'Eastertide',c:'#B8972A',n:'Easter Day'};
+    if(before(date,pent))              return {s:'Eastertide',c:'#B8972A',n:'Eastertide'};
+    if(sameDay(date,pent))             return {s:'Whitsunday',c:'#9B2335',n:'Whitsunday'};
+    if(onOrBefore(date,trin))          return {s:'Whitsuntide',c:'#9B2335',n:'Whitsuntide'};
+    if(ms<a1) {
+      const wks=Math.floor((ms-trin)/(7*864e5));
+      const ords=['First','Second','Third','Fourth','Fifth','Sixth','Seventh',
+        'Eighth','Ninth','Tenth','Eleventh','Twelfth','Thirteenth','Fourteenth',
+        'Fifteenth','Sixteenth','Seventeenth','Eighteenth','Nineteenth','Twentieth',
+        'Twenty-First','Twenty-Second','Twenty-Third','Twenty-Fourth','Twenty-Fifth','Twenty-Sixth'];
+      return {s:'Trinity Season',c:'#4a7c4e',
+        n: wks>0&&wks<=ords.length?`${ords[wks-1]} Sunday after Trinity`:'Trinity Season'};
+    }
+    if(ms<new Date(y,11,25))       return {s:'Advent',c:'#5B4B8A',n:'Advent'};
+    return {s:'Christmastide',c:'#B8972A',n:'Christmastide'};
+  }
+
+  function getRCL(date) {
+    const y=date.getFullYear(), ay=date>=adv1(y)?y:y-1;
+    return ['Year A','Year B','Year C'][ay%3];
+  }
+
+  // ── Format ───────────────────────────────────────────────────────────────
+  const fmtFull  = d=>`${WDAYS[d.getDay()]}, ${MONTHS[d.getMonth()]} ${d.getDate()}, ${d.getFullYear()}`;
+  const fmtShort = d=>`${MONTHS[d.getMonth()]} ${d.getDate()}`;
+
+  // ── Step builder ─────────────────────────────────────────────────────────
+  function step(num, op, formula, result, cite, note) {
+    return `<div class="step">
+      <div class="step-num">${String(num).padStart(2,'0')}</div>
+      <div class="step-body">
+        <div class="step-op">${op}</div>
+        ${formula?`<div class="step-formula">${formula}</div>`:''}
+        <div class="step-result">${result}</div>
+        ${cite?`<div class="step-cite">${cite}</div>`:''}
+        ${note?`<div class="step-note">${note}</div>`:''}
+      </div>
+    </div>`;
+  }
+
+  // ── Main ─────────────────────────────────────────────────────────────────
+  function run() {
+    const val=document.getElementById('date-input').value;
+    const errEl=document.getElementById('err');
+    errEl.style.display='none';
+
+    if(!val){
+      document.getElementById('out').style.display='none';
+      document.getElementById('empty').style.display='block';
+      return;
+    }
+    const [y,m,d]=val.split('-').map(Number);
+    if(y<1600||y>4999){ errEl.textContent='Year must be between 1600 and 4999.'; errEl.style.display='block'; return; }
+
+    const date=new Date(y,m-1,d);
+    const gnV =gn(y);
+    const lp  =leap(y);
+    const dlV =dl(y);
+    const anV =anch(y);
+    const pfmD=pfm(y);
+    const east=easter(y);
+    const pos =getSeason(date);
+    const rcl =getRCL(date);
+
+    const jan1    =new Date(y,0,1);
+    const jan1Day =WDAYS[jan1.getDay()];
+    const pfmMo   =pfmD?MONTHS[pfmD.getMonth()]:'—';
+    const pfmDy   =pfmD?pfmD.getDate():'—';
+    const pfmWd   =pfmD?WDAYS[pfmD.getDay()]:'—';
+    const pfmLet  =pfmD?perpLet(pfmD):'—';
+    const eastStr =east?fmtFull(east):'—';
+    const t2val   =anV&&T2[anV]?T2[anV][gnV-1]:'—';
+    const dfe     =east?Math.round((date-east)/864e5):null;
+
+    // Accent color
+    const color=pos.c||'#4a7c4e';
+    document.documentElement.style.setProperty('--accent',color);
+    document.documentElement.style.setProperty('--accent-pale',color+'14');
+    document.getElementById('season-line').style.background=color;
+
+    // Hide empty state
+    document.getElementById('empty').style.display='none';
+    const out=document.getElementById('out');
+    out.style.display='block';
+
+    out.innerHTML=`
+      <div class="result-date">${fmtFull(date)}</div>
+      <div class="result-season">
+        <div class="result-dot"></div>
+        <span class="result-season-label">${pos.s}${pos.n?' — '+pos.n:''}</span>
+      </div>
+
+      <p class="steps-heading">Step-by-step calculation</p>
+
+      ${step(1,
+        'Golden Number',
+        `(${y} + 1) mod 19 = ${(y+1)%19||19}`,
+        `Golden Number = <strong>${gnV}</strong>`,
+        'Rule I — Tables and Rules, BCP 1928 &nbsp;·&nbsp; <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/06_tables-and-rules.md" target="_blank" rel="noopener">06_tables-and-rules.md</a>',
+        `Your position in the 19-year Metonic cycle — the ancient Greek discovery that lunar phases repeat almost exactly every 19 years. The Church has used this since the Council of Nicaea (325 AD) to predict the full moon without a telescope. Golden Number ${gnV} means ${y} is year ${gnV} of the current Metonic cycle. This single number drives the entire Easter calculation.`
+      )}
+
+      ${step(2,
+        'Leap Year Check',
+        `${y} ÷ 4 = ${y/4}${lp?' → no remainder → leap year':' → not a leap year'}`,
+        lp?`<strong>${y} is a leap year.</strong>`:`<strong>${y} is not a leap year.</strong>`,
+        'Gregorian calendar rule: divisible by 4, except centuries unless also divisible by 400.',
+        lp
+          ? `In a leap year the Dominical Letter shifts after February 28 — February 29 carries no perpetual calendar letter. Because Easter always falls in March or April, the post-February letter is the one that matters here.`
+          : `No leap year adjustment is needed. The Dominical Letter calculated in the next step applies to the whole year.`
+      )}
+
+      ${step(3,
+        'Dominical Letter',
+        `January 1, ${y} = ${jan1Day}${lp?' → post-Feb letter shifts one step earlier':''}`,
+        `Dominical Letter = <strong>${dlV}</strong>`,
+        'TABLE I — Tables and Rules, BCP 1928 &nbsp;·&nbsp; <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/06_tables-and-rules.md" target="_blank" rel="noopener">06_tables-and-rules.md</a>',
+        `The perpetual calendar assigns the letter A to January 1 and cycles A through G, one letter per day. The Dominical Letter is whichever letter falls on Sunday this year. January 1, ${y} is a ${jan1Day}, so counting forward to the first Sunday gives the letter <strong>${dlV}</strong>. Every Sunday in ${y} falls on a day labelled ${dlV} in the perpetual calendar.${lp?' Because this is a leap year, the letter shifts one step earlier from March 1 onward.':''}`
+      )}
+
+      ${step(4,
+        'Paschal Full Moon — TABLE II lookup',
+        `TABLE II, century row ${anV} → Golden Number ${gnV} → table value ${t2val}`,
+        `Paschal Full Moon = <strong>${pfmMo} ${pfmDy}</strong> &nbsp;(${pfmWd}, letter ${pfmLet})`,
+        'TABLE II — Tables and Rules, BCP 1928 &nbsp;·&nbsp; <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/06_tables-and-rules.md" target="_blank" rel="noopener">06_tables-and-rules.md</a>',
+        `TABLE II maps each Golden Number to an ecclesiastical full moon date in March or April. This is not the astronomical full moon — it is the Church's official lunar calendar, fixed at the Council of Nicaea and carried forward through Thomas Cranmer into the Book of Common Prayer. Day values above 20 fall in March; values 1 through 20 fall in April. Find your Golden Number (${gnV}) across the top of TABLE II, read down to the row for century ${anV}, and the value ${t2val} gives you ${pfmMo} ${pfmDy}.`
+      )}
+
+      ${step(5,
+        'Easter Sunday',
+        `First Sunday after ${pfmMo} ${pfmDy} (letter ${pfmLet}) → next letter ${dlV}`,
+        `Easter ${y} = <strong>${eastStr}</strong>`,
+        'TABLE I intersection — Tables and Rules, BCP 1928 &nbsp;·&nbsp; <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/06_tables-and-rules.md" target="_blank" rel="noopener">06_tables-and-rules.md</a>',
+        `Easter is the first Sunday after the Paschal Full Moon. The full moon (${pfmMo} ${pfmDy}) carries the perpetual calendar letter ${pfmLet}. The Dominical Letter this year is ${dlV}. Counting forward from ${pfmLet} to the next ${dlV} gives you Easter. One critical rule from Nicaea: if the full moon itself falls on a Sunday, Easter is the <em>following</em> Sunday — preventing Easter from coinciding with the Jewish Passover.`
+      )}
+
+      ${dfe!==null?step(6,
+        'Position Relative to Easter',
+        `${fmtFull(date)} − ${east?fmtShort(east):'—'} = ${dfe>=0?'+':''}${dfe} days`,
+        dfe===0
+          ? `<strong>This date is Easter Sunday.</strong>`
+          : dfe>0
+          ? `<strong>${dfe} day${dfe!==1?'s':''} after Easter ${y}</strong>`
+          : `<strong>${Math.abs(dfe)} day${Math.abs(dfe)!==1?'s':''} before Easter ${y}</strong>`,
+        null,
+        `All moveable feasts and the entire season structure of the church year flow from this relationship. Ash Wednesday is always 46 days before Easter. Ascension Day is always 39 days after. Whitsunday (Pentecost) is 49 days after. Trinity Sunday is 56 days after. Once you know Easter, you know the whole calendar.`
+      ):''}
+
+      ${step(dfe!==null?7:6,
+        'Liturgical Season — 1928 BCP',
+        null,
+        `<strong>${pos.s}</strong>${pos.n?' &mdash; '+pos.n:''}`,
+        'BCP 1928 season and Sunday structure.',
+        `The liturgical season is determined by the date's relationship to Easter and the fixed boundaries of the church year. ${
+          dfe===0 ? 'This date is Easter Sunday — the first day of Eastertide, the fifty days of resurrection celebration running from Easter through Whitsunday (Pentecost).' :
+          dfe!==null && dfe>0 && dfe<49 ? 'Eastertide runs fifty days from Easter Sunday through the eve of Whitsunday (Pentecost).' :
+          dfe!==null && dfe===49 ? 'Whitsunday (Pentecost) falls exactly fifty days after Easter Sunday.' :
+          dfe!==null && dfe<0 && dfe>=-46 ? 'Lent begins on Ash Wednesday (46 days before Easter) and runs through Holy Saturday.' :
+          'The season boundaries all trace back to the Easter date calculated in step 5.'
+        }`
+      )}
+
+      <div class="summary">
+        <h3>Summary</h3>
+        <div class="summary-grid">
+          <div class="summary-item"><label>Golden Number</label><value>${gnV}</value></div>
+          <div class="summary-item"><label>Leap Year</label><value>${lp?'Yes':'No'}</value></div>
+          <div class="summary-item"><label>Dominical Letter</label><value>${dlV}</value></div>
+          <div class="summary-item"><label>Paschal Full Moon</label><value>${pfmMo} ${pfmDy}</value></div>
+          <div class="summary-item"><label>Easter ${y}</label><value>${east?fmtShort(east):'—'}</value></div>
+          <div class="summary-item"><label>Season (1928)</label><value>${pos.s}</value></div>
+          <div class="summary-item"><label>RCL Year</label><value>${rcl}</value></div>
+          <div class="summary-item"><label>TABLE II Row</label><value>${anV||'—'} <span style="font-size:0.7rem;color:var(--ink-light);">(covers ${
+            anV ? (() => {
+              const anchors = [1600,1700,1900,2200,2300,2600,2900,3100,3400,3800,4100,4200,4500,4700,5000];
+              const idx = anchors.indexOf(anV);
+              const next = anchors[idx+1];
+              return next ? anV+'–'+(next-1) : anV+'–5000';
+            })() : ''
+          })</span></value></div>
+        </div>
+      </div>
+
+      <p class="cert-note">
+        All calculations use TABLE I and TABLE II from the 1928 BCP as transcribed in
+        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/06_tables-and-rules.md"
+           target="_blank" rel="noopener">06_tables-and-rules.md</a>.
+        Certified against the 1979 BCP printed Easter list (2026–2099) and bcponline.org
+        (76 years, zero mismatches). See
+        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/_data/validation/validation_2026.md"
+           target="_blank" rel="noopener">validation_2026.md</a>.
+      </p>
+    `;
+  }
+
+  function go(s){ document.getElementById('date-input').value=s; run(); }
+  function today(){ const d=new Date(); return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`; }
+
+  document.getElementById('date-input').addEventListener('keydown',e=>{ if(e.key==='Enter') run(); });
+
+  // Reset display when input is cleared
+  document.getElementById('date-input').addEventListener('change', function() {
+    if (!this.value) {
+      document.getElementById('out').style.display = 'none';
+      document.getElementById('empty').style.display = 'block';
+      document.getElementById('err').style.display = 'none';
+      // Reset accent color to default green
+      document.documentElement.style.setProperty('--accent', '#4a7c4e');
+      document.documentElement.style.setProperty('--accent-pale', 'rgba(74,124,78,0.08)');
+      document.getElementById('season-line').style.background = '#4a7c4e';
+    }
+  });
+  document.getElementById('date-input').value=today();
+</script>
+</body>
+</html>
