@@ -378,11 +378,71 @@
     }
 
     .site-footer a:hover { color: var(--accent); }
+  .edition-switcher {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .edition-switcher-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-right: 0.25rem;
+    }
+
+    .edition-btn {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: none;
+      color: var(--ink-light);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .edition-btn:hover { color: var(--ink-mid); border-color: var(--ink-mid); }
+
+    .edition-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-pale);
+    }
+
+    .edition-btn.unavailable {
+      color: var(--rule);
+      border-color: var(--rule);
+      cursor: default;
+      pointer-events: none;
+    }
+
   </style>
 </head>
 <body>
 
 <header class="site-header">
+
+  <div class="edition-switcher">
+    <span class="edition-switcher-label">Edition</span>
+    <a class="edition-btn unavailable" title="Coming soon">1662</a>
+    <a class="edition-btn unavailable" title="Coming soon">1892</a>
+    <a class="edition-btn active" href="today.html">1928</a>
+    <a class="edition-btn unavailable" title="Pending copyright">1979</a>
+  </div>
+
   <p class="site-wordmark">The Concordentary — Daily Office</p>
   <h1 class="date-heading" id="date-heading">Loading…</h1>
   <div class="season-rule">
@@ -400,6 +460,7 @@
   <button class="tab unavailable" role="tab" data-panel="compline" title="Not in 1928 BCP">Compline</button>
   <button class="tab" role="tab" data-panel="family">Family Prayer</button>
   <button class="tab" role="tab" data-panel="readings">Readings</button>
+  <button class="tab" role="tab" data-panel="hymn">Hymn</button>
   <button class="tab" role="tab" data-panel="lookup">Prayer Lookup</button>
 </nav>
 
@@ -523,6 +584,18 @@
         Source: <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/04_lectionary-christian-year.md"
            style="color:var(--accent);" target="_blank" rel="noopener">04_lectionary-christian-year.md</a>
         (1945 revision)
+      </p>
+    </div>
+  </section>
+
+  <!-- HYMN -->
+  <section class="tab-panel" id="panel-hymn">
+    <div class="office-section">
+      <h3>Hymn of the Day</h3>
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
+        The daily hymn layer is coming — a 365-day curated sequence drawn from the
+        Hymnal 1940, Hymnal 1982, and LEVAS, linked to Hymnary.org and Spotify.<br><br>
+        Source file: <code style="font-style:normal;font-size:0.8rem;">_data/hymns-365.csv</code>
       </p>
     </div>
   </section>
