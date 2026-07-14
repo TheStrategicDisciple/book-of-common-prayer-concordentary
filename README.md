@@ -28,7 +28,7 @@ _study/       Formation notes, one per canonical file
 _hymnody/     Musical curation, linked from canonical files
 ```
 
-Files use zero-padded numeric prefixes for book order (`01_morning-prayer.md`, `02_evening-prayer.md`). Edition folders mirror the same filenames where the same rite appears across editions — enabling direct cross-edition comparison by filename.
+Files use zero-padded numeric prefixes for book order (`01_front-matter.md`, `02_concerning-the-service.md`). Edition folders mirror the same filenames where the same rite appears across editions — enabling direct cross-edition comparison by filename.
 
 ---
 

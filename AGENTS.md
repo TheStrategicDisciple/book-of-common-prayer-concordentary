@@ -1,4 +1,4 @@
-# Agents.md — The Concordentary
+# AGENTS.md — The Concordentary
 
 > A version-controlled, schema-structured Markdown archive of the Book of Common Prayer across major editions. This file tells any AI agent how to read, navigate, and work within this repository.
 
@@ -31,10 +31,10 @@ The Concordentary is a structured digital archive of the Book of Common Prayer i
 ├── 1789/                   ← First American edition
 ├── 1892/                   ← PECUSA revision
 ├── 1928/                   ← Primary active edition (most complete)
-│   ├── 01_morning-prayer.md
-│   ├── 02_evening-prayer.md
-│   ├── 03_prayers-and-thanksgivings.md
-│   └── ... (25 files total, see file index below)
+│   ├── 01_front-matter.md
+│   ├── 02_concerning-the-service.md
+│   ├── 03_psalms-and-lessons-tables.md
+│   └── ... (29 files total, see file index below)
 ├── 1979/                   ← Episcopal Church edition (pending copyright clearance)
 │
 ├── _atomic/                ← Cross-edition extracts (canticles, collects, creeds, prayers)
@@ -142,38 +142,38 @@ Agents editing or generating content must follow these conventions exactly:
 
 ## 1928 Edition File Index
 
-The 1928 edition is the primary active build. Files in order:
+The 1928 edition is the primary active build. 29 files in order:
 
 ```
-01  Morning Prayer
-02  Evening Prayer
-03  Prayers and Thanksgivings
-04  The Litany
-05  Penitential Office (Ash Wednesday)
-06  Holy Communion
-07  Baptism
-08  Confirmation
-09  Matrimony
-10  Churching of Women
-11  Visitation of the Sick
-12  Communion of the Sick
-13  Burial of the Dead
-14  Burial of a Child
-15  Offices of Instruction
-16  [Confirmation — split from Offices of Instruction]
-17  Consecration of a Church
-18  Institution of Ministers
-19  The Psalter
-20  Articles of Religion
-21  The Ordinal
-22  Catechism
-23  Family Prayer
-24  Tables and Rules (includes TABLE I and TABLE II — first complete digital editions)
-25  The Calendar
-    Concerning the Service
-    Psalms and Lessons Tables
-    Table of Lessons 1928
-    The Propers (Collects, Epistles, Gospels) — in progress
+01  01_front-matter.md                  Ratification, Preface, Table of Contents
+02  02_concerning-the-service.md        Concerning the Service of the Church
+03  03_psalms-and-lessons-tables.md     Psalms and Lessons Tables
+04  04_lectionary-christian-year.md     Lectionary for the Christian Year
+05  05_calendar.md                      The Calendar
+06  06_tables-and-rules.md              Tables and Rules (TABLE I and TABLE II — first complete digital editions)
+07  07_morning-prayer.md                The Order for Daily Morning Prayer
+08  08_evening-prayer.md                The Order for Daily Evening Prayer
+09  09_prayers-and-thanksgivings.md     Prayers and Thanksgivings
+10  10_the-litany.md                    The Litany
+11  11_penitential-office.md            A Penitential Office for Ash Wednesday
+12  12_holy-communion.md                The Order for the Administration of the Lord's Supper
+13  13_collects-epistles-gospels.md     The Collects, Epistles, and Gospels (292 KB)
+14  14_baptism.md                       The Ministration of Holy Baptism
+15  15_offices-of-instruction.md        Offices of Instruction
+16  16_confirmation.md                  The Order of Confirmation
+17  17_matrimony.md                     The Solemnization of Matrimony
+18  18_churching-of-women.md            The Thanksgiving of Women after Child-birth
+19  19_visitation-of-the-sick.md        The Order for the Visitation of the Sick
+20  20_communion-of-the-sick.md         The Communion of the Sick
+21  21_burial-of-the-dead.md            The Order for the Burial of the Dead
+22  22_burial-of-a-child.md             At The Burial of A Child
+23  23_psalter.md                       The Psalter, or Psalms of David (268 KB)
+24  24_the-ordinal.md                   The Form and Manner of Making, Ordaining, and Consecrating
+25  25_consecration-of-a-church.md      The Form of Consecration of a Church or Chapel
+26  26_institution-of-ministers.md      An Office of Institution of Ministers
+27  27_catechism.md                     A Catechism
+28  28_family-prayer.md                 Forms of Prayer to be used in Families
+29  29_articles-of-religion.md          Articles of Religion
 ```
 
 ---
@@ -210,13 +210,21 @@ Example — 2026: Jan 1 = Thursday = A. Count to Sunday: B, C, D. Jan 4 = Sunday
 
 The 1979 BCP prints Easter dates through 2099. That list is the test harness. Running the 1892 lookup engine against the full 1979 printed list should produce identical output — two completely different BCP methodologies, same tradition, same answer. Any mismatch is a bug.
 
-**Validation mode** is triggered with `--validate` flag:
+**Validation mode** — outputs Easter dates for a range, compare against 1979 BCP back-matter:
 
 ```bash
-python computus.py --validate --start 2026 --end 2030
+python _engine/computus.py --validate --start 2026 --end 2030
 ```
 
-Output is a plain list of `YEAR: Easter date` for the requested range. Compare manually against the 1979 BCP back-matter. Recommended progression: 5 years first, then 20, then full range to certify.
+Recommended progression: 5 years first, then 20, then full range to certify. When validation passes, commit output as `_data/validation/YYYY.md` — the passing run is part of the audit trail.
+
+**Date injection mode** — bypasses NIST, feeds a specific date directly into the engine for testing:
+
+```bash
+python _engine/computus.py --date 2026-12-21
+```
+
+Output is identical to the live cron format. Use to verify known dates — Advent, Easter, Christmas, Holy Saturday edge case. Both flags can be combined; either suppresses the NIST call.
 
 When validation passes, commit the output as `_data/validation_YYYY.md` — the passing run becomes part of the repo's audit trail.
 
@@ -323,6 +331,7 @@ All derivative work acknowledges this chain. Do not generate content that obscur
 - First digital TABLE I (Dominical Letter) in structured Markdown
 - First digital TABLE II (Golden Number) covering years 1600–8400 in structured Markdown
 - First digital Table of Lessons 1928 in structured Markdown
+- First digital edition of Article IX to correctly render Greek φρόνημα σαρκός with correct word-final sigma ς
 
 ---
 
