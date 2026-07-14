@@ -562,7 +562,7 @@ def upcoming_events(date: datetime.date, feasts: dict) -> list:
         if candidate <= date:
             candidate = datetime.date(date.year + 1, month, day)
         diff = (candidate - date).days
-        if 0 < diff <= 60:
+        if 0 < diff <= 120:
             events.append((diff, name, candidate))
 
     # Moveable feasts (current and next year)
@@ -570,7 +570,7 @@ def upcoming_events(date: datetime.date, feasts: dict) -> list:
         if feast_date <= date:
             continue
         diff = (feast_date - date).days
-        if 0 < diff <= 60:
+        if 0 < diff <= 120:
             events.append((diff, name, feast_date))
 
     # Next season change
@@ -594,7 +594,23 @@ def upcoming_events(date: datetime.date, feasts: dict) -> list:
             events.append((diff, sc_name, sc_date))
 
     events.sort()
-    return events[:3]
+
+    # Always find the next season change and pin it to the list
+    future_seasons = []
+    for sc_date, sc_name in season_changes:
+        if sc_date > date:
+            diff = (sc_date - date).days
+            future_seasons.append((diff, f"Next season: {sc_name}", sc_date))
+    future_seasons.sort()
+
+    # Return: up to 4 nearest feasts + always the next season change
+    # Deduplicate season changes from feast list first
+    feast_events = [e for e in events if not any(e[2] == fs[2] for fs in future_seasons)][:4]
+    result = feast_events
+    if future_seasons:
+        result = result + [future_seasons[0]]
+    result.sort()
+    return result
 
 
 # ---------------------------------------------------------------------------
