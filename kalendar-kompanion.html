@@ -538,22 +538,35 @@
     return new Date(x.getTime()-(b+21)*86400000);
   }
 
+  // Compare dates safely by calendar day, avoiding DST ms-offset bugs
+  function sameDay(a,b){ return a.getFullYear()===b.getFullYear()&&a.getMonth()===b.getMonth()&&a.getDate()===b.getDate(); }
+  function daysBetween(a,b){ return Math.round((b-a)/864e5); }
+  function addDays(d,n){ return new Date(d.getFullYear(),d.getMonth(),d.getDate()+n); }
+
   function getSeason(date) {
-    const y=date.getFullYear(), ms=date.getTime();
+    const y=date.getFullYear();
     const e=easter(y); if(!e) return {s:'Unknown',c:'#888',n:''};
-    const ash=new Date(e-46*864e5), sep=new Date(e-63*864e5);
-    const pent=new Date(e+49*864e5), trin=new Date(e+56*864e5);
-    const palm=new Date(e-7*864e5);
+    const ash =addDays(e,-46), sep =addDays(e,-63);
+    const pent=addDays(e, 49), trin=addDays(e, 56);
+    const palm=addDays(e, -7);
     const a1=adv1(y), pa=adv1(y-1);
-    if(ms>=pa&&ms<new Date(y,0,1)) return {s:'Advent',c:'#5B4B8A',n:'Advent'};
-    if(ms<new Date(y,0,6))         return {s:'Christmastide',c:'#B8972A',n:'Christmastide'};
-    if(ms<sep)                     return {s:'Epiphany',c:'#4a7c4e',n:'Epiphany Season'};
-    if(ms<ash)                     return {s:'Pre-Lent',c:'#4a7c4e',n:'Pre-Lent'};
-    if(ms<palm)                    return {s:'Lent',c:'#5B4B8A',n:'Lent'};
-    if(ms<e)                       return {s:'Holy Week',c:'#8B1A1A',n:'Holy Week'};
-    if(ms<pent)                    return {s:'Eastertide',c:'#B8972A',n:'Eastertide'};
-    if(ms===pent.getTime())        return {s:'Whitsunday',c:'#9B2335',n:'Whitsunday'};
-    if(ms<=trin)                   return {s:'Whitsuntide',c:'#9B2335',n:'Whitsuntide'};
+
+    // Use calendar-day comparison throughout
+    const before = (a,b) => a.getFullYear()<b.getFullYear()||(a.getFullYear()===b.getFullYear()&&(a.getMonth()<b.getMonth()||(a.getMonth()===b.getMonth()&&a.getDate()<b.getDate())));
+    const after  = (a,b) => before(b,a);
+    const onOrAfter = (a,b) => !before(a,b);
+    const onOrBefore= (a,b) => !after(a,b);
+
+    if(onOrAfter(date,pa)&&before(date,new Date(y,0,1))) return {s:'Advent',c:'#5B4B8A',n:'Advent'};
+    if(before(date,new Date(y,0,6)))   return {s:'Christmastide',c:'#B8972A',n:'Christmastide'};
+    if(before(date,sep))               return {s:'Epiphany',c:'#4a7c4e',n:'Epiphany Season'};
+    if(before(date,ash))               return {s:'Pre-Lent',c:'#4a7c4e',n:'Pre-Lent'};
+    if(before(date,palm))              return {s:'Lent',c:'#5B4B8A',n:'Lent'};
+    if(before(date,e))                 return {s:'Holy Week',c:'#8B1A1A',n:'Holy Week'};
+    if(sameDay(date,e))                return {s:'Eastertide',c:'#B8972A',n:'Easter Day'};
+    if(before(date,pent))              return {s:'Eastertide',c:'#B8972A',n:'Eastertide'};
+    if(sameDay(date,pent))             return {s:'Whitsunday',c:'#9B2335',n:'Whitsunday'};
+    if(onOrBefore(date,trin))          return {s:'Whitsuntide',c:'#9B2335',n:'Whitsuntide'};
     if(ms<a1) {
       const wks=Math.floor((ms-trin)/(7*864e5));
       const ords=['First','Second','Third','Fourth','Fifth','Sixth','Seventh',
@@ -699,7 +712,13 @@
         null,
         `<strong>${pos.s}</strong>${pos.n?' &mdash; '+pos.n:''}`,
         'BCP 1928 season and Sunday structure.',
-        null
+        `The liturgical season is determined by the date's relationship to Easter and the fixed boundaries of the church year. ${
+          dfe===0 ? 'This date is Easter Sunday — the first day of Eastertide, the fifty days of resurrection celebration running from Easter through Whitsunday (Pentecost).' :
+          dfe!==null && dfe>0 && dfe<49 ? 'Eastertide runs fifty days from Easter Sunday through the eve of Whitsunday (Pentecost).' :
+          dfe!==null && dfe===49 ? 'Whitsunday (Pentecost) falls exactly fifty days after Easter Sunday.' :
+          dfe!==null && dfe<0 && dfe>=-46 ? 'Lent begins on Ash Wednesday (46 days before Easter) and runs through Holy Saturday.' :
+          'The season boundaries all trace back to the Easter date calculated in step 5.'
+        }`
       )}
 
       <div class="summary">
@@ -712,7 +731,14 @@
           <div class="summary-item"><label>Easter ${y}</label><value>${east?fmtShort(east):'—'}</value></div>
           <div class="summary-item"><label>Season (1928)</label><value>${pos.s}</value></div>
           <div class="summary-item"><label>RCL Year</label><value>${rcl}</value></div>
-          <div class="summary-item"><label>Century Anchor</label><value>${anV||'—'}</value></div>
+          <div class="summary-item"><label>TABLE II Row</label><value>${anV||'—'} <span style="font-size:0.7rem;color:var(--ink-light);">(covers ${
+            anV ? (() => {
+              const anchors = [1600,1700,1900,2200,2300,2600,2900,3100,3400,3800,4100,4200,4500,4700,5000];
+              const idx = anchors.indexOf(anV);
+              const next = anchors[idx+1];
+              return next ? anV+'–'+(next-1) : anV+'–5000';
+            })() : ''
+          })</span></value></div>
         </div>
       </div>
 
