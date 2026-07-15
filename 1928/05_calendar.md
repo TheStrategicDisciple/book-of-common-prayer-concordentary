@@ -512,4 +512,4 @@ review_notes: " First known complete digital edition."
 
 *¶ In addition to the above, in November, the first Thursday (or, if any other day be appointed by the Civil Authority, then such day) shall be observed as a Day of Thanksgiving to Almighty God, for the Fruits of the Earth, and all other Blessings of his merciful Providence.*
 
-<!-- ⚠️ CONCORDENTARY NOTE: Golden Numbers (1-19) should appear beside specific dates in March and April in the printed calendar. These mark the days when the Paschal Full Moon falls for Easter calculation in each year of the 19-year Metonic cycle. Requires verification against hardcopy to restore exact placement. -->
+<!-- ⚠️ CONCORDENTARY NOTE: Golden Numbers (1-19) should appear beside specific dates in March and April in the printed calendar. These mark the days when the Paschal Full Moon falls for Easter calculation in each year of the 19-year Metonic cycle.-->
