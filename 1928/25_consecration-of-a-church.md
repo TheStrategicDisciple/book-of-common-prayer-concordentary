@@ -69,7 +69,7 @@ manuscript_sources: []
 file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: "Hyphenation artifact corrected: dedicating. Note: page ref 563 places this file after the Psalter and Ordinal in book order — verify numbering sequence against TOC."
+review_notes:
 ---
 ### The Form of Consecration of a Church or Chapel
 
