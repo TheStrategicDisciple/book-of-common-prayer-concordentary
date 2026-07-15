@@ -1,57 +1,54 @@
 ---
 title: Articles of Religion
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Articles_Religion_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Articles_Religion_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1563"
   carried_forward:
     - edition: "1662"
       ref: "[[../1662/29_articles-of-religion]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/29_articles-of-religion]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Articles_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Articles_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/29_articles-of-religion]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Articles_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Articles_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[29_articles-of-religion]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/29_articles-of-religion]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1801"
-  dropped_in: null
+  dropped_in:
   notes: "The Thirty-Nine Articles of Religion derive from Cranmer's Forty-Two Articles of 1553, revised to thirty-nine under Elizabeth I in 1563. The American church adopted a modified version in Convention on September 12, 1801 — not appearing in printed Prayer Books until after about 1808. In the 1789 BCP they were placed between the Psalter and the Ordinal; in the 1892 and 1928 Books they were moved to the very end of the Book. The 1789 and 1892 editions add 'ART.' before every article title and generally italicize personal and place names — both absent in the 1928. The note for Article XXI (Of the Authority of General Councils) appears as a footnote in the 1789 and 1892 Books. The American Articles dropped or modified articles incompatible with a republic — most notably Article XXXVII on the authority of Civil Magistrates over the Church. [Source: Charles Wohlers, justus.anglican.org comparative apparatus]"
-
 category: doctrinal-standards
 subcategory: articles-of-religion
 page_ref: "603"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - doctrinal-standards
   - articles-of-religion
@@ -59,30 +56,24 @@ tags:
   - confession
   - doctrine
   - anglican-formularies
-
 active_in_edition: true
-modern_equivalent: null
-
+modern_equivalent:
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/Articles_Religion_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Articles_Religion_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Typo in Article IX: ORIGIONAL → ORIGINAL — verify against hardcopy whether this is source error or transcription error. Greek text φρονημα σαρκος renders correctly in Unicode — retained. Charles Wohlers' comparative apparatus for this file is unusually rich — see HTML source for full margin notes."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: Greek text φρονημα σαρκος renders correctly in Unicode — retained.
 ---
 
 ### Articles of Religion
@@ -117,7 +108,7 @@ HOLY Scripture containeth all things necessary to salvation: so that whatsoever 
 
 *Of the Names and Number of the Canonical Books*
 
-| Genesis,     | The First Book of Samuel,      | The Book of Esther,           |
+| **Genesis,**     | **The First Book of Samuel,**      | The Book of Esther,           |
 | ------------ | ------------------------------ | ----------------------------- |
 | Exodus,      | The Second Book of Samuel,     | The Book of Job,              |
 | Leviticus,   | The First Book of Kings,       | The Psalms,                   |
