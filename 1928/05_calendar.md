@@ -69,10 +69,10 @@ superseded_by:
 supersedes:
 critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-file_version: 0.9.0
+file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: Verify all feast day assignments and dominical letters against hardcopy. Golden numbers for March 22 - April 18 need verification from hardcopy — they appear in the original calendar beside specific dates to mark the Paschal Full Moon for Easter calculation and require careful transcription. First complete digital edition.
+review_notes: " First known complete digital edition."
 ---
 
 # The Calendar
