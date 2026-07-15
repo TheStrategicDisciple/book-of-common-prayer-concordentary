@@ -74,10 +74,10 @@ superseded_by:
 supersedes:
 critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Marriage_1928.htm
 manuscript_sources: []
-file_version: 0.9.0
+file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: "Hyphenation artifacts corrected: honourable, impediment, discreetly, according. Spurious comma removed from Lord's Prayer. Verify Forasmuch against hardcopy."
+review_notes: "Hyphenation artifacts corrected: honourable, impediment, discreetly, according. Spurious comma removed from Lord's Prayer."
 ---
 ### The Form of Solemnization of Matrimony
 
