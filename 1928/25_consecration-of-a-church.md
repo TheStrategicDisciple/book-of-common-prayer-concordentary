@@ -1,53 +1,50 @@
 ---
 title: The Form of Consecration of a Church or Chapel
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Consecration_church_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Consecration_church_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/24_consecration-of-church]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/24_consecration-of-church]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[24_consecration-of-church]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/24_consecration-of-church]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Consecration of a Church is an episcopal rite — only the Bishop may perform it. A Sentence of Consecration, a legal document, is presented and laid on the Communion Table as the act of legal dedication. The rite is a distinctly American development, not present in the 1662 BCP. The opening procession with Psalm 24 (The earth is the LORD's) and the Gospel of the cleansing of the temple (John 2) together make a precise theological statement — the space belongs to God, not to commerce or human convenience, and Christ himself is the one who enforces that claim."
-
+  dropped_in:
+  notes: The Consecration of a Church is an episcopal rite — only the Bishop may perform it. A Sentence of Consecration, a legal document, is presented and laid on the Communion Table as the act of legal dedication. The rite is a distinctly American development, not present in the 1662 BCP. The opening procession with Psalm 24 (The earth is the LORD's) and the Gospel of the cleansing of the temple (John 2) together make a precise theological statement — the space belongs to God, not to commerce or human convenience, and Christ himself is the one who enforces that claim.
 category: episcopal-office
 subcategory: consecration-of-church
 page_ref: "563"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - episcopal-office
   - consecration
@@ -55,29 +52,23 @@ tags:
   - bishop
   - psalm-24
   - dedication
-
 active_in_edition: true
-modern_equivalent: "Dedication and Consecration of a Church — BCP 1979, pp. 567–579"
-
+modern_equivalent: Dedication and Consecration of a Church — BCP 1979, pp. 567–579
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/consecration-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/Consecration_church_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Consecration_church_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
 review_notes: "Hyphenation artifact corrected: dedicating. Note: page ref 563 places this file after the Psalter and Ordinal in book order — verify numbering sequence against TOC."
 ---
 ### The Form of Consecration of a Church or Chapel
