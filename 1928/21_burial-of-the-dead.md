@@ -1,61 +1,58 @@
 ---
 title: The Order for the Burial of the Dead
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/21_burial-of-the-dead]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/21_burial-of-the-dead]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/burial_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/burial_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/21_burial-of-the-dead]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/burial_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/burial_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/21_burial-of-the-dead]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/burial_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/burial_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[21_burial-of-the-dead]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/21_burial-of-the-dead]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "One of Cranmer's most carefully constructed rites, drawing on Scripture, the Sarum burial office, and the medieval commendation prayers. The three opening sentences — I am the resurrection and the life; I know that my Redeemer liveth; We brought nothing into this world — are among the most recognized passages in Christian liturgy in the English-speaking world. The committal In sure and certain hope of the Resurrection traces essentially unchanged from 1549. The 1928 revision expanded the psalm options and added additional prayers. The rite deliberately excludes prayers for the dead in keeping with Anglican theology, while maintaining the note of certain hope."
-
+  dropped_in:
+  notes: One of Cranmer's most carefully constructed rites, drawing on Scripture, the Sarum burial office, and the medieval commendation prayers. The three opening sentences — I am the resurrection and the life; I know that my Redeemer liveth; We brought nothing into this world — are among the most recognized passages in Christian liturgy in the English-speaking world. The committal In sure and certain hope of the Resurrection traces essentially unchanged from 1549. The 1928 revision expanded the psalm options and added additional prayers. The rite deliberately excludes prayers for the dead in keeping with Anglican theology, while maintaining the note of certain hope.
 category: pastoral-office
 subcategory: burial
 page_ref: "324"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - pastoral-office
   - burial
@@ -66,30 +63,24 @@ tags:
   - psalm-130
   - epistle
   - gospel
-
 active_in_edition: true
-modern_equivalent: "Burial of the Dead Rite I — BCP 1979, pp. 469–489"
-
+modern_equivalent: Burial of the Dead Rite I — BCP 1979, pp. 469–489
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/burial-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Check end of file for child burial overlap from WordPerfect source — trim at AT THE BURIAL OF A CHILD heading. Verify committal sentence and psalm pointing throughout."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: Check end of file for child burial overlap from WordPerfect source — trim at AT THE BURIAL OF A CHILD heading. Verify committal sentence and psalm pointing throughout.
 ---
 ### The Order for The Burial of the Dead
 
