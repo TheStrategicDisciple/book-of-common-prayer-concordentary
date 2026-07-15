@@ -1,69 +1,66 @@
 ---
 title: The Order for Daily Evening Prayer
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/EP_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/EP_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1552"
       ref: "[[../1552/02_evening-prayer]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1559"
       ref: "[[../1559/02_evening-prayer]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1604"
       ref: "[[../1604/02_evening-prayer]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/02_evening-prayer]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/EveningPrayer_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/EveningPrayer_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/02_evening-prayer]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/EveningPrayer_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/EveningPrayer_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/02_evening-prayer]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/EveningPrayer_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/EveningPrayer_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[02_evening-prayer]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/02_evening-prayer]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "Traces to Cranmer's 1549 BCP, consolidating Vespers and Compline into a single evening rite in the vernacular. The 1928 revision modified several rubrics from the 1892 BCP. Evening Prayer retains the Gloria in excelsis after the Psalms, distinguishing it structurally from Morning Prayer."
-
+  dropped_in:
+  notes: Traces to Cranmer's 1549 BCP, consolidating Vespers and Compline into a single evening rite in the vernacular. The 1928 revision modified several rubrics from the 1892 BCP. Evening Prayer retains the Gloria in excelsis after the Psalms, distinguishing it structurally from Morning Prayer.
 category: daily-office
 subcategory: evening-prayer
 page_ref: "21"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - daily-office
   - evening-prayer
@@ -74,29 +71,23 @@ tags:
   - cantate-domino
   - creed
   - collects
-
 active_in_edition: true
-modern_equivalent: "Evening Prayer Rite I and Rite II — BCP 1979, pp. 60–73 and 115–126"
-
+modern_equivalent: Evening Prayer Rite I and Rite II — BCP 1979, pp. 60–73 and 115–126
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/evening-prayer-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
 review_notes: "Typo confirmed in source: 'United Sates' corrected to 'United States' in Prayer for the President. Verified against Wohlers HTML source."
 ---
 ### The Order for Daily Evening Prayer
