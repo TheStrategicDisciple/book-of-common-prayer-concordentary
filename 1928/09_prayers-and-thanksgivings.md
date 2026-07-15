@@ -80,7 +80,7 @@ reviewed_against:
 review_notes:
 ---
 
-### Prayers and Thanksgivings
+## Prayers and Thanksgivings
 
 #### **PRAYERS.**
 ¶ *To be used before the Prayer for all Conditions of Men, or, when that is not said, before the final Prayer of Thanksgiving or of Blessing, or before the Grace.*
@@ -239,13 +239,10 @@ And now, brethren, summing up all our petitions, and all our thanksgivings, in t
 ¶ *To be used after the General Thanksgiving, or, when that is not said, before the final Prayer of Blessing or the Benediction.*
 
 *A Thanksgiving to Almighty God for the Fruits of the Earth and all the other Blessings of his merciful Providence.*
-
 **M**OST gracious God, by whose knowledge the depths are broken up, and the clouds drop down the dew; We yield thee unfeigned thanks and praise for the return of seedtime and harvest, for the increase of the ground and the gathering in of the fruits thereof, and for all the other blessings of thy merciful providence bestowed upon this nation and people. And, we beseech thee, give us a just sense of these great mercies; such as may appear in our lives by an humble, holy, and obedient walking before thee all our days; through Jesus Christ our Lord, to whom, with thee and the Holy Ghost, be all glory and honour, world without end. *Amen.*
 
 *The Thanksgiving of Women after Child-birth.*
-
 ¶ *To be said when any Woman, being present in Church, shall have desired to return thanks to Almighty God for her safe deliverance.*
-
 **O** ALMIGHTY God, we give thee humble thanks for that thou hast been graciously pleased to preserve, through the great pain and peril of child-birth, *this woman*, thy *servant*, who *desireth* now to offer *her* praises and thanksgivings unto thee. Grant, we beseech thee, most merciful Father, that *she*, through thy help, may faithfully live according to thy will in this life, and also may be *partaker* of everlasting glory in the life to come; through Jesus Christ our Lord. *Amen.*
 
 #### *For Rain.*
