@@ -83,9 +83,8 @@ reviewed_against:
 review_notes: "Hyphenation artifacts corrected: conversation, themselves, Impediment, innocency (x2), knowledge, Government, determined. Em dash artifacts (---) corrected to — throughout."
 ---
 ### The Form and Manner of
-
 Making, Ordaining, and Consecrating
-### Bishops, Priests, and Deacons
+Bishops, Priests, and Deacons
 
 according to the
 Order of the Protestant Episcopal Church
@@ -130,15 +129,14 @@ September, A.D. 1792
 ¶ *And* NOTE *further, That in the discretion of the Bishop, instead of the Litany appointed, may be said the Litany for Ordinations.*
 ¶ *Then shall be said the Service for the Communion, with the Collect, Epistle, and Gospel, as followeth.*
 
-### *The Collect.*
-
+#### *The Collect.*
 **A**LMIGHTY God, who by thy divine providence hast appointed divers Orders of Ministers in thy Church, and didst inspire thine Apostles to choose into the Order of Deacons the first Martyr Saint Stephen, with others; Mercifully behold these thy servants now called to the like Office and Administration: so replenish them with the truth of thy Doctrine, and adorn them with innocency of life, that, both by word and good example, they may faithfully serve thee in this Office, to the glory of thy Name, and the edification of thy Church; through the merits of our Saviour Jesus Christ, who liveth and reigneth with thee and the Holy Ghost, now and for ever. *Amen.*
 
-### *The Epistle.* 1 Timothy iii. 8.
+#### *The Epistle.* 1 Timothy iii. 8.
 **L**IKEWISE must the deacons be grave, not double tongued, not given to much wine, not greedy of filthy lucre; holding the mystery of the faith in a pure conscience. And let these also first be proved; then let them use the office of a deacon, being found blameless. Even so must their wives be grave, not slanderers, sober, faithful in all things. Let the deacons be the husbands of one wife, ruling their children and their own houses well. For they that have used the office of a deacon well purchase to themselves a good degree, and great boldness in the faith which is in Christ Jesus.
 
 ¶ *Or else.*
-### *The Epistle.* Acts vi. 2.
+#### *The Epistle.* Acts vi. 2.
 **T**HEN the twelve called the multitude of the disciples unto them, and said, It is not reason that we should leave the word of God, and serve tables. Wherefore, brethren, look ye out among you seven men of honest report, full of the Holy Ghost and wisdom, whom we may appoint over this business. But we will give ourselves continually to prayer, and to the ministry of the word. And the saying pleased the whole multitude: and they chose Stephen, a man full of faith and of the Holy Ghost, and Philip, and Prochorus, and Nicanor, and Timon, and Parmenas, and Nicolas a proselyte of Antioch: whom they set before the apostles: and when they had prayed, they laid their hands on them. And the word of God increased; and the number of the disciples multiplied in Jerusalem greatly; and a great company of the priests were obedient to the faith.
 
 ¶ *Then, the People being sealed, the Bishop shall examine every one of those who are to be Ordered, in the presence of the People, after this manner following*
@@ -168,7 +166,7 @@ September, A.D. 1792
 
 ¶ *Then one of them, appointed by the Bishop, shall read the Gospel.*
 
-### *The Gospel.* St. Luke xii. 35.
+#### *The Gospel.* St. Luke xii. 35.
 **L**ET your loins be girded about, and your lights burning; and ye yourselves like unto men that wait for their lord, when he will return from the wedding; that when he cometh and knocketh, they may open unto him immediately. Blessed are those servants, whom the lord when he cometh shall find watching: verily I say unto you, that he shall gird himself, and make them to sit down to meat, and will come forth and serve them. And if he shall come in the second watch, or come in the third watch, and find them so, blessed are those servants.
 
 ¶ *Then shall the Bishop proceed in the Communion; and all who are Ordered shall tarry, and receive the Holy Communion the same day, with the Bishop.*
@@ -204,17 +202,17 @@ September, A.D. 1792
 ¶ *And* NOTE *further, That in the discretion of the Bishop, instead of the Litany appointed, may be said the Litany for Ordinations.*
 ¶ *Then shall be said the Service for the Communion, with the Collect, Epistle, and Gospel, as followeth.*
 
-### *The Collect.*
+#### *The Collect.*
 **A**LMIGHTY God, giver of all good things, who by thy Holy Spirit hast appointed divers Orders of Ministers in thy Church; Mercifully behold these thy servants now called to the Office of Priesthood; and so replenish them with the truth of thy Doctrine, and adorn them with innocency of life, that, both by word and good example, they may faithfully serve thee in this Office, to the glory of thy Name, and the edification of thy Church; through the merits of our Saviour Jesus Christ, who liveth and reigneth with thee and the same Holy Spirit, world without end. *Amen.*
 
-### *The Epistle.* Ephesians iv. 7.
+#### *The Epistle.* Ephesians iv. 7.
 **U**NTO every one of us is given grace according to the measure of the gift of Christ. Wherefore he saith, When he ascended up on high, he led captivity captive, and gave gifts unto men. (Now that he ascended, what is it but that he also descended first into the lower parts of the earth? He that descended is the same also that ascended up far above all heavens, that he might fill all things.) And he gave some, apostles; and some, prophets; and some, evangelists; and some, pastors and teachers; for the perfecting of the saints, for the work of the ministry, for the edifying of the body of Christ: till we all come in the unity of the faith, and of the knowledge of the Son of God, unto a perfect man, unto the measure of the stature of the fulness of Christ.
 
-### *The Gospel.* St. Matthew ix. 36.
+#### *The Gospel.* St. Matthew ix. 36.
 **W**HEN Jesus saw the multitudes, he was moved with compassion on them, because they fainted, and were scattered abroad as sheep having no shepherd. Then saith he unto his disciples, The harvest truly is plenteous, but the labourers are few; pray ye therefore the Lord of the harvest, that he will send forth labourers into his harvest.
 
 *¶ Or else.*
-### *The Gospel.* St. John x. 1.
+#### *The Gospel.* St. John x. 1.
 **V**ERILY, verily, I say unto you, He that entereth not by the door into the sheepfold, but climbeth up some other way, the same is a thief and a robber. But he that entereth in by the door is the shepherd of the sheep. To him the porter openeth; and the sheep hear his voice: and he calleth his own sheep by name, and leadeth them out. And when he putteth forth his own sheep, he goeth before them, and the sheep follow him: for they know his voice. And a stranger will they not follow, but will flee from him: for they know not the voice of strangers. This parable spake Jesus unto them: but they understood not what things they were which he spake unto them. Then said Jesus unto them again, Verily, verily, I say unto you, I am the door of the sheep. All that ever came before me are thieves and robbers: but the sheep did not hear them. I am the door: by me if any man enter in, he shall be saved, and shall go in and out, and find pasture. The thief cometh not, but for to steal, and to kill, and to destroy: I am come that they might have life, and that they might have it more abundantly. I am the good shepherd: the good shepherd giveth his life for the sheep. But he that is an hireling, and not the shepherd, whose own the sheep are not, seeth the wolf coming, and leaveth the sheep, and fleeth: and the wolf catcheth them, and scattereth the sheep. The hireling fleeth, because he is an hireling, and careth not for the sheep. I am the good shepherd; and know my sheep, and am known of mine, even as the Father knoweth me, and I know the Father; and I lay down my life for the sheep. And other sheep I have, which are not of this fold: them also I must bring, and they shall hear my voice; and there shall be one flock, and one shepherd.
 
 ¶ *Then, the People being seated, the Bishop shall say unto those who are to be ordained Priests as followeth.*
@@ -248,7 +246,7 @@ And now, that this present Congregation of Christ may also understand your minds
 
 ¶ *After which, the Persons to be ordained Priests kneeling, and others standing, the Bishop shall sing or say the Veni, Creator Spiritus; the Bishop beginning, and the Priests, and others that are present, answering by verses, as followeth.*
 
-### *Veni, Creator Spiritus.*
+#### *Veni, Creator Spiritus.*
 **C**OME, Holy Ghost, our souls inspire,
 *And lighten with celestial fire.*
 Thou the anointing Spirit art,
@@ -273,7 +271,7 @@ That, through the ages all along,
 
 *¶ Or this.*
 
-COME, Holy Ghost, Creator blest,
+**C**OME, Holy Ghost, Creator blest,
 Vouchsafe within our souls to rest;
 *Come with thy grace and heavenly aid,*
 *And fill the hearts which thou hast made.*
@@ -325,39 +323,39 @@ Let us pray.
 
 ¶ *And if, on the same day, the Order of Deacons be given to some, and the Order of Priesthood to others; the Deacons shall be first presented, and then the Priests; and it shall suffice that the Litany be once said for both. The Epistle shall be Ephesians iv. 7 to 13, as before in this Office. Immediately after which, they that are to be made Deacons, shall be examined and Ordained, as is above prescribed. Then one of them having read the Gospel, (which shall be either Saint Matthew ix. 36 to 38, as before in this Office; or else Saint Luke xii. 35 to 38, as before in the Form for the Ordering of Deacons,) they that are to be made Priests shall likewise be examined and Ordained, as is in this Office before appointed. The Collect shall be as followeth.*
 
-### *The Collect.*
+#### *The Collect.*
 **A**LMIGHTY God, giver of all good things, who by thy Holy Spirit hast appointed divers Orders of Ministers in thy Church; Mercifully behold these thy servants now called to the Office of Deacon and these thy servants now called to the Office of Priest; and so replenish them with the truth of thy Doctrine, and adorn them with innocency of life, that, both by word and good example, they may faithfully serve thee in their Ministry, to the glory of thy Name, and the edification of thy Church; through the merits of our Saviour Jesus Christ, who liveth and reigneth with thee and the same Holy Spirit, world without end. *Amen.*
 
 ## The Form of Ordaining or Consecrating a Bishop
 
 *¶ When all things are duly prepared in the Church, and set in order, the Presiding Bishop, or some other Bishop appointed by the Bishops present, shall begin the Communion Service, in which this shall be*
 
-### *The Collect.*
+#### *The Collect.*
 **A**LMIGHTY God, who by thy Son Jesus Christ didst give to thy holy Apostles many excellent gifts, and didst charge them to feed thy flock; Give grace, we beseech thee, to all Bishops, the Pastors of thy Church, that they may diligently preach thy Word, and duly administer the godly Discipline thereof; and grant to the people, that they may obediently follow the same; that all may receive the crown of everlasting glory; through the same thy Son Jesus Christ our Lord. *Amen.*
 
 ¶ *And another Bishop shall read the Epistle.*
 
-### *The Epistle.* 1 Timothy iii. 1.
+#### *The Epistle.* 1 Timothy iii. 1.
 **T**HIS is a true saying, If a man desire the office of a bishop, he desireth a good work. A bishop then must be blameless, the husband of one wife, vigilant, sober, of good behaviour, given to hospitality, apt to teach; not given to wine, no striker, not greedy of filthy lucre; but patient, not a brawler, not covetous; one that ruleth well his own house, having his children in subjection with all gravity; (for if a man know not how to rule his own house, how shall he take care of the church of God?) not a novice, lest being lifted up with pride he fall into the condemnation of the devil. Moreover he must have a good report of them which are without; lest he fall into reproach and the snare of the devil.
 
 ¶ *Or this.*
 
-### *For the Epistle.* Acts xx. 17.
+#### *For the Epistle.* Acts xx. 17.
 **F**ROM Miletus Paul sent to Ephesus, and called the elders of the church. And when they were come to him, he said unto them, Ye know, from the first day that I came into Asia, after what manner I have been with you at all seasons, serving the Lord with all humility of mind, and with many tears, and temptations, which befell me by the lying in wait of the Jews: and how I kept back nothing that was profitable unto you, but have shewed you, and have taught you publickly, and from house to house, testifying both to the Jews, and also to the Greeks, repentance toward God, and faith toward our Lord Jesus Christ. And now, behold, I go bound in the spirit unto Jerusalem, not knowing the things that shall befall me there: save that the Holy Ghost witnesseth in every city, saying that bonds and afflictions abide me. But none of these things move me, neither count I my life dear unto myself, so that I might finish my course with joy, and the ministry, which I have received of the Lord Jesus, to testify the gospel of the grace of God. And now, behold, I know that ye all, among whom I have gone preaching the kingdom of God, shall see my face no more. Wherefore I take you to record this day, that I am pure from the blood of all men. For I have not shunned to declare unto you all the counsel of God. Take heed therefore unto yourselves, and to all the flock, over the which the Holy Ghost hath made you overseers, to feed the church of God, which he hath purchased with his own blood. For I know this, that after my departing shall grievous wolves enter in among you, not sparing the flock. Also of your own selves shall men arise, speaking perverse things, to draw away disciples after them. Therefore watch, and remember, that by the space of three years I ceased not to warn every one night and day with tears. And now, brethren, I commend you to God, and to the word of his grace, which is able to build you up, and to give you an inheritance among all them which are sanctified. I have coveted no man\'s silver, or gold, or apparel. Yea, ye yourselves know, that these hands have ministered unto my necessities, and to them that were with me. I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive.
 
 ¶ *Then another Bishop shall read the Gospel.*
 
-### *The Gospel.* St. John xxi. 15.
+#### *The Gospel.* St. John xxi. 15.
 **J**ESUS saith to Simon Peter, Simon, son of Jonas, lovest thou me more than these? He saith unto him, Yea, Lord; thou knowest that I love thee. He saith unto him, Feed my lambs. He saith to him again the second time, Simon, son of Jonas, lovest thou me? He saith unto him, Yea, Lord; thou knowest that I love thee. He saith unto him, Feed my sheep. He saith unto him the third time, Simon, son of Jonas, lovest thou me? Peter was grieved because he said unto him the third time, Lovest thou me? And he said unto him, Lord, thou knowest all things; thou knowest that I love thee. Jesus saith unto him, Feed my sheep.
 
 ¶ *Or this.*
 
-## *The Gospel.* St. John xx. 19.
+#### *The Gospel.* St. John xx. 19.
 **T**HE same day at evening, being the first day of the week, when the doors were shut where the disciples were assembled for fear of the Jews, came Jesus, and stood in the midst, and saith unto them, Peace be unto you. And when he had so said, he shewed unto them his hands and his side. Then were the disciples glad, when they saw the Lord. Then saith Jesus to them again, Peace be unto you: as my Father hath sent me, even so send I you. And when he had said this, he breathed on them, and saith unto them, Receive ye the Holy Ghost: whose soever sins ye remit, they are remitted unto them; and whose soever sins ye retain, they are retained.
 
 ¶ *Or this.*
 
-### *The Gospel.* St. Matthew xxviii. 18.
+#### *The Gospel.* St. Matthew xxviii. 18.
 **J**ESUS came and spake unto them, saying, All power is given unto me in heaven and in earth. Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world.
 
 ¶ *Then shall follow the Nicene Creed, and after that the Sermon; which being ended, the Elected Bishop, vested with his Rochet, shall be presented by two Bishops of this Church unto the Presiding Bishop, or to the Bishop appointed, sitting in his chair, near the Holy Table; the Bishops who present him saying,*
@@ -541,5 +539,4 @@ Lord, have mercy upon us.
 *Answer.* And let our cry come unto thee.
 
 Let us pray.
-
 **G**OD, who dost ever hallow and protect thy Church; Raise up therein, through thy Spirit, good and faithful stewards of the mysteries of Christ, that by their ministry and example thy people may abide in thy favour and be guided in the way of truth; through Jesus Christ our Lord, who liveth and reigneth with thee in the unity of the same Spirit ever, one God, world without end. *Amen.*
