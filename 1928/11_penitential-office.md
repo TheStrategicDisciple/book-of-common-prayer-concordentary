@@ -1,53 +1,50 @@
 ---
 title: A Penitential Office for Ash Wednesday
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Penitential_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Penitential_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/11_penitential-office]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Penitential_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Penitential_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/11_penitential-office]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Penitential_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Penitential_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[11_penitential-office]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/11_penitential-office]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Penitential Office is the American prayer book's adaptation of the English 1662 Commination service, which itself drew on earlier penitential forms. The American church dropped the Commination's more severe language of cursing and retained the penitential core. The 1928 revision shaped the current form. Centers on Psalm 51 (Miserere mei), the great penitential psalm, appointed here as the anchor of the Ash Wednesday liturgy. The closing Aaronic Blessing (Numbers 6:24-26) is a distinctive touch — ending the penitential office with benediction."
-
+  dropped_in:
+  notes: The Penitential Office is the American prayer book's adaptation of the English 1662 Commination service, which itself drew on earlier penitential forms. The American church dropped the Commination's more severe language of cursing and retained the penitential core. The 1928 revision shaped the current form. Centers on Psalm 51 (Miserere mei), the great penitential psalm, appointed here as the anchor of the Ash Wednesday liturgy. The closing Aaronic Blessing (Numbers 6:24-26) is a distinctive touch — ending the penitential office with benediction.
 category: occasional-office
 subcategory: penitential-office
 page_ref: "60"
 liturgical_season: lent
 liturgical_color: violet
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: "ash-wednesday"
-fast: "ash-wednesday"
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast: ash-wednesday
+fast: ash-wednesday
 tags:
   - penitential
   - ash-wednesday
@@ -56,30 +53,24 @@ tags:
   - miserere
   - confession
   - absolution
-
 active_in_edition: true
-modern_equivalent: "Ash Wednesday — BCP 1979, pp. 264–269"
-
+modern_equivalent: Ash Wednesday — BCP 1979, pp. 264–269
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/ash-wednesday-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefore. Verify blood-guiltiness hyphenation against hardcopy — this is authentic BCP text."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefore."
 ---
 ### A Penitential Office For Ash Wednesday
 
