@@ -1,57 +1,54 @@
 ---
-title: "Tables and Rules for the Movable and Immovable Feasts, Together with the Days of Fasting and Abstinence Throughout the Year, and the Days of Solemn Supplication"
+title: Tables and Rules for the Movable and Immovable Feasts, Together with the Days of Fasting and Abstinence Throughout the Year, and the Days of Solemn Supplication
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1662"
       ref: "[[../1662/05_tables-movable-feasts]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/05_tables-movable-feasts]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/05_tables-movable-feasts]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[05_tables-movable-feasts]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/05_tables-movable-feasts]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "Contains the Rules for Movable Feasts, Table of Feasts, Table of Fasts, Days of Solemn Supplication, Tables of Precedence, complete Easter table 1786–2013, Table of Movable Feasts, and the General Tables for finding the Dominical Letter (TABLE I) and Golden Number placements (TABLE II). First complete digital edition — Charles Wohlers omitted these tables entirely from his digitization. TABLE II covers Golden Number placements from year 1600 through 8400. The PDF scan of the original 1928 BCP was used as the authoritative verification source."
-
+  dropped_in:
+  notes: Contains the Rules for Movable Feasts, Table of Feasts, Table of Fasts, Days of Solemn Supplication, Tables of Precedence, complete Easter table 1786–2013, Table of Movable Feasts, and the General Tables for finding the Dominical Letter (TABLE I) and Golden Number placements (TABLE II). First complete digital edition — Charles Wohlers omitted these tables entirely from his digitization. TABLE II covers Golden Number placements from year 1600 through 8400. The PDF scan of the original 1928 BCP was used as the authoritative verification source.
 category: tables
 subcategory: movable-feasts
-page_ref: "l"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+page_ref: l
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - tables
   - movable-feasts
@@ -63,30 +60,24 @@ tags:
   - golden-number
   - table-i
   - table-ii
-
 active_in_edition: true
-modern_equivalent: null
-
+modern_equivalent:
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "TABLE I has two formatting issues: (1) cells with <br> tags need reformatting — remove line breaks or restructure; (2) '28000' typo should be '2800'. TABLE II present and verified against PDF hardcopy scan. Easter table verified: March 26 = Feb. 8 correct. First complete digital edition of these tables."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: First known complete digital edition of these tables.
 ---
 
 # Tables and Rules for the Movable and Immovable Feasts
