@@ -1,61 +1,58 @@
 ---
 title: The Order of Confirmation
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Instruction_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Instruction_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/16_confirmation]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/16_confirmation]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/Confirmation_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/Confirmation_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/16_confirmation]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Confirmation_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Confirmation_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/16_confirmation]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Confirmation_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Confirmation_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[16_confirmation]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/16_confirmation]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "Confirmation is reserved to the Bishop in the Anglican tradition, reflecting the historic understanding that the bishop is the minister of the fullness of the Spirit. The rite requires that no person be admitted to Holy Communion until confirmed or ready and desirous of confirmation — a discipline that defined Anglican parish life for centuries. Cranmer's 1549 rite drew on medieval confirmation forms, retaining the laying on of hands while removing chrism. The final rubric restricting communion to the confirmed is theologically and pastorally significant."
-
+  dropped_in:
+  notes: Confirmation is reserved to the Bishop in the Anglican tradition, reflecting the historic understanding that the bishop is the minister of the fullness of the Spirit. The rite requires that no person be admitted to Holy Communion until confirmed or ready and desirous of confirmation — a discipline that defined Anglican parish life for centuries. Cranmer's 1549 rite drew on medieval confirmation forms, retaining the laying on of hands while removing chrism. The final rubric restricting communion to the confirmed is theologically and pastorally significant.
 category: sacrament
 subcategory: confirmation
 page_ref: "296"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - sacrament
   - confirmation
@@ -63,30 +60,24 @@ tags:
   - laying-on-of-hands
   - holy-spirit
   - communion-discipline
-
 active_in_edition: true
-modern_equivalent: "Confirmation — BCP 1979, pp. 413–419"
-
+modern_equivalent: Confirmation — BCP 1979, pp. 413–419
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/confirmation-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Split from combined Instruction and Confirmation file. Hyphenation artifacts corrected: acceptable, preserved. Verify laying on of hands rubric and final communion restriction rubric carefully against hardcopy — these are canonically significant."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Split from combined Instruction and Confirmation file. Hyphenation artifacts corrected: acceptable, preserved."
 ---
 ### The Order of Confirmation
  
