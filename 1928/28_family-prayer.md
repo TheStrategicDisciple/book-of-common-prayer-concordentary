@@ -1,53 +1,50 @@
 ---
 title: Forms of Prayer to be used in Families
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/family_prayer_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/family_prayer_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/28_family-prayer]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/28_family-prayer]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[28_family-prayer]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/28_family-prayer]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The domestic prayer tradition — the prayer book brought into the household. Forms of Prayer to be used in Families is a distinctly American development, reflecting the pietistic strain of the colonial church and the tradition of household worship that predated regular Sunday attendance for many. Contains Morning Prayer, Evening Prayer, and a rich collection of prayers for specific circumstances and concerns. The prayers here are notably more intimate in register than the public liturgy, addressing poverty, suffering, labour, and the needs of ordinary daily life with directness. This section embodies the prayer book's aspiration to form not just the congregation but the household."
-
+  dropped_in:
+  notes: The domestic prayer tradition — the prayer book brought into the household. Forms of Prayer to be used in Families is a distinctly American development, reflecting the pietistic strain of the colonial church and the tradition of household worship that predated regular Sunday attendance for many. Contains Morning Prayer, Evening Prayer, and a rich collection of prayers for specific circumstances and concerns. The prayers here are notably more intimate in register than the public liturgy, addressing poverty, suffering, labour, and the needs of ordinary daily life with directness. This section embodies the prayer book's aspiration to form not just the congregation but the household.
 category: devotional
 subcategory: family-prayer
 page_ref: "587"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - devotional
   - family-prayer
@@ -55,30 +52,24 @@ tags:
   - evening-prayer
   - domestic
   - occasional-prayers
-
 active_in_edition: true
-modern_equivalent: null
-
+modern_equivalent:
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/family_prayer_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/family_prayer_1928.htm
 manuscript_sources: []
-
 file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Two rubric formatting issues corrected: missing space before asterisk and asterisk position. File previously reviewed at project start — verify against original for any remaining conversion artifacts."
+last_reviewed:
+reviewed_against:
+review_notes:
 ---
 ### Family Prayer
 
