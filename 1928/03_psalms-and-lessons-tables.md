@@ -61,7 +61,7 @@ manuscript_sources: []
 file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: "First complete digital edition of these tables. Verify all psalm numbers against hardcopy. Note: Charles Wohlers omitted this section entirely from his digitization."
+review_notes: First complete digital edition of these tables.
 ---
 
 # Psalms and Lessons for the Christian Year
