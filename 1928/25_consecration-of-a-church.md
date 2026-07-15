@@ -76,10 +76,9 @@ review_notes:
 ¶ The following Office may be used with the Order for the Holy Communion, or at Morning Prayer or Evening Prayer, or separately.*
 ¶ *The Bishop is to be received at the entrance of the Church, or Chapel, by the Church-wardens and Vestrymen, or some other persons appointed for that purpose. The Bishop and the Clergy who are present shall go up the aisle of the Church, or Chapel, to the Holy Table, repeating the following Psalm alternately, the Bishop one verse and the Clergy another.*
 
-### *Domini est terra.* Psalm xxiv.
+#### *Domini est terra.* Psalm xxiv.
 
 **T**HE earth is the LORD's, and all that therein is; \* the compass of the world, and they that dwell therein.
-
 2 For he hath founded it upon the seas, \* and stablished it upon the floods.
 3 Who shall ascend into the hill of the LORD? \* or who shall rise up in his holy place?
 4 Even he that hath clean hands, and a pure heart; \* and that hath not lift up his mind unto vanity, nor sworn to deceive his neighbour.
@@ -107,7 +106,7 @@ As it was in the beginning, is now, and ever shall be, \* world without end. Ame
 
 ***G**RANT, O Lord, that they who at this place shall in their own persons renew the promises and vows of their Baptism, and be Confirmed by the Bishop, may receive such a measure of thy Holy Spirit, that they may grow in grace unto their life\'s end. *Amen.*
 
-GRANT, O Lord, that whosoever shall receive in this place the blessed Sacrament of the Body and Blood of Christ, may come to that holy ordinance with faith, charity, and true repentance; and being filled with thy grace and heavenly benediction, may, to their great and endless comfort, obtain remission of their sins, and all other benefits of his passion. *Amen.*
+**G**RANT, O Lord, that whosoever shall receive in this place the blessed Sacrament of the Body and Blood of Christ, may come to that holy ordinance with faith, charity, and true repentance; and being filled with thy grace and heavenly benediction, may, to their great and endless comfort, obtain remission of their sins, and all other benefits of his passion. *Amen.*
 
 **G**RANT, O Lord, that by thy holy Word which shall be read and preached in this place, and by thy Holy Spirit grafting it inwardly in the heart, the hearers thereof may both perceive and know what things they ought to do, and may have power and strength to fulfil the same. *Amen.*
 
@@ -121,14 +120,14 @@ GRANT, O Lord, that whosoever shall receive in this place the blessed Sacrament 
 
 ¶ *When there is a Communion, the following shall be the Collect, Epistle, and Gospel.*
 
-### *The Collect.*
+#### *The Collect.*
  **M**OST glorious God, whom the heaven of heavens cannot contain; Graciously accept the Dedication of this place to thy service; and grant that all who shall call upon thee here may worship thee in spirit and in truth, and may in their lives show forth thy praise; through Jesus Christ our Lord. *Amen*.
 
-### *For the Epistle.* Revelation xxi. 2.
+#### *For the Epistle.* Revelation xxi. 2.
 
 **A**ND I John saw the holy city, new Jerusalem, coming down from God out of heaven, prepared as a bride adorned for her husband. And I heard a great voice out of heaven saying, Behold, the tabernacle of God is with men, and he will dwell with them, and they shall be his people, and God himself shall be with them, and be their God. And God shall wipe away all tears from their eyes; and there shall be no more death, neither sorrow, nor crying, neither shall there be any more pain: for the former things are passed away. And he that sat upon the throne said, Behold, I make all things new. And he said unto me, Write: for these words are true and faithful.
 
-### *The Gospel.* St. John ii. 13.
+#### *The Gospel.* St. John ii. 13.
 
 **A**ND the Jews' passover was at hand, and Jesus went up to Jerusalem, and found in the temple those that sold oxen and sheep and doves, and the changers of money sitting: and when he had made a scourge of small cords, he drove them all out of the temple, and the sheep, and the oxen; and poured out the changers\' money, and overthrew the tables; and said unto them that sold doves, Take these things hence; make not my Father\'s house an house of merchandise. And his disciples remembered that it was written, The zeal of thine house hath eaten me up.
 
