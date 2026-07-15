@@ -58,7 +58,7 @@ superseded_by:
 supersedes:
 critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-file_version: 0.9.0
+file_version: 1.0.0
 last_reviewed:
 reviewed_against:
 review_notes: "First complete digital edition of these tables. Verify all psalm numbers against hardcopy. Note: Charles Wohlers omitted this section entirely from his digitization."
