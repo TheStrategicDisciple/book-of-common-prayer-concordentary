@@ -1,61 +1,58 @@
 ---
 title: The Order for the Visitation of the Sick
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Misc_Pastoral_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Misc_Pastoral_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/19_visitation-of-sick]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/19_visitation-of-sick]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/19_visitation-of-sick]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/19_visitation-of-sick]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[19_visitation-of-sick]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/19_visitation-of-sick]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The 1928 revision significantly expanded the Visitation office, adding the Litany for the Dying, the Commendation (Depart, O Christian soul), the Commendatory Prayer after death, and most significantly the Unction of the Sick — restoring anointing with oil and laying on of hands to Anglican pastoral practice after centuries of absence. The restoration of Unction was theologically controversial and represented a deliberate move toward the ancient patristic practice of healing ministry. This file contains the most complete Anglican pastoral accompaniment to dying that any American prayer book had ever provided."
-
+  dropped_in:
+  notes: The 1928 revision significantly expanded the Visitation office, adding the Litany for the Dying, the Commendation (Depart, O Christian soul), the Commendatory Prayer after death, and most significantly the Unction of the Sick — restoring anointing with oil and laying on of hands to Anglican pastoral practice after centuries of absence. The restoration of Unction was theologically controversial and represented a deliberate move toward the ancient patristic practice of healing ministry. This file contains the most complete Anglican pastoral accompaniment to dying that any American prayer book had ever provided.
 category: pastoral-office
 subcategory: visitation-of-sick
 page_ref: "308"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - pastoral-office
   - visitation
@@ -67,30 +64,24 @@ tags:
   - laying-on-of-hands
   - commendation
   - penitential-psalms
-
 active_in_edition: true
-modern_equivalent: "Ministration to the Sick — BCP 1979, pp. 453–461"
-
+modern_equivalent: Ministration to the Sick — BCP 1979, pp. 453–461
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Hyphenation artifacts corrected: sustaining, refreshment, Acknowledge. Italicised gender variables throughout are authentic BCP rubric convention — leave as is. Verify Unction rubric and Commendation carefully against hardcopy — theologically significant 1928 additions."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Hyphenation artifacts corrected: sustaining, refreshment, Acknowledge. Italicised gender variables throughout are authentic BCP rubric convention — leave as is."
 ---
 ## The Order for the Visitation of the Sick
 
