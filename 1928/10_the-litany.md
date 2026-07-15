@@ -1,61 +1,58 @@
 ---
 title: The Litany, or General Supplication
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Litany_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Litany_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1544"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/10_litany]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/10_litany]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/Litany_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/Litany_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/10_litany]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Litany_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Litany_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/10_litany]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Litany_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Litany_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[10_litany]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/10_litany]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Litany is the oldest surviving element of the Book of Common Prayer, predating the first BCP by five years. Cranmer composed it in English in 1544 during Henry VIII's war with France, originally for use in processions. It draws on the ancient litanic forms of the Western church, the Sarum Use, and Luther's German Litany of 1529. It entered the 1549 BCP essentially unchanged and has been carried forward through every revision. The 1928 revision added 'by air' to the intercession for travellers, reflecting the new age of flight."
-
+  dropped_in:
+  notes: The Litany is the oldest surviving element of the Book of Common Prayer, predating the first BCP by five years. Cranmer composed it in English in 1544 during Henry VIII's war with France, originally for use in processions. It draws on the ancient litanic forms of the Western church, the Sarum Use, and Luther's German Litany of 1529. It entered the 1549 BCP essentially unchanged and has been carried forward through every revision. The 1928 revision added 'by air' to the intercession for travellers, reflecting the new age of flight.
 category: litany
 subcategory: general-supplication
 page_ref: "54"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - litany
   - supplication
@@ -63,29 +60,23 @@ tags:
   - kyrie
   - deprecations
   - obsecrations
-
 active_in_edition: true
-modern_equivalent: "The Great Litany — BCP 1979, pp. 148–155"
-
+modern_equivalent: The Great Litany — BCP 1979, pp. 148–155
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/litany-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
 review_notes: ""
 ---
 ### The Litany
@@ -174,7 +165,6 @@ Lord, have mercy upon us.
 *Lord, have mercy upon us.*
 
 *¶ Then shall the Minister, and the People with him, say the Lord\'s Prayer.*
-
 **O**UR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. *Amen.*
 
 ¶ *The Minister may, at his discretion, omit all that followeth, to the Prayer,* We humbly beseech thee, O Father, etc.
@@ -193,7 +183,6 @@ O Lord, arise, help us, and deliver us for thy Name\'s sake.
 **O** GOD, we have heard with our ears, and our fathers have declared unto us, the noble works that thou didst in their days, and in the old time before them.
 
 *¶ Minister and People.*
-
 O Lord, arise, help us, and deliver us for thine honour.
 
 *Minister.*
@@ -211,7 +200,6 @@ O Lord, let thy mercy be showed upon us;
 *As we do put our trust in thee.*
 
 Let us pray.
-
 **W**E humbly beseech thee, O Father, mercifully to look upon our infirmities; and, for the glory of thy Name, turn from us all those evils that we most justly have deserved; and grant, that in all our troubles we may put our whole trust and confidence in thy mercy, and evermore serve thee in holiness and pureness of living, to thy honour and glory; through our only Mediator and Advocate, Jesus Christ our Lord. *Amen.*
 
 ¶ *The Minister may end the Litany here, or at his discretion add other prayers from this Book.*
