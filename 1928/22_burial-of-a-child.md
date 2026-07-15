@@ -1,53 +1,50 @@
 ---
 title: At the Burial of a Child
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/22_burial-of-child]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/22_burial-of-child]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[22_burial-of-child]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/22_burial-of-child]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "A separate and distinct rite for the burial of children, absent from the 1662 BCP but present in American editions from 1789 onward. The psalm selection is deliberate and pastoral — Psalm 23 (the LORD is my shepherd) and Psalm 121 (I will lift up mine eyes) chosen for comfort rather than penitence. The Matthew 18 lesson (Suffer the little children) anchors the rite theologically. The committal replaces the adult phrase with the Aaronic blessing applied personally to the child. The rite reflects the American church's pastoral sensitivity to the grief of parents — one of the most beautiful and tender offices in the entire prayer book."
-
+  dropped_in:
+  notes: A separate and distinct rite for the burial of children, absent from the 1662 BCP but present in American editions from 1789 onward. The psalm selection is deliberate and pastoral — Psalm 23 (the LORD is my shepherd) and Psalm 121 (I will lift up mine eyes) chosen for comfort rather than penitence. The Matthew 18 lesson (Suffer the little children) anchors the rite theologically. The committal replaces the adult phrase with the Aaronic blessing applied personally to the child. The rite reflects the American church's pastoral sensitivity to the grief of parents — one of the most beautiful and tender offices in the entire prayer book.
 category: pastoral-office
 subcategory: burial-of-child
 page_ref: "338"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - pastoral-office
   - burial
@@ -57,30 +54,24 @@ tags:
   - matthew-18
   - committal
   - resurrection
-
 active_in_edition: true
-modern_equivalent: "Burial of the Dead Rite I — BCP 1979, pp. 469–489"
-
+modern_equivalent: Burial of the Dead Rite I — BCP 1979, pp. 469–489
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/burial-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Three artifacts corrected: stray asterisk in Kyrie, formatting typo in committal (give *him* peace), forevermore hyphenation. Verify committal sentence and Matthew 18 lesson against hardcopy."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes:
 ---
 ### AT THE BURIAL OF A CHILD.
 ¶ *The Minister, meeting the Body, and going before it, either into the Church or towards the Grave, shall say,*
