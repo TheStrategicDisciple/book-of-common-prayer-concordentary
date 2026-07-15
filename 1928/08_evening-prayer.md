@@ -128,22 +128,17 @@ The Spirit and the bride say, Come. And let him that heareth say, Come. And let 
 LET us humbly confess our sins unto Almighty God.
 
 ¶ *Or else he shall say as followeth.*
-
-**D**EARLY beloved brethren, the Scripture moveth us, in sundry places, to acknowledge and confess our manifold sins and wickedness; and that we should not dissemble nor cloak them before the face of Almighty God our heavenly Father; but confess them with an humble, lowly, penitent, and obedient heart; to the end that we may obtain forgiveness of the same, by his infinite goodness and mercy. And although we ought, at all times, humbly to acknowledge our sins before God; yet ought we chiefly so to do, when we assemble and meet together to render thanks for the great benefits that we have received at his hands, to set forth his most worthy praise, to hear his most holy Word, and to ask those things which are requisite and
-
-necessary, as well for the body as the soul. Wherefore I pray and beseech you, as many as are here present, to accompany me with a pure heart, and humble voice, unto the throne of the heavenly grace, saying--
+**D**EARLY beloved brethren, the Scripture moveth us, in sundry places, to acknowledge and confess our manifold sins and wickedness; and that we should not dissemble nor cloak them before the face of Almighty God our heavenly Father; but confess them with an humble, lowly, penitent, and obedient heart; to the end that we may obtain forgiveness of the same, by his infinite goodness and mercy. And although we ought, at all times, humbly to acknowledge our sins before God; yet ought we chiefly so to do, when we assemble and meet together to render thanks for the great benefits that we have received at his hands, to set forth his most worthy praise, to hear his most holy Word, and to ask those things which are requisite and necessary, as well for the body as the soul. Wherefore I pray and beseech you, as many as are here present, to accompany me with a pure heart, and humble voice, unto the throne of the heavenly grace, saying--
 
 ### *A General Confession.*
 
 *¶ To be said by the whole Congregation, after the Minister, all kneeling.*
-
 **A**LMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those. O God, who confess their faults. Restore thou those who are penitent; According to thy promises declared unto mankind
 In Christ Jesus our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.
 
 ### *The Declaration of Absolution, or Remission of Sins.*
 
 *¶ To be made by the Priest alone, standing; the People still kneeling.*
-
 **A**LMIGHTY God, the Father of our Lord Jesus Christ, who desireth not the death of a sinner, but rather that he may turn from his wickedness and live, hath given power, and commandment, to his Ministers, to declare and pronounce to his people, being penitent, the Absolution and Remission of their sins. He pardoneth and absolveth all those who truly repent, and unfeignedly believe his holy Gospel.
 Wherefore let us beseech him to grant us true repentance, and his Holy Spirit, that those things may please him which we do at this present; and that the rest of our life hereafter may be pure and holy; so that at the last we may come to his eternal joy; through Jesus Christ our Lord. *Amen.*
 
@@ -155,12 +150,10 @@ Wherefore let us beseech him to grant us true repentance, and his Holy Spirit, t
 **O**UR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. For thine is the kingdom, and the power, and the glory, for ever and ever. Amen.
 
 *¶ Then likewise he shall say,*
-
 O Lord, open thou our lips.
 *Answer*. And our mouth shall show forth thy praise.
 
 *¶ Here, all standing up, the Minister shall say,*
-
 Glory be to the Father, and to the Son, and to the Holy Ghost;
 *Answer.* As it was in the beginning, is now, and ever shall be, world without end. Amen.
 *Minister.* Praise ye the Lord.
@@ -192,7 +185,6 @@ He remembering his mercy hath holpen his servant Israel; \* as he promised to ou
 *¶ Or this Psalm.*
 
 ### *Cantate Domino.* Psalm xcviii.
-
 **O** SING unto the LORD a new song; \* for he hath done marvellous things.
 With his own right hand, and with his holy arm, \* hath he gotten himself the victory.
 The LORD declared his salvation; \* his righteousness hath he openly showed in the sight of the heathen.
@@ -207,7 +199,6 @@ With righteousness shall he judge the world, \* and the peoples with equity.
 *¶ Or this.*
 
 ### *Bonum est confiteri*. Psalm xcii.
-
 **I**T is a good thing to give thanks unto the LORD, \* and to sing praises unto thy Name, O Most Highest; 
 To tell of thy loving-kindness early in the morning, \* and of thy truth in the night season;
 Upon an instrument of ten strings, and upon the lute; \* upon a loud instrument, and upon the harp.
@@ -217,16 +208,13 @@ For thou, LORD, hast made me glad through thy works; \* and I will rejoice in gi
 ¶ *And after that shall be sung or said the Hymn called the Nunc dimittis, as followeth.*
 
 ### *Nunc dimittis*. St. Luke ii. 29.
-
 **L**ORD, now lettest thou thy servant depart in peace, \* according to thy word.
  For mine eyes have seen \* thy salvation,
 Which thou hast prepared \* before the face of all people;
 To be a light to lighten the Gentiles, \* and to be the glory of thy people Israel.
 
 *¶ Or else this Psalm.*
-
 ### *Deus misereatur*. Psalm lxvii.
-
 **G**OD be merciful unto us, and bless us, \* and show us the light of his countenance, and be merciful unto us;
 That thy way may be known upon earth, \* thy saving health among all nations.
 Let the peoples praise thee, O God; \* yea, let all the peoples praise thee.
@@ -236,9 +224,7 @@ Then shall the earth bring forth her increase; \* and God, even our own God, sha
 God shall bless us; \* and all the ends of the world shall fear him.
 
 *¶ Or this.*
-
 ### *Benedic, anima mea.* Psalm ciii.
-
 **P**RAISE the LORD O my soul; \* and all that is within me, praise his holy Name.
 Praise the LORD, O my soul, \* and forget not all his benefits:
 Who forgiveth all thy sin, \* and healeth all thine infirmities;
@@ -249,19 +235,16 @@ O praise the LORD, all ye his hosts; \* ye servants of his that do his pleasure.
 O speak good of the LORD, all ye works of his, in all places of his dominion: \* praise thou the LORD, O my soul.
 
 ¶ *Then shall be said the Apostle's Creed by the Minister and the People, standing. And any Churches may, instead of the words,* He descended into Hell, *use the words,* He went into the place of departed spirits, *which are considered as words of the same meaning in the Creed.*
-
 **I** BELIEVE in God the Father Almighty, Maker of heaven and earth:
 And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.
 I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body: And the Life everlasting. Amen.
 
 *¶ Or the Creed commonly called the Nicene.*
-
 **I** BELIEVE in one God the Father Almighty, Maker of heaven and earth, And of all things visible and invisible:
 And in one Lord Jesus Christ, the only-begotten Son of God; Begotten of his Father before all worlds, God of God, Light of Light, Very God of Very God: Begotten, not made; Being of one substance with the Father; By whom all things were made: Who for us men and for our salvation came down from heaven, And was incarnate by the Holy Ghost of the Virgin Mary, And was made man: And was crucified also for us under Pontius Pilate; He suffered and was buried: And the third day he rose again according to the Scriptures: And ascended into heaven, And sitteth on the right hand of God the Father: And he shall come again, with glory, to judge both the quick and the dead; Whose kingdom shall have no end.
 And I believe in the Holy Ghost, The Lord, and Giver of Life, Who proceedeth from the Father and the Son; Who with the Father and the Son together is worshipped and glorified; Who spoke by the Prophets: And I believe one Catholic and Apostolic Church: I acknowledge one Baptism for the remission of sins: And I look for the Resurrection of the dead: And the Life of the world to come. Amen.
 
 ¶ *And after that, these Prayers following, the People devoutly kneeling; the Minister first pronouncing,*
-
 The Lord be with you.
 *Answer*. And with thy spirit.
 *Minister*. Let us pray.
@@ -284,18 +267,15 @@ The Lord be with you.
 ¶ *Then shall be said the Collect for the Day, and after that the Collects and Prayers following.*
 
 ### *A Collect for Peace.*
-
 **O** GOD, from whom all holy desires, all good counsels, and all just works do proceed; Give unto thy servants that peace which the world cannot give; that our hearts may be set to obey thy commandments, and also that by thee, we, being defended from the fear of our enemies, may pass our time in rest and quietness; through the merits of Jesus Christ our Saviour. *Amen.*
 
 ### *A Collect for Aid against Perils.*
-
 **L**IGHTEN our darkness, we beseech thee, O Lord; and by thy great mercy defend us from all perils and dangers of this night; for the love of thy only Son, our Saviour, Jesus Christ. *Amen.*
 
 *¶ In places where it may be convenient, here followeth the Anthem.,*
 ¶*The Minister may here end the Evening Prayer, with such Prayer, or Prayers, taken out of this Book, as he shall think fit.*
 
 ### *A Prayer for The President of the United States, and all in Civil Authority.*
-
 ALMIGHTY God, whose kingdom is everlasting and power infinite; Have mercy upon this whole land; and so rule the hearts of thy servants THE PRESIDENT OF THE UNITED STATES, *The Governor of this State*, and all others in authority, that they, knowing whose ministers they are, may above all things seek thy honour and glory; and that we and all the People, duly considering whose authority they bear, may faithfully and obediently honour them, according to thy blessed Word and ordinance; through Jesus Christ our Lord, who with thee and the Holy Ghost liveth and reigneth ever, one God, world without end. *Amen.*
 ### *A Prayer for the Clergy and People.*
 **A**LMIGHTY and everlasting God, from whom cometh every good and perfect gift; Send down upon our Bishops, and other Clergy, and upon the Congregations committed to their charge, the healthful Spirit of thy grace; and, that they may truly please thee, pour upon them the continual dew of thy blessing. Grant this, O Lord, for the honour of our Advocate and Mediator, Jesus Christ. *Amen*.
