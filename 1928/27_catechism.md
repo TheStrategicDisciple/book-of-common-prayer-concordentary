@@ -82,7 +82,6 @@ reviewed_against:
 review_notes: stedfastly (x2) is authentic BCP spelling — retained. Roman numeral backslash escaping II\. III\. etc. is correct Markdown — retained.
 ---
 ### A Catechism
-
 that is to say, an Instruction,
 to be Learned by Every Person before he
 be brought to be Confirmed
