@@ -79,7 +79,6 @@ review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefo
 ¶ *The Minister and the People kneeling, then shall be said by them this Psalm following.*
 
 #### *Miserere mei, Deus*. Psalm li.
-
 **H**AVE mercy upon me, O God, after thy great goodness; \* according to the multitude of thy mercies do away mine offences.
 Wash me throughly from my wickedness, \* and cleanse me from my sin.
 For I acknowledge my faults, \* and my sin is ever before me.
@@ -99,7 +98,6 @@ For thou desirest no sacrifice, else would I give it thee; \* but thou delightes
 The sacrifice of God is a troubled spirit: \* a broken and contrite heart, O God, shalt thou not despise.
 Glory be to the Father, and to the Son, \* and to the Holy Ghost;
 As it was in the beginning, is now, and ever shall be, \* world without end. Amen.
-
 ¶*If the Litany hath been already said. the Minister may pass at once to* O Lord, save thy servants; etc.
 
 Lord, have mercy upon us.
@@ -118,17 +116,13 @@ O Lord, hear our prayer.
 *And let our cry come unto thee.*
 
 Let us pray.
-
 **O** LORD, we beseech thee, mercifully hear our prayers, and spare all those who confess their sins unto thee; that they, whose consciences by sin are accused, by thy merciful pardon may be absolved; through Christ our Lord. *Amen*.
 
 **O** MOST mighty God, and merciful Father, who hast compassion upon all men, and who wouldest not the death of a sinner, but rather that he should turn from his sin, and be saved; Mercifully forgive us our trespasses; receive and comfort us, who are grieved and wearied with the burden of our sins. Thy property is always to have mercy; to thee only it appertaineth to forgive sins. Spare us therefore, good Lord, spare thy people, whom thou hast re-deemed; enter not into judgment with thy servants; but so turn thine anger from us, who meekly acknowledge our transgressions, and truly repent us of our faults, and so make haste to help us in this world, that we may ever live with thee in the world to come; through Jesus Christ our Lord. *Amen.*
 
 *¶ Then shall the People say this that followeth, after the Minister.*
-
-TURN thou us, O good Lord, and so shall we be turned. Be favourable, O Lord, Be favourable to thy people, Who turn to thee in weeping, fasting, and praying. For thou art a merciful God, Full of compassion, Long-suffering, and of great pity. Thou sparest when we deserve punishment, And in thy wrath thinkest upon mercy. Spare thy people, good Lord, spare them, And let not thine heritage be brought to confusion. Hear us, O Lord, for thy mercy is great, And after the multitude of thy mercies look upon us; Through the merits and mediation of thy blessed Son, Jesus Christ our Lord. Amen.
+**T**URN thou us, O good Lord, and so shall we be turned. Be favourable, O Lord, Be favourable to thy people, Who turn to thee in weeping, fasting, and praying. For thou art a merciful God, Full of compassion, Long-suffering, and of great pity. Thou sparest when we deserve punishment, And in thy wrath thinkest upon mercy. Spare thy people, good Lord, spare them, And let not thine heritage be brought to confusion. Hear us, O Lord, for thy mercy is great, And after the multitude of thy mercies look upon us; Through the merits and mediation of thy blessed Son, Jesus Christ our Lord. Amen.
 
 *¶ Then the Minister shall say,*
-
-O GOD, whose nature and property is ever to have mercy and to forgive; Receive our humble petitions; and though we be tied and bound with the chain of our sins, yet let the pitifulness of thy great mercy loose us; for the honour of Jesus Christ, our Mediator and Advocate. *Amen*.
-
-THE LORD bless us, and keep us. The LORD make his face to shine upon us, and be gracious unto us. The LORD lift up his countenance upon us, and give us peace, both now and evermore. *Amen*.
+**O** GOD, whose nature and property is ever to have mercy and to forgive; Receive our humble petitions; and though we be tied and bound with the chain of our sins, yet let the pitifulness of thy great mercy loose us; for the honour of Jesus Christ, our Mediator and Advocate. *Amen*.
+**T**HE LORD bless us, and keep us. The LORD make his face to shine upon us, and be gracious unto us. The LORD lift up his countenance upon us, and give us peace, both now and evermore. *Amen*.
