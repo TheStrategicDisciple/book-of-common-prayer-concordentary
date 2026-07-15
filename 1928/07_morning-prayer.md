@@ -145,22 +145,18 @@ Because ye are sons, God hath sent forth the Spirit of his Son into your hearts,
 The LORD by wisdom hath founded the earth; by understanding hath he established the heavens. By his knowledge the depths are broken up, and the clouds drop down the dew. *Prov. iii*. 19, 20.
 
 ¶ *Then the Minister shall say,*
-
 **D**EARLY beloved brethren, the Scripture moveth us, in sundry places, to acknowledge and confess our manifold sins and wickedness; and that we should not dissemble nor cloak them before the face of Almighty God our heavenly Father; but confess them with an humble, lowly, penitent, and obedient heart; to the end that we may obtain forgiveness of the same, by his infinite goodness and mercy. And although we ought, at all times, humbly to acknowledge our sins before God; yet ought we chiefly so to do, when we assemble and meet together to render thanks for the great benefits that we have received at his hands, to set forth his most worthy praise, to hear his most holy Word, and to ask those things which are requisite and necessary, as well for the body as the soul. Wherefore I pray and beseech you, as many as are here present, to accompany me with a pure heart, and humble voice, unto the throne of the heavenly grace, saying--
 
 ¶ *Or he shall say,*
-
 **L**ET us humbly confess our sins unto Almighty God.
 
 #### A General Confession.
 ¶ *To be said by the whole Congregation, after the Minister, all kneeling.*
-
 **A**LMIGHTY and most merciful Father; We have erred, and strayed from thy ways like lost sheep. We have followed too much the devices and desires of our own hearts. We have offended against thy holy laws. We have left undone those things which we ought to have done; And we have done those things which we ought not to have done; And there is no health in us. But thou, O Lord, have mercy upon us, miserable offenders. Spare thou those, O God, who confess their faults. Restore thou those who are penitent; According to thy promises declared unto mankind In Christ Jesus our Lord. And grant, O most merciful Father, for his sake; That we may hereafter live a godly, righteous, and sober life, To the glory of thy holy Name. Amen.
 
 #### *The Declaration of Absolution, or Remission of Sins.*
 ¶ *To be made by the Priest alone, standing; the People still kneeling.*
 ¶ *But* NOTE *That the Priest, at his discretion, may use, instead of what follows, the Absolution from the Order for the Holy Communion.*
-
 **A**LMIGHTY God, the Father of our Lord Jesus Christ, who desireth not the death of a sinner, but rather that he may turn from his wickedness and live, hath given power, and commandment, to his Ministers, to declare and pronounce to his people, being penitent, the Absolution and Remission of their sins. He pardoneth and absolveth all those who truly repent, and unfeignedly believe his holy Gospel.
 Wherefore let us beseech him to grant us true repentance, and his Holy Spirit, that those things may please him which we do at this present; and that the rest of our life hereafter may be pure and holy; so that at the last we may come to his eternal joy; through Jesus Christ our Lord. *Amen.*
 
@@ -172,44 +168,30 @@ O Lord, open thou our lips.
 *Answer*. And our mouth shall show forth thy praise.
 
 ¶ *Here, all standing up, the Minister shall say,*
-
 Glory be to the Father, and to the Son, and to the Holy Ghost;
 *Answer.* As it was in the beginning, is now, and ever shall be, world without end. Amen.
-
 *Minister.* Praise ye the Lord.
 *Answer*. The Lord\'s Name be praised.
 
 ¶ *Then shall be said or sung the following Canticle; except on those days for which other Canticles are appointed; and except also, that Psalm 95 may be used in this place.*
-
 ¶ *But* NOTE *That on Ash Wednesday and Good Friday the Venite may be omitted.*
 
 ✤ ✤ ✤
 
 ¶ *On the days hereafter named, immediately before the Venite may be sung or said,*
-
 ¶ *On the Sundays in Advent.* Our King and Saviour draweth nigh; \* O come, let us adore him.
-
-
 ¶ *On Christmas Day and until the Epiphany*. Alleluia. Unto us a child is born; \* O come, let us adore him. Alleluia.
-
 ¶ *On the Epiphany and seven days after, and on the Feast of the Transfiguration*. The Lord hath manifested forth his glory; \* O come, let us adore him.
-
 ¶ *On Monday in Easter Week and until Ascension Day*. Alleluia. The Lord is risen indeed; \* O come, let us adore him. Alleluia.
-
 ¶ *On Ascension Day and until Whitsunday. Alleluia.* Christ the Lord ascendeth into heaven; \* O come, let us adore him. Alleluia.
-
 ¶ *On Whitsunday and six days after*. Alleluia. The Spirit of the Lord filleth the world; \* O come, let us adore him. Alleluia.
-
 ¶ *On Trinity Sunday.* Father, Son, and Holy Ghost, one God; \* O come, let us adore him.
-
 ¶ On the Purification, and the Annunciation. The Word was made flesh, and dwelt among us; \* O come, let us adore him.
-
 ¶ *On other Festivals for which a proper Epistle and Gospel are ordered*. The Lord is glorious in his saints; \* O come, let us adore him.
 
 ✤ ✤ ✤
 
 #### *Venite, exultemus Domino.*
-
 **O** COME, let us sing unto the LORD \* let us heartily rejoice in the strength of our salvation.
 Let us come before his presence with thanksgiving; \* and show ourselves glad in him with psalms.
 For the LORD is a great God; \* and a great King above all gods.
@@ -227,12 +209,10 @@ For he cometh, for he cometh to judge the earth; \* and with righteousness to ju
 As it was in the beginning, is now, and ever shall be, \* world without end. Amen.
 
 ¶ *Then shall be read the First Lesson, according to the Table or Calendar. And* NOTE *That before every Lesson, the Minister shall say*, Here beginneth *such a* Chapter (*or* Verse of *such a* Chapter)* of *such a Book; and after every Lesson*, Here endeth the First (*or* the Second) Lesson.
-
 ¶ *Here shall be said or sung the following Hymn.*
 ¶ *But,* NOTE *That on any day when the Holy Communion is immediately to follow, the Minister at his discretion, after any one of the following Canticles of Morning Prayer has been said or sung, may pass at once to the Communion Service.*
 
 #### *Te Deum laudamus.*
-
 **W**E praise thee, O God; we acknowledge thee to be the Lord.
 All the earth doth worship thee, the Father everlasting.
 To thee all Angels cry aloud; the Heavens, and all the Powers therein;
@@ -266,9 +246,7 @@ O Lord, let thy mercy be upon us, as our trust is in thee.
 O Lord, in thee have I trusted; let me never be confounded.
 
 ¶ *Or this Canticle.*
-
 #### *Benedictus es, Domine.*
-
 **B**LESSED art thou, O Lord God of our fathers:\* praised and exalted above all for ever.
 Blessed art thou for the Name of thy Majesty:\* praised and exalted above all for ever.
 Blessed art thou in the temple of thy holiness:\* praised and exalted above all for ever.
@@ -277,9 +255,7 @@ Blessed art thou on the glorious throne of thy kingdom: \* praised and exalted a
 Blessed art thou in the firmament of heaven: \* praised and exalted above all for ever.
 
 ¶ *Or this Canticle*
-
 #### *Benedicite, omnia opera Domini.*
-
 **O** ALL ye Works of the Lord, bless ye the Lord: \* praise him, and magnify him for ever.
 O ye Angels of the Lord, bless ye the Lord: \* praise him, and magnify him for ever.
 
@@ -323,7 +299,6 @@ O ye holy and humble Men of heart, bless ye the Lord: \* praise him, and magnify
 ¶ *But* NOTE, *That, save on the Sundays in Advent, the latter portion thereof may be omitted.*
 
 #### *Benedictus*. St. Luke i. 68.
-
 **B**LESSED be the Lord God of Israel; \* for he hath visited and redeemed his people;
 And hath raised up a mighty salvation for us, \* in the house of his servant David;
 As he spake by the mouth of his holy Prophets, \* which have been since the world began;
@@ -339,16 +314,13 @@ Through the tender mercy of our God; \* whereby the day-spring from on high hath
 To give light to them that sit in darkness, and in the shadow of death, \* and to guide our feet into the way of peace.
 
 ¶ Or this Psalm.
-
 #### *Jubilate Deo.* Psalm c.
-
 O BE joyful in the LORD all ye lands: \* serve the LORD with gladness, and come before his presence with a song.
 Be ye sure that the LORD he is God; it is he that hath made us, and not we ourselves; \* we are his people, and the sheep of his pasture.
 O go your way into his gates with thanksgiving, and into his courts with praise; \* be thankful unto him, and speak good of his Name.
 For the LORD is gracious, his mercy is everlasting; \* and his truth endureth from generation to generation.
 
 ¶ *Then shall be said the Apostle\'s Creed by the Minister and the People, standing. And any Churches may, instead of the words,* He descended into Hell, *use the words,* He went into the place of departed spirits, *which are considered as words of the same meaning in the Creed.*
-
 **I** BELIEVE in God the Father Almighty, Maker of heaven and earth:
 And in Jesus Christ his only Son our Lord: Who was conceived by the Holy Ghost, Born of the Virgin Mary: Suffered under Pontius Pilate, Was crucified, dead, and buried: He descended into hell; The third day he rose again from the dead: He ascended into heaven, And sitteth on the right hand of God the Father Almighty: From thence he shall come to judge the quick and the dead.
 I believe in the Holy Ghost: The holy Catholic Church; The Communion of Saints: The Forgiveness of sins: The Resurrection of the body: And the Life everlasting. Amen.
@@ -359,7 +331,6 @@ And in one Lord Jesus Christ, the only-begotten Son of God; Begotten of his Fath
 And I believe in the Holy Ghost, The Lord, and Giver of Life, Who proceedeth from the Father and the Son; Who with the Father and the Son together is worshipped and glorified; Who spoke by the Prophets: And I believe one Catholic and Apostolic Church: I acknowledge one Baptism for the remission of sins: And I look for the Resurrection of the dead: And the Life of the world to come. Amen.
 
 ¶ *And after that, these Prayers following, the People devoutly kneeling; the Minister first pronouncing,*
-
 The Lord be with you.
 *Answer.* And with thy spirit.
 *Minister*. Let us pray.
@@ -394,7 +365,6 @@ O LORD, our heavenly Father, Almighty and everlasting God, who hast safely broug
 **O** GOD, the Creator and Preserver of all mankind, we humbly beseech thee for all sorts and conditions of men; that thou wouldest be pleased to make thy ways known unto them, thy saving health unto all nations. More especially we pray for thy holy Church universal; that it may be so guided and governed by thy good Spirit, that all who profess and call themselves Christians may be led into the way of truth, and hold the faith in unity of spirit, in the bond of peace, and in righteousness of life. Finally, we commend to thy fatherly goodness all those who, are any ways afflicted, or distressed, in mind, body, or estate; \[\* *especially those for whom our prayers are desired*\] that it may please thee to comfort and relieve them, according to their several necessities; giving them patience under their sufferings, and a happy issue out of all their afflictions. And this we beg for Jesus Christ\'s sake. *Amen.*
 
 #### *A General Thanksgiving.*
-
 **A**LMIGHTY God, Father of all mercies, we, thine unworthy servants, do give thee most humble and hearty thanks for all thy goodness and loving-kindness to us, and to all men; \[\* *particularly to those who desire now to offer up their praises and thanksgivings for thy late mercies vouchsafed unto them*.\] We bless thee for our creation, preservation, and all the blessings of this life; but above all, for thine inestimable love in the redemption of the world by our Lord Jesus Christ; for the means of grace, and for the hope of glory. And, we beseech thee, give us that due sense of all thy mercies, that our hearts may be unfeignedly thankful; and that we show forth thy praise, not only with our lips, but in our lives, by giving up our selves to thy service, and by walking before thee in holiness and righteousness all our days; through Jesus Christ our Lord, to whom, with thee and the Holy Ghost, be all honour and glory, world without end. *Amen.*
 
 \**This may be said when any desire to return thanks for mercies vouchsafed to them*
@@ -404,7 +374,7 @@ O LORD, our heavenly Father, Almighty and everlasting God, who hast safely broug
 #### *A Prayer of St. Chrysostom.*
 **A**LMIGHTY God, who hast given us grace at this time with one accord to make our common supplications unto thee; and dost promise that when two or three are gathered together in thy Name thou wilt grant their requests; Fulfil now, O Lord, the desires and petitions of thy servants, as may be most expedient for them; granting us in this world knowledge of thy truth, and in the world to come life everlasting. *Amen.*
 
-	*2 Cor. xiii. 14*
+*2 Cor. xiii. 14*
 **T**HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. *Amen.*
 
 *Here endeth The Order of Morning Prayer.*
