@@ -117,9 +117,10 @@ Lord, have mercy upon us.
 **O** LORD, look down from heaven, behold, visit, and relieve this thy servant. Look upon *him* with the eyes of thy mercy, give *him* comfort and sure confidence in thee, defend *him* in all danger, and keep *him* in perpetual peace and safety; through Jesus Christ our Lord. *Amen.*
 
 ¶ *Here may be said any one or more of the Psalms following, with Antiphon and Collect.*
+
 *Antiphon.* I did call upon the LORD with my voice; And he heard me out of his holy hill.
 
-## *Domine, quid multiplicati?* Psalm iii.
+#### *Domine, quid multiplicati?* Psalm iii.
 LORD, how are they increased that trouble me! many are they that rise against me.
 Many one there be that say of my soul, There is no help for him in his God.
 But thou, O LORD, art my defender; thou art my worship, and the lifter up of my head.
@@ -127,7 +128,7 @@ I did call upon the LORD with my voice, and he heard me out of his holy hill.
 I laid me down and slept, and rose up again; for the LORD sustained me.
 Salvation belongeth unto the LORD; and thy blessing is upon thy people.
 
-## *The Collect.*
+#### *The Collect.*
 **H**EAR us, Almighty and most merciful God and Saviour; extend thy accustomed goodness to this thy servant who is grieved with sickness. Visit *him,* O Lord, with thy loving mercy, and so restore *him* to *his* former health, that *he* may give thanks unto thee in thy holy Church; through Jesus Christ our Lord. *Amen.*
 
 *Antiphon.* I will go unto the altar of God; Unto the God of my joy and gladness.
@@ -142,12 +143,11 @@ Why art thou so heavy, O my soul? and why art thou so disquieted within me?
 O put thy trust in God; for I will yet give him thanks, which is the help of my countenance, and my God.
 
 ### *The Collect.*
-
 **S**ANCTIFY, we beseech thee, O Lord, the sickness of this thy servant; that the sense of *his* weakness may add strength to *his* faith, and seriousness to *his* repentance; and grant that *he* may dwell with thee in life everlasting; through Jesus Christ our Lord. *Amen.*
 
 *Antiphon.* I have considered the days of old; And the years that are past.
 
-### *Voce mea ad Dominum.* Psalm lxxvii.
+#### *Voce mea ad Dominum.* Psalm lxxvii.
 **I** WILL cry unto God with my voice; even unto God will I cry with my voice, and he shall hearken unto me.
 In the time of my trouble I sought the Lord: I stretched forth my hands unto him, and ceased not in the night season; my soul refused comfort.
 When I am in heaviness, I will think upon God; when my heart is vexed, I will complain.
@@ -159,27 +159,24 @@ Is his mercy clean gone for ever? and is his promise come utterly to an end for 
 Hath God forgotten to be gracious? and will he shut up his loving-kindness in displeasure?
 And I said, It is mine own infirmity; but I will remember the years of the right hand of the Most Highest.
 
-### *The Collect.*
-
+#### *The Collect.*
 **H**EAR, O Lord, we beseech thee, these our prayers, as we call upon thee on behalf of this thy servant; and bestow upon *him* the help of thy merciful consolation; through Jesus Christ our Lord. *Amen.*
 
 *Antiphon.* Though I walk in the midst of trouble; Yet shalt thou refresh me.
 
-### *Confitebor tibi.* Psalm cxxxviii.
+#### *Confitebor tibi.* Psalm cxxxviii.
 **I** WILL give thanks unto thee, O Lord, with my whole heart; even before the gods will I sing praise unto thee.
 I will worship toward thy holy temple, and praise thy Name, because of thy loving-kindness and truth; for thou hast magnified thy Name, and thy word, above all things.
 When I called upon thee, thou heardest me; and enduedst my soul with much strength.
 Though I walk in the midst of trouble, yet shalt thou refresh me; thou shalt stretch forth thy hand upon the furiousness of mine enemies, and thy right hand shall save me.
 The LORD shall make good his loving-kindness toward me; yea, thy mercy, O LORD, endureth for ever; despise not then the works of thine own hands.
 
-### *The Collect.*
-
+#### *The Collect.*
 **O** GOD, the strength of the weak and the comfort of sufferers; Mercifully accept our prayers, and grant to thy servant the help of thy power, that *his* sickness may be turned into health, and our sorrow into joy; through Jesus Christ our Lord. *Amen.*
 
 *Antiphon.* The LORD saveth thy life from destruction; And crowneth thee with mercy and loving-kindness.
 
-### *Benedic, anima mea.* Psalm ciii.
-
+#### *Benedic, anima mea.* Psalm ciii.
 **P**RAISE the LORD, O my soul; and all that is within me, praise his holy Name.
 Praise the LORD, O my soul, and forget not all his benefits:
 Who forgiveth all thy sin, and healeth all thine infirmities;
@@ -188,8 +185,7 @@ O praise the LORD, ye angels of his, ye that excel in strength; ye that fulfil h
 O praise the LORD, all ye his hosts; ye servants of his that do his pleasure.
 O speak good of the LORD, all ye works of his, in all places of his dominion: praise thou the LORD, O my soul.
 
-### *The Collect.*
-
+#### *The Collect.*
 **A**CCEPT, we beseech thee, merciful Lord, the devout praise of thy humble servant; and grant *him* an abiding sense of thy loving-kindness; through Jesus Christ our Lord. *Amen.*
 
 ¶ *Any of the following Psalms, 20, 27, 42, 91, 121, 146, may, at the discretion of the Minister, be substituted for any of those given above.*
@@ -202,8 +198,7 @@ O speak good of the LORD, all ye works of his, in all places of his dominion: pr
 ¶ *Then shall the sick person be moved to make a special confession of his sins, if he feel his conscience troubled with any matter; after which confession, on evidence of his repentance, the Minister shall assure him of God\'s mercy and forgiveness.*
 ¶ *Then the Minister shall say,*
 
-Let us pray.
-
+#### Let us pray.
 **O** MOST merciful God, who, according to the multitude of thy mercies, dost so put away the sins of those who truly repent, that thou rememberest them no more; Open thine eye of mercy upon this thy servant, who most earnestly desireth pardon and forgiveness. Renew in *him,* most loving Father, whatsoever hath been decayed by the fraud and malice of the devil, or by *his* own carnal will and frailness; preserve and continue this sick member in the unity of the Church; consider *his* contrition, accept *his* tears, assuage *his* pain, as shall seem to thee most expedient for *him.* And forasmuch as *he* putteth *his* full trust only in thy mercy, impute not unto *him* *his* former sins, but strengthen *him* with thy blessed Spirit; and, when thou art pleased to take *him* hence, take *him* unto thy favour; through the merits of thy most dearly beloved Son, Jesus Christ our Lord. *Amen.*
 
 *¶ Then shall the Minister say,*
@@ -218,28 +213,28 @@ Let us pray.
 
 ¶ *These Prayers may be said with the foregoing Service, or any part thereof, at the discretion of the Minister.*
 
-### *A Prayer for Recovery.*
+#### *A Prayer for Recovery.*
 **O** GOD of heavenly powers, who, by the might of thy command, drivest away from men\'s bodies all sickness and all infirmity; Be present in thy goodness with this thy servant, that *his* weakness may be banished and *his* strength recalled; that *his* health being thereupon restored, *he* may bless thy holy Name; through Jesus Christ our Lord. *Amen*.
 
-### *A Prayer for Healing.*
+#### *A Prayer for Healing.*
 **O** ALMIGHTY God, who art the giver of all health, and the aid of them that turn to thee for succour; We entreat thy strength and goodness in behalf of this thy servant, that *he* may be healed of *his* infirmities, to thine honour and glory; through Jesus Christ our Lord. *Amen*.
 
-### *A Thanksgiving for the Beginning of a Recovery.*
+#### *A Thanksgiving for the Beginning of a Recovery.*
 **G**REAT and mighty God, who bringest down to the grave, and bringest up again; We bless thy wonderful goodness, for having turned our heaviness into joy and our mourning into gladness, by restoring this our *brother* to some degree of *his* former health. Blessed be thy Name that thou didst not forsake *him* in his sickness; but didst visit *him* with comforts from above; didst support *him* in patience and submission to thy will; and at last didst send *him* seasonable relief. Perfect, we beseech thee, this thy mercy towards *him;* and prosper the means which shall be made use of for *his* cure: that, being restored to health of body, vigour of mind, and cheerfulness of spirit, *he* may be able to go to thine house, to offer thee an oblation with great gladness, and to bless thy holy Name for all thy goodness towards *him;* through Jesus Christ our Saviour, to whom, with thee and the Holy Spirit, be all honour and glory, world without end. *Amen*.
 
-### *A Prayer for a Sick Person, when there appeareth but small hope of Recovery.*
+#### *A Prayer for a Sick Person, when there appeareth but small hope of Recovery.*
 **O** FATHER of mercies, and God of all comfort, our only help in time of need; We fly unto thee for succour in behalf of this thy servant, here lying in great weakness of body. Look graciously upon *him,* O Lord; and the more the outward man decayeth, strengthen *him,* we beseech thee, so much the more continually with thy grace and Holy Spirit in the inner man. Give *him* unfeigned repentance for all the errors of *his* life past, and stedfast faith in thy Son Jesus; that *his* sins may be done away by thy mercy, and *his* pardon sealed in heaven; through the same thy Son, our Lord and Saviour. *Amen.*
 
-### *A Prayer for the Despondent.*
+#### *A Prayer for the Despondent.*
 **C**OMFORT, we beseech thee, most gracious God, this thy servant, cast down and faint of heart amidst the sorrows and difficulties of the world; and grant that, by the power of thy Holy Spirit, *he* may be enabled to go upon his way rejoicing, and give thee continual thanks for thy sustaining providence; through Jesus Christ our Lord. *Amen*.
 
-### *A Prayer which may be said by the Minister in behalf of all present at the Visitation.*
+#### *A Prayer which may be said by the Minister in behalf of all present at the Visitation.*
 **O** GOD, whose days are without end, and whose mercies cannot be numbered; Make us, we beseech thee, deeply sensible of the shortness and uncertainty of human life; and let thy Holy Spirit lead us in holiness and righteousness, all our days: that, when we shall have served thee in our generation, we may be gathered unto our fathers, having the testimony of a good conscience; in the communion of the Catholic Church; in the confidence of a certain faith; in the comfort of a reasonable, religious, and holy hope; in favour with thee our God, and in perfect charity with the world. All which we ask through Jesus Christ our Lord. *Amen.*
 
-### *A Commendatory Prayer for a Sick Person at the point of Departure.*
+#### *A Commendatory Prayer for a Sick Person at the point of Departure.*
 **O** ALMIGHTY God, with whom do live the spirits of just men made perfect, after they are delivered from their earthly prisons; We humbly commend the soul of this thy servant, our dear *brother,* into thy hands, as into the hands of a faithful Creator, and most merciful Saviour; beseeching thee, that it may be precious in thy sight. Wash it, we pray thee, in the blood of that immaculate Lamb, that was slain to take away the sins of the world; that whatsoever defilements it may have contracted, through the lusts of the flesh or the wiles of Satan, being purged and done away, it may be presented pure and without spot before thee; through the merits of Jesus Christ thine only Son our Lord. *Amen.*
 
-### LITANY FOR THE DYING.
+#### LITANY FOR THE DYING.
  O GOD the Father;
 *Have mercy upon the soul of thy servant.*
 O God the Son;
@@ -278,23 +273,22 @@ Lord, have mercy.
 **O**UR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.
 
 Let us pray.
-
 **O** SOVEREIGN Lord, who desirest not the death of a sinner; We beseech thee to loose the spirit of this thy servant from every bond, and set *him* free from all evil; that *he* may rest with all thy saints in the eternal habitations; through Jesus Christ our Lord, who liveth and reigneth with thee and the Holy Ghost, one God, world without end. *Amen*.
 
-### *An Absolution to be said by the Priest.*
+#### *An Absolution to be said by the Priest.*
 **T**HE Almighty and merciful Lord grant thee pardon and remission of all thy sins, and the grace and comfort of the Holy Spirit. *Amen.*
 
-### *A Commendation.*
+#### *A Commendation.*
 **D**EPART, O Christian soul, out of this world,
 In the Name of God the Father Almighty who created thee.
 In the Name of Jesus Christ who redeemed thee.
 In the Name of the Holy Ghost who sanctifieth thee.
 May thy rest be this day in peace, and thy dwellingplace in the Paradise of God.
 
-### *A Commendatory Prayer when the Soul is Departed.*
+#### *A Commendatory Prayer when the Soul is Departed.*
 **I**NTO thy hands, O merciful Saviour, we commend the soul of thy servant, now departed from the body. Acknowledge, we humbly beseech thee, a sheep of thine own fold, a lamb of thine own flock, a sinner of thine own redeeming. Receive him into the arms of thy mercy, into the blessed rest of everlasting peace, and into the glorious company of the saints in light. *Amen.*
 
-### UNCTION OF THE SICK.
+#### UNCTION OF THE SICK.
 ¶ *When any sick person shall in humble faith desire the ministry of healing through Anointing or Laying on of Hands, the Minister may use such portion of the foregoing Office as he shall think fit, and the following:*
 
 **O** BLESSED Redeemer, relieve, we beseech thee, by thy indwelling power, the distress of this thy servant; release *him* from sin, and drive away all pain of soul and body, that being restored to soundness of health, *he* may offer thee praise and thanksgiving; who livest and reignest with the Father and the Holy Ghost, one God, world without end. *Amen.*
