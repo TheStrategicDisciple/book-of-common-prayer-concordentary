@@ -1,61 +1,58 @@
 ---
 title: The Ministration of Holy Baptism
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Baptism_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Baptism_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/14_baptism]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/14_baptism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/Baptism_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/Baptism_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/14_baptism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Baptism_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Baptism_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/14_baptism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Baptism_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Baptism_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[14_baptism]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/14_baptism]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "One of the most significant structural changes in the 1928 revision — the three previously separate rites (Public Baptism of Infants, Private Baptism of those in Extremis, and Baptism of Adults) were combined into a single unified office. This file contains all three forms, including the emergency form for private baptism and the provision for conditional baptism. The admission of parents as sponsors is an American addition. The 1928 rite draws directly from Cranmer's 1549 form, which consolidated multiple Sarum baptismal rites into one vernacular service."
-
+  dropped_in:
+  notes: One of the most significant structural changes in the 1928 revision — the three previously separate rites (Public Baptism of Infants, Private Baptism of those in Extremis, and Baptism of Adults) were combined into a single unified office. This file contains all three forms, including the emergency form for private baptism and the provision for conditional baptism. The admission of parents as sponsors is an American addition. The 1928 rite draws directly from Cranmer's 1549 form, which consolidated multiple Sarum baptismal rites into one vernacular service.
 category: sacrament
 subcategory: baptism
 page_ref: "273"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - sacrament
   - baptism
@@ -66,30 +63,24 @@ tags:
   - conditional-baptism
   - private-baptism
   - adult-baptism
-
 active_in_edition: true
-modern_equivalent: "Holy Baptism — BCP 1979, pp. 299–314"
-
+modern_equivalent: Holy Baptism — BCP 1979, pp. 299–314
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/baptism-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/Baptism_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Baptism_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Hyphenation artifact corrected: kingdom. Leading spaces before rubrics tidied. Verify all variable insertions (this Child / this Person / he) against hardcopy — these are intentional BCP rubric conventions, not errors."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Hyphenation artifact corrected: kingdom. Leading spaces before rubrics tidied."
 ---
 ## The Ministration of Holy Baptism
 
