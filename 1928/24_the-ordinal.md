@@ -1,61 +1,58 @@
 ---
-title: "The Form and Manner of Making, Ordaining, and Consecrating Bishops, Priests, and Deacons"
+title: The Form and Manner of Making, Ordaining, and Consecrating Bishops, Priests, and Deacons
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Ordinal_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Ordinal_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1550"
   carried_forward:
     - edition: "1550"
       ref: "[[../1550/ordinal]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/ordinal]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/ordinal]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/ordinal]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[ordinal]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/ordinal]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
+  dropped_in:
   notes: "The Ordinal predates the Book of Common Prayer itself by one year — Cranmer produced the first English ordination rites in 1550 under Edward VI. The American church adopted its revised Ordinal in General Convention, September 1792. The Preface — from the Apostles' time there have been these Orders of Ministers — is the foundational Anglican statement on apostolic succession and historic episcopate. Contains three complete rites: Making of Deacons, Ordering of Priests, Consecration of Bishops. The Veni, Creator Spiritus (Come, Holy Ghost, our souls inspire) is appointed at the ordination of priests and consecration of bishops — Cranmer's translation of the 9th-century Latin hymn, carried unchanged through every revision. The charge to bishops (Be to the flock of Christ a shepherd, not a wolf) is among the most striking pastoral charges in the entire prayer book tradition."
-
 category: episcopal-office
 subcategory: ordinal
 page_ref: "529"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - episcopal-office
   - ordinal
@@ -66,30 +63,24 @@ tags:
   - apostolic-succession
   - veni-creator-spiritus
   - historic-episcopate
-
 active_in_edition: true
-modern_equivalent: "Ordination of Bishops, Priests, and Deacons — BCP 1979, pp. 510–555"
-
+modern_equivalent: Ordination of Bishops, Priests, and Deacons — BCP 1979, pp. 510–555
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/ordinal-hymnody]]"
   notes: "Veni Creator Spiritus appointed at ordination of priests and consecration of bishops. Hymnal 1982 #503, #504."
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/Ordinal_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Ordinal_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Hyphenation artifacts corrected: conversation, themselves, Impediment, innocency (x2), knowledge, Government, determined. Em dash artifacts (---) corrected to — throughout. Trim Consecration of a Church and Institution of Ministers sections — already handled as files 24 and 25. Verify all three ordination rites against hardcopy."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Hyphenation artifacts corrected: conversation, themselves, Impediment, innocency (x2), knowledge, Government, determined. Em dash artifacts (---) corrected to — throughout."
 ---
 ### The Form and Manner of
 
