@@ -1,49 +1,46 @@
 ---
 title: Offices of Instruction
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Instruction_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Instruction_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1892"
   carried_forward:
     - edition: "1892"
       ref: "[[../1892/15_offices-of-instruction]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[15_offices-of-instruction]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/15_offices-of-instruction]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Offices of Instruction are a distinctly American development, providing three structured catechetical sessions for confirmation candidates. They draw on the traditional catechism format of question and answer, covering Baptismal vows, the Apostles' Creed, the Ten Commandments, the Lord's Prayer, and the two Sacraments. The three-office structure ensures systematic coverage of the core formational content before confirmation. Not present in the 1662 or earlier English editions."
-
+  dropped_in:
+  notes: The Offices of Instruction are a distinctly American development, providing three structured catechetical sessions for confirmation candidates. They draw on the traditional catechism format of question and answer, covering Baptismal vows, the Apostles' Creed, the Ten Commandments, the Lord's Prayer, and the two Sacraments. The three-office structure ensures systematic coverage of the core formational content before confirmation. Not present in the 1662 or earlier English editions.
 category: catechesis
 subcategory: offices-of-instruction
 page_ref: "283"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - catechesis
   - instruction
@@ -53,30 +50,24 @@ tags:
   - lords-prayer
   - sacraments
   - baptismal-vows
-
 active_in_edition: true
-modern_equivalent: "A Catechism — BCP 1979, pp. 845–862"
-
+modern_equivalent: A Catechism — BCP 1979, pp. 845–862
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Split from combined Instruction and Confirmation file. Contains First, Second, and Third Offices. Missing opening asterisk corrected on first Answer rubric."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: Split from combined Instruction and Confirmation file. Contains First, Second, and Third Offices. Missing opening asterisk corrected on first Answer rubric.
 ---
 ### Offices of Instruction
 
