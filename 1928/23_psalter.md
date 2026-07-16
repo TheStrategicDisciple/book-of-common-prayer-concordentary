@@ -2623,8 +2623,6 @@ review_notes: First known complete structured Markdown Coverdale Psalter.
 ### The Twenty-fifth Day
 #### Morning Prayer
 
-##### Psalm 119 (continued)
-
 ###### V. Legem pone.
 
 **33** Teach me, O LORD, the way of thy statutes, \* and I shall keep it unto the end.  
