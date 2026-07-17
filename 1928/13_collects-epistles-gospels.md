@@ -1595,6 +1595,7 @@ Glory be to the Father, and to the Son, \* and to the Holy Ghost;
 As it was in the beginning, is now, and ever shall be, \* world without end. Amen.
 
 *The Collect.*
+
 **O** MOST merciful Father, who hast blessed the labours of the husbandman in the returns of the fruits of the earth; We give thee humble and hearty thanks for this thy bounty; beseeching thee to continue thy loving-kindness to us, that our land may still yield her increase, to thy glory and our comfort; through Jesus Christ our Lord. *Amen*.
 
 *The Epistle.* St. James i. 16.
