@@ -438,4 +438,4 @@ review_notes: "revision: \"1945\"\r
 
 ---
 
-<!-- ⚠️ CONCORDENTARY NOTE: Verify all lesson references against hardcopy BCP 1928. Scripture references use BCP notation: v. = verse, end = to chapter end. First complete digital edition of this table. Charles Wohlers omitted entirely from his digitization. -->
+

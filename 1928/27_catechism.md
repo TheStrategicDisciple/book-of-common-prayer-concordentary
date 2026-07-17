@@ -1,61 +1,58 @@
 ---
 title: A Catechism
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Catechism_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Catechism_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/27_catechism]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/27_catechism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/Catechism_1662.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/Catechism_1662.htm
+      status: planned
     - edition: "1789"
       ref: "[[../1789/27_catechism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Catechism_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Catechism_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/27_catechism]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Catechism_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Catechism_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[27_catechism]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/27_catechism]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "One of the foundational documents of Anglican formation, present in the BCP since 1549. The structure — Name and Baptism, Apostles' Creed, Ten Commandments, Lord's Prayer, Two Sacraments — defines the core content of Christian formation as Anglicanism understands it. The answer on sacraments — Two only, as generally necessary to salvation — is one of the most theologically precise and identity-defining statements in the entire prayer book, distinguishing Anglican practice from Rome's seven sacraments while affirming the full sacramental reality of Baptism and Eucharist. The duty to neighbour answer remains one of the most complete summaries of Christian ethics in catechetical form."
-
+  dropped_in:
+  notes: One of the foundational documents of Anglican formation, present in the BCP since 1549. The structure — Name and Baptism, Apostles' Creed, Ten Commandments, Lord's Prayer, Two Sacraments — defines the core content of Christian formation as Anglicanism understands it. The answer on sacraments — Two only, as generally necessary to salvation — is one of the most theologically precise and identity-defining statements in the entire prayer book, distinguishing Anglican practice from Rome's seven sacraments while affirming the full sacramental reality of Baptism and Eucharist. The duty to neighbour answer remains one of the most complete summaries of Christian ethics in catechetical form.
 category: catechesis
 subcategory: catechism
 page_ref: "577"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - catechism
   - catechesis
@@ -65,33 +62,26 @@ tags:
   - sacraments
   - baptism
   - confirmation-preparation
-
 active_in_edition: true
-modern_equivalent: "A Catechism — BCP 1979, pp. 845–862"
-
+modern_equivalent: A Catechism — BCP 1979, pp. 845–862
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/Catechism_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/Catechism_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "stedfastly (x2) is authentic BCP spelling — retained. Roman numeral backslash escaping II\\. III\\. etc. is correct Markdown — retained. No artifacts found."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: stedfastly (x2) is authentic BCP spelling — retained. Roman numeral backslash escaping II\. III\. etc. is correct Markdown — retained.
 ---
 ### A Catechism
-
 that is to say, an Instruction,
 to be Learned by Every Person before he
 be brought to be Confirmed

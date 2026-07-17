@@ -1,53 +1,50 @@
 ---
 title: An Office of Institution of Ministers into Parishes or Churches
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/institution_ministers_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/institution_ministers_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/25_institution-of-ministers]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/25_institution-of-ministers]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[25_institution-of-ministers]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/25_institution-of-ministers]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "A distinctly American rite not present in the 1662 BCP, providing the formal legal and liturgical mechanism for a priest to be instituted as Rector of a parish. The Letter of Institution (Sigillum Signat) is a legal document granting sacerdotal authority, presented and read as part of the rite. The transfer of keys from Senior Warden to new Rector is a striking ceremonial act — civil and ecclesiastical authority meeting at the church door. The newly instituted minister's personal prayer of dedication (O LORD my God, I am not worthy) is unusual in the BCP — one of very few prayers written in the first person singular for a minister to pray on his own behalf."
-
+  dropped_in:
+  notes: A distinctly American rite not present in the 1662 BCP, providing the formal legal and liturgical mechanism for a priest to be instituted as Rector of a parish. The Letter of Institution (Sigillum Signat) is a legal document granting sacerdotal authority, presented and read as part of the rite. The transfer of keys from Senior Warden to new Rector is a striking ceremonial act — civil and ecclesiastical authority meeting at the church door. The newly instituted minister's personal prayer of dedication (O LORD my God, I am not worthy) is unusual in the BCP — one of very few prayers written in the first person singular for a minister to pray on his own behalf.
 category: episcopal-office
 subcategory: institution-of-ministers
 page_ref: "569"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - episcopal-office
   - institution
@@ -56,29 +53,23 @@ tags:
   - bishop
   - letter-of-institution
   - keys
-
 active_in_edition: true
-modern_equivalent: "Celebration of a New Ministry — BCP 1979, pp. 559–565"
-
+modern_equivalent: Celebration of a New Ministry — BCP 1979, pp. 559–565
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/institution_ministers_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/institution_ministers_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
 review_notes: "Hyphenation artifacts corrected: confide, enlighten (x2), together, goodness, administer, governance. Rubric asterisk position corrected. endue is authentic BCP spelling — retained."
 ---
 ### An Office of Institution of Ministers

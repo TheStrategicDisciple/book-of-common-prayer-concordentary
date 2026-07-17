@@ -1,57 +1,54 @@
 ---
 title: Prayers and Thanksgivings
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Prayers_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Prayers_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1662"
   carried_forward:
     - edition: "1662"
       ref: "[[../1662/03_prayers-and-thanksgivings]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/03_prayers-and-thanksgivings]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/03_prayers-and-thanksgivings]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[03_prayers-and-thanksgivings]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/03_prayers-and-thanksgivings]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "A mixed collection. Several prayers trace to the 1662 BCP. Others are American additions — notably the prayers for Congress, State Legislature, Courts of Justice, Army, Navy, and Memorial Days, which reflect the distinct civic theology of the American church. The 1928 revision expanded and reorganized this section considerably from the 1892 BCP."
-
+  dropped_in:
+  notes: A mixed collection. Several prayers trace to the 1662 BCP. Others are American additions — notably the prayers for Congress, State Legislature, Courts of Justice, Army, Navy, and Memorial Days, which reflect the distinct civic theology of the American church. The 1928 revision expanded and reorganized this section considerably from the 1892 BCP.
 category: prayers
 subcategory: occasional-prayers
 page_ref: "35"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - prayers
   - thanksgivings
@@ -63,33 +60,27 @@ tags:
   - sickness
   - weather
   - missions
-
 active_in_edition: true
-modern_equivalent: "Various — scattered through BCP 1979 pp. 814–841"
-
+modern_equivalent: Various — scattered through BCP 1979 pp. 814–841
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
-  companion: null
+  companion:
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Note: this section contains prayers of mixed provenance. Individual prayers within this file warrant their own atomic provenance notes when the atomic pass is completed. Two drop cap formatting issues corrected: DIRECT and ALMIGHTY. One missing italic Amen corrected."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes:
 ---
 
-### Prayers and Thanksgivings
+## Prayers and Thanksgivings
 
 #### **PRAYERS.**
 ¶ *To be used before the Prayer for all Conditions of Men, or, when that is not said, before the final Prayer of Thanksgiving or of Blessing, or before the Grace.*
@@ -248,13 +239,10 @@ And now, brethren, summing up all our petitions, and all our thanksgivings, in t
 ¶ *To be used after the General Thanksgiving, or, when that is not said, before the final Prayer of Blessing or the Benediction.*
 
 *A Thanksgiving to Almighty God for the Fruits of the Earth and all the other Blessings of his merciful Providence.*
-
 **M**OST gracious God, by whose knowledge the depths are broken up, and the clouds drop down the dew; We yield thee unfeigned thanks and praise for the return of seedtime and harvest, for the increase of the ground and the gathering in of the fruits thereof, and for all the other blessings of thy merciful providence bestowed upon this nation and people. And, we beseech thee, give us a just sense of these great mercies; such as may appear in our lives by an humble, holy, and obedient walking before thee all our days; through Jesus Christ our Lord, to whom, with thee and the Holy Ghost, be all glory and honour, world without end. *Amen.*
 
 *The Thanksgiving of Women after Child-birth.*
-
 ¶ *To be said when any Woman, being present in Church, shall have desired to return thanks to Almighty God for her safe deliverance.*
-
 **O** ALMIGHTY God, we give thee humble thanks for that thou hast been graciously pleased to preserve, through the great pain and peril of child-birth, *this woman*, thy *servant*, who *desireth* now to offer *her* praises and thanksgivings unto thee. Grant, we beseech thee, most merciful Father, that *she*, through thy help, may faithfully live according to thy will in this life, and also may be *partaker* of everlasting glory in the life to come; through Jesus Christ our Lord. *Amen.*
 
 #### *For Rain.*

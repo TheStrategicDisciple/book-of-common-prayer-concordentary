@@ -1,53 +1,50 @@
 ---
 title: At the Burial of a Child
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/22_burial-of-child]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/22_burial-of-child]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[22_burial-of-child]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/22_burial-of-child]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "A separate and distinct rite for the burial of children, absent from the 1662 BCP but present in American editions from 1789 onward. The psalm selection is deliberate and pastoral — Psalm 23 (the LORD is my shepherd) and Psalm 121 (I will lift up mine eyes) chosen for comfort rather than penitence. The Matthew 18 lesson (Suffer the little children) anchors the rite theologically. The committal replaces the adult phrase with the Aaronic blessing applied personally to the child. The rite reflects the American church's pastoral sensitivity to the grief of parents — one of the most beautiful and tender offices in the entire prayer book."
-
+  dropped_in:
+  notes: A separate and distinct rite for the burial of children, absent from the 1662 BCP but present in American editions from 1789 onward. The psalm selection is deliberate and pastoral — Psalm 23 (the LORD is my shepherd) and Psalm 121 (I will lift up mine eyes) chosen for comfort rather than penitence. The Matthew 18 lesson (Suffer the little children) anchors the rite theologically. The committal replaces the adult phrase with the Aaronic blessing applied personally to the child. The rite reflects the American church's pastoral sensitivity to the grief of parents — one of the most beautiful and tender offices in the entire prayer book.
 category: pastoral-office
 subcategory: burial-of-child
 page_ref: "338"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - pastoral-office
   - burial
@@ -57,30 +54,24 @@ tags:
   - matthew-18
   - committal
   - resurrection
-
 active_in_edition: true
-modern_equivalent: "Burial of the Dead Rite I — BCP 1979, pp. 469–489"
-
+modern_equivalent: Burial of the Dead Rite I — BCP 1979, pp. 469–489
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/burial-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/burial_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/burial_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Three artifacts corrected: stray asterisk in Kyrie, formatting typo in committal (give *him* peace), forevermore hyphenation. Verify committal sentence and Matthew 18 lesson against hardcopy."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes:
 ---
 ### AT THE BURIAL OF A CHILD.
 ¶ *The Minister, meeting the Body, and going before it, either into the Church or towards the Grave, shall say,*
@@ -94,8 +85,7 @@ review_notes: "Three artifacts corrected: stray asterisk in Kyrie, formatting ty
 
 ¶ *When they are come into the Church, shall be said the following Psalms; and at the end of each Psalm shall be said the Gloria Patri.*
 
-### *Dominus regit me.* Psalm xxiii.
-
+#### *Dominus regit me.* Psalm xxiii.
 **T**HE LORD is my shepherd; \* therefore can I lack nothing.
 He shall feed me in a green pasture, \* and lead me forth beside the waters of comfort.
 He shall convert my soul, \* and bring me forth in the paths of righteousness for his Name\'s sake.
@@ -103,7 +93,7 @@ Yea, though I walk through the valley of the shadow of death, I will fear no evi
 Thou shalt prepare a table before me in the presence of them that trouble me; \* thou hast anointed my head with oil, and my cup shall be full.
 Surely thy loving-kindness and mercy shall follow me all the days of my life; \* and I will dwell in the house of the LORD for ever.
 
-### *Levavi oculos.* Psalm cxxi.
+#### *Levavi oculos.* Psalm cxxi.
 
 **I** WILL lift up mine eyes unto the hills; \* from whence cometh my help?
 My help cometh even from the LORD, \* who hath made heaven and earth.
@@ -129,7 +119,6 @@ Lord, have mercy upon us.
 Lord, have mercy upon us.
 
 ¶ *Then shall be said by the Minister and People,*
-
 **O**UR Father, who art in heaven, Hallowed be thy Name. Thy kingdom come. Thy will be done, On earth as it is in heaven. Give us this day our daily bread. And forgive us our trespasses, As we forgive those who trespass against us. And lead us not into temptation, But deliver us from evil. Amen.
 
 *Minister.* Blessed are the pure in heart;
@@ -140,7 +129,6 @@ Lord, have mercy upon us.
 *Answer.* And let our cry come unto thee.
 
 ¶ *Here shall be said the following Prayers, or other fitting Prayers from this Book.*
-
 **O** MERCIFUL Father, whose face the angels of thy little ones do always behold in heaven; Grant us stedfastly to believe that this thy child hath been taken into the safe keeping of thine eternal love; through Jesus Christ our Lord. *Amen.*
 
 **A**LMIGHTY and merciful Father, who dost grant to children an abundant entrance into thy kingdom; Grant us grace so to conform our lives to their innocency and perfect faith, that at length, united with them, we may stand in thy presence in fulness of joy; through Jesus Christ our Lord. *Amen.*
@@ -148,26 +136,21 @@ Lord, have mercy upon us.
 **T**HE grace of our Lord Jesus Christ, and the love of God, and the fellowship of the Holy Ghost, be with us all evermore. *Amen.*
 
 *¶ When they are come to the Grave shall be said or sung,*
-
 **J**ESUS saith to his disciples, Ye now therefore have sorrow: but I will see you again, and your heart shall rejoice, and your joy no man taketh from you.
 
 *¶ While the earth is being cast upon the Body, the Minister shall say,*
-
 **I**N sure and certain hope of the Resurrection to eternal life through our Lord Jesus Christ, we commit the body of this child to the ground. The LORD bless *him* and keep *him,* the LORD make his face to shine upon *him* and be gracious unto *him,* the LORD lift up his countenance upon *him,* and give *him* peace, both now and evermore.
 
 *¶ Then shall be said or sung,*
-
 **T**HEREFORE are they before the throne of God, and serve him day and night in his temple: and he that sitteth on the throne shall dwell among them.
 They shall hunger no more, neither thirst any more; neither shall the sun light on them, nor any heat.
 For the Lamb which is in the midst of the throne shall feed them, and shall lead them unto living fountains of waters: and God shall wipe away all tears from their eyes.
 
 *¶ Then shall the Minister say,*
-
 The Lord be with you.
 *Answer*. And with thy spirit.
 
 Let us pray.
-
 **O** GOD, whose most dear Son did take little children into his arms and bless them; Give us grace, we beseech thee, to entrust the soul of this child to thy neverfailing care and love, and bring us all to thy heavenly kingdom; through the same thy Son, Jesus Christ our Lord. *Amen.*
 
 **A**LMIGHTY God, Father of mercies and giver of all comfort; Deal graciously, we pray thee, with all those who mourn, that, casting every care on thee, they may know the consolation of thy love; through Jesus Christ our Lord*. Amen.*

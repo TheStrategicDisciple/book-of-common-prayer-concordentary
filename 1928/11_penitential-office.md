@@ -1,53 +1,50 @@
 ---
 title: A Penitential Office for Ash Wednesday
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/Penitential_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs"
+source_url: http://justus.anglican.org/resources/bcp/1928/Penitential_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-23T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-23T00:00:00Z
 provenance:
   first_appeared: "1789"
   carried_forward:
     - edition: "1789"
       ref: "[[../1789/11_penitential-office]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/Penitential_1789.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/Penitential_1789.htm
+      status: planned
     - edition: "1892"
       ref: "[[../1892/11_penitential-office]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/Penitential_1892.htm"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/Penitential_1892.htm
+      status: planned
     - edition: "1928"
       ref: "[[11_penitential-office]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/11_penitential-office]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Penitential Office is the American prayer book's adaptation of the English 1662 Commination service, which itself drew on earlier penitential forms. The American church dropped the Commination's more severe language of cursing and retained the penitential core. The 1928 revision shaped the current form. Centers on Psalm 51 (Miserere mei), the great penitential psalm, appointed here as the anchor of the Ash Wednesday liturgy. The closing Aaronic Blessing (Numbers 6:24-26) is a distinctive touch — ending the penitential office with benediction."
-
+  dropped_in:
+  notes: The Penitential Office is the American prayer book's adaptation of the English 1662 Commination service, which itself drew on earlier penitential forms. The American church dropped the Commination's more severe language of cursing and retained the penitential core. The 1928 revision shaped the current form. Centers on Psalm 51 (Miserere mei), the great penitential psalm, appointed here as the anchor of the Ash Wednesday liturgy. The closing Aaronic Blessing (Numbers 6:24-26) is a distinctive touch — ending the penitential office with benediction.
 category: occasional-office
 subcategory: penitential-office
 page_ref: "60"
 liturgical_season: lent
 liturgical_color: violet
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: "ash-wednesday"
-fast: "ash-wednesday"
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast: ash-wednesday
+fast: ash-wednesday
 tags:
   - penitential
   - ash-wednesday
@@ -56,30 +53,24 @@ tags:
   - miserere
   - confession
   - absolution
-
 active_in_edition: true
-modern_equivalent: "Ash Wednesday — BCP 1979, pp. 264–269"
-
+modern_equivalent: Ash Wednesday — BCP 1979, pp. 264–269
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/ash-wednesday-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/BCP_1928.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefore. Verify blood-guiltiness hyphenation against hardcopy — this is authentic BCP text."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefore."
 ---
 ### A Penitential Office For Ash Wednesday
 
@@ -88,7 +79,6 @@ review_notes: "Three hyphenation artifacts corrected: misdeeds, receive, therefo
 ¶ *The Minister and the People kneeling, then shall be said by them this Psalm following.*
 
 #### *Miserere mei, Deus*. Psalm li.
-
 **H**AVE mercy upon me, O God, after thy great goodness; \* according to the multitude of thy mercies do away mine offences.
 Wash me throughly from my wickedness, \* and cleanse me from my sin.
 For I acknowledge my faults, \* and my sin is ever before me.
@@ -108,7 +98,6 @@ For thou desirest no sacrifice, else would I give it thee; \* but thou delightes
 The sacrifice of God is a troubled spirit: \* a broken and contrite heart, O God, shalt thou not despise.
 Glory be to the Father, and to the Son, \* and to the Holy Ghost;
 As it was in the beginning, is now, and ever shall be, \* world without end. Amen.
-
 ¶*If the Litany hath been already said. the Minister may pass at once to* O Lord, save thy servants; etc.
 
 Lord, have mercy upon us.
@@ -127,17 +116,13 @@ O Lord, hear our prayer.
 *And let our cry come unto thee.*
 
 Let us pray.
-
 **O** LORD, we beseech thee, mercifully hear our prayers, and spare all those who confess their sins unto thee; that they, whose consciences by sin are accused, by thy merciful pardon may be absolved; through Christ our Lord. *Amen*.
 
 **O** MOST mighty God, and merciful Father, who hast compassion upon all men, and who wouldest not the death of a sinner, but rather that he should turn from his sin, and be saved; Mercifully forgive us our trespasses; receive and comfort us, who are grieved and wearied with the burden of our sins. Thy property is always to have mercy; to thee only it appertaineth to forgive sins. Spare us therefore, good Lord, spare thy people, whom thou hast re-deemed; enter not into judgment with thy servants; but so turn thine anger from us, who meekly acknowledge our transgressions, and truly repent us of our faults, and so make haste to help us in this world, that we may ever live with thee in the world to come; through Jesus Christ our Lord. *Amen.*
 
 *¶ Then shall the People say this that followeth, after the Minister.*
-
-TURN thou us, O good Lord, and so shall we be turned. Be favourable, O Lord, Be favourable to thy people, Who turn to thee in weeping, fasting, and praying. For thou art a merciful God, Full of compassion, Long-suffering, and of great pity. Thou sparest when we deserve punishment, And in thy wrath thinkest upon mercy. Spare thy people, good Lord, spare them, And let not thine heritage be brought to confusion. Hear us, O Lord, for thy mercy is great, And after the multitude of thy mercies look upon us; Through the merits and mediation of thy blessed Son, Jesus Christ our Lord. Amen.
+**T**URN thou us, O good Lord, and so shall we be turned. Be favourable, O Lord, Be favourable to thy people, Who turn to thee in weeping, fasting, and praying. For thou art a merciful God, Full of compassion, Long-suffering, and of great pity. Thou sparest when we deserve punishment, And in thy wrath thinkest upon mercy. Spare thy people, good Lord, spare them, And let not thine heritage be brought to confusion. Hear us, O Lord, for thy mercy is great, And after the multitude of thy mercies look upon us; Through the merits and mediation of thy blessed Son, Jesus Christ our Lord. Amen.
 
 *¶ Then the Minister shall say,*
-
-O GOD, whose nature and property is ever to have mercy and to forgive; Receive our humble petitions; and though we be tied and bound with the chain of our sins, yet let the pitifulness of thy great mercy loose us; for the honour of Jesus Christ, our Mediator and Advocate. *Amen*.
-
-THE LORD bless us, and keep us. The LORD make his face to shine upon us, and be gracious unto us. The LORD lift up his countenance upon us, and give us peace, both now and evermore. *Amen*.
+**O** GOD, whose nature and property is ever to have mercy and to forgive; Receive our humble petitions; and though we be tied and bound with the chain of our sins, yet let the pitifulness of thy great mercy loose us; for the honour of Jesus Christ, our Mediator and Advocate. *Amen*.
+**T**HE LORD bless us, and keep us. The LORD make his face to shine upon us, and be gracious unto us. The LORD lift up his countenance upon us, and give us peace, both now and evermore. *Amen*.

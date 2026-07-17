@@ -68,7 +68,7 @@ manuscript_sources: []
 file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: File contains two certificate variants — 1929 Robinson and 1945 Suter. Both retained as historically accurate. TOC wikilinks use original Obsidian naming convention and will need updating to match locked schema filenames as each file is completed.
+review_notes: File contains two certificate variants — 1929 Robinson and 1945 Suter. Both retained as historically accurate from Wholers. TOC wikilinks use original Obsidian naming convention and will need updating to match locked schema filenames as each file is completed.
 ---
 ## THE BOOK OF COMMON PRAYER
 
