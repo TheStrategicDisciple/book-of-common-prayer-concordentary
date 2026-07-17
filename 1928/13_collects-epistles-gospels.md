@@ -1545,12 +1545,15 @@ And one of the elders answered, saying unto me, What are these which are arrayed
 At the Four Seasons.
 
 *The Collect.*
+
 **O** ALMIGHTY God, who hast committed to the hands of men the ministry of reconciliation; We humbly beseech thee, by the inspiration of thy Holy Spirit, to put it into the hearts of many to offer themselves for this ministry; that thereby mankind may be drawn to thy blessed kingdom; through Jesus Christ our Lord. *Amen.*
 
 *For the Epistle.* Acts xiii. 44.
+
 **T**HE next sabbath day came almost the whole city together to hear the word of God. But when the Jews saw the multitudes, they were filled with envy, and spake against those things which were spoken by Paul, contradicting and blaspheming. Then Paul and Barnabas waxed bold, and said, It was necessary that the word of God should first have been spoken to you: but seeing ye put it from you, and judge yourselves unworthy of everlasting life, lo, we turn to the Gentiles. For so hath the Lord commanded us, saying, I have set thee to be a light of the Gentiles, that thou shouldest be for salvation unto the ends of the earth. And when the Gentiles heard this, they were glad, and glorified the word of the Lord: and as many as were ordained to eternal life believed. And the word of the Lord was published throughout all the region.
 
 *The Gospel.* St. Luke iv. 16.
+
 **J**ESUS came to Nazareth, where he had been brought up: and, as his custom was, he went into the synagogue on the sabbath day, and stood up for to read. And there was delivered unto him the book of the prophet Esaias. And when he had opened the book, he found the place where it was written, The Spirit of the Lord is upon me, because he hath anointed me to preach the gospel to the poor; he hath sent me to heal the brokenhearted, to preach deliverance to the captives, and recovering of sight to the blind, to set at liberty them that are bruised, to preach the acceptable year of the Lord. And he closed the book, and he gave it again to the minister, and sat down. And the eyes of all them that were in the synagogue were fastened on him. And he began to say unto them, This day is this scripture fulfilled in your ears.
 
 #### The Rogation Days
@@ -1558,12 +1561,15 @@ At the Four Seasons.
 Being the Three Days before Ascension Day.
 
 *The Collect.*
+
 **A**LMIGHTY God, Lord of heaven and earth; We beseech thee to pour forth thy blessing upon this land, and to give us a fruitful season; that we, constantly receiving thy bounty, may evermore give thanks unto thee in thy holy Church; through Jesus Christ our Lord. *Amen.*
 
 *For the Epistle.* Ezekiel xxxiv. 25.
+
 **I** WILL make with them a covenant of peace, and will cause the evil beasts to cease out of the land: and they shall dwell safely in the wilderness, and sleep in the woods. And I will make them and the places round about my hill a blessing; and I will cause the shower to come down in his season; there shall be showers of blessing. And the tree of the field shall yield her fruit, and the earth shall yield her increase, and they shall be safe in their land, and shall know that I am the LORD, when I have broken the bands of their yoke, and delivered them out of the hand of those that served themselves of them. And they shall no more be a prey to the heathen, neither shall the beast of the land devour them; but they shall dwell safely, and none shall make them afraid. And I will raise up for them a plant of renown, and they shall be no more consumed with hunger in the land, neither bear the shame of the heathen any more. Thus shall they know that I the LORD their God am with them, and that they, even the house of Israel, are my people, saith the Lord God. And ye my flock, the flock of my pasture, are men, and I am your God, saith the Lord God.
 
 *The Gospel.* St. Luke xi. 5.
+
 **J**ESUS said unto them, Which of you shall have a friend, and shall go unto him at midnight, and say unto him, Friend, lend me three loaves; for a friend of mine in his journey is come to me, and I have nothing to set before him? and he from within shall answer and say, Trouble me not: the door is now shut, and my children are with me in bed; I cannot rise and give thee. I say unto you, Though he will not rise and give him, because he is his friend, yet because of his importunity he will rise and give him as many as he needeth. And I say unto you, Ask, and it shall be given you; seek, and ye shall find; knock, and it shall be opened unto you. For every one that asketh receiveth; and he that seeketh findeth; and to him that knocketh it shall be opened. If a son shall ask bread of any of you that is a father, will he give him a stone? or if he ask a fish, will he for a fish give him a serpent? or if he shall ask an egg, will he offer him a scorpion? If ye then, being evil, know how to give good gifts unto your children: how much more shall your heavenly Father give the Holy Spirit to them that ask him?
 
 #### Independence Day.
@@ -1571,17 +1577,21 @@ Being the Three Days before Ascension Day.
 \[July 4.\]
 
 *The Collect.*
+
 **O** ETERNAL God, through whose mighty power our fathers won their liberties of old; Grant, we beseech thee, that we and all the people of this land may have grace to maintain these liberties in righteousness and peace; through Jesus Christ our Lord. *Amen.*
 
 *For the Epistle.* Deuteronomy x. 17.
+
 **T**HE LORD your God is God of gods, and Lord of lords, a great God, a mighty, and a terrible, which regardeth not persons, nor taketh reward: he doth execute the judgment of the fatherless and widow, and loveth the stranger, in giving him food and raiment. Love ye therefore the stranger: for ye were strangers in the land of Egypt. Thou shalt fear the LORD thy God; him shalt thou serve, and to him shalt thou cleave, and swear by his name. He is thy praise, and he is thy God, that hath done for thee these great and terrible things, which thine eyes have seen.
 
 *The Gospel.* St. Matthew v. 43.
+
 **J**ESUS said, Ye have heard that it hath been said, Thou shalt love thy neighbour, and hate thine enemy. But I say unto you, Love your enemies, bless them that curse you, do good to them that hate you, and pray for them which despitefully use you, and persecute you; that ye may be the children of your Father which is in heaven: for he maketh his sun to rise on the evil and on the good, and sendeth rain on the just and on the unjust. For if ye love them which love you, what reward have ye? do not even the publicans the same? And if ye salute your brethren only, what do ye more than others? do not even the publicans so? Be ye therefore perfect, even as your Father which is in heaven is perfect.
 
 #### Thanksgiving Day
 
 *¶ Instead of the Venite, the following shall be said or sung.*
+
 **O** PRAISE the LORD, for it is a good thing to sing praises unto our God; \* yea, a joyful and pleasant thing it is to be thankful.
 The LORD doth build up Jerusalem, \* and gather together the outcasts of Israel.
 He healeth those that are broken in heart, \* and giveth medicine to heal their sickness.
@@ -1599,25 +1609,31 @@ As it was in the beginning, is now, and ever shall be, \* world without end. Ame
 **O** MOST merciful Father, who hast blessed the labours of the husbandman in the returns of the fruits of the earth; We give thee humble and hearty thanks for this thy bounty; beseeching thee to continue thy loving-kindness to us, that our land may still yield her increase, to thy glory and our comfort; through Jesus Christ our Lord. *Amen*.
 
 *The Epistle.* St. James i. 16.
+
 **D**O not err, my beloved brethren. Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning. Of his own will begat he us with the word of truth, that we should be a kind of firstfruits of his creatures. Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath: for the wrath of man worketh not the righteousness of God. Wherefore lay apart all filthiness and superfluity of naughtiness, and receive with meekness the engrafted word, which is able to save your souls. But be ye doers of the word, and not hearers only, deceiving your own selves. For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: for he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was. But whoso looketh into the perfect law of liberty, and continueth therein, he being not a forgetful hearer, but a doer of the work, this man shall be blessed in his deed. If any man among you seem to be religious, and bridleth not his tongue, but deceiveth his own heart, this man\'s religion is vain. Pure religion and undefiled before God and the Father is this, To visit the fatherless and widows in their affliction, and to keep himself unspotted from the world.
 
 *The Gospel.* St. Matthew vi. 25.
+
 **J**ESUS said, Be not anxious for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than food, and the body than raiment? Behold the fowls of the air: for they sow not, neither do they reap, nor gather into barns; yet your heavenly Father feedeth them. Are ye not much better than they? Which of you by being anxious can add one cubit unto the measure of his life? And why are ye anxious for raiment? Consider the lilies of the field, how they grow; they toil not, neither do they spin: and yet I say unto you, That even Solomon in all his glory was not arrayed like one of these. Wherefore, if God so clothe the grass of the field, which today is, and tomorrow is cast into the oven, shall he not much more clothe you, O ye of little faith? Therefore be not anxious, saying, What shall we eat? or, What shall we drink? or, Wherewithal shall we be clothed? (For after all these things do the Gentiles seek:) for your heavenly Father knoweth that ye have need of all these things. But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you. Be not therefore anxious for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof.
 
 #### At a Marriage.
 
 *The Collect.*
+
 **O** ETERNAL God, we humbly beseech thee, favourably to behold these thy servants now (*or* about to be) joined in wedlock according to thy holy ordinance; and grant that they, seeking first thy kingdom and thy righteousness, may obtain the manifold blessings of thy grace; through Jesus Christ our Lord. *Amen*.
 
 *The Epistle.* Ephesians v. 20.
+
 **G**IVE thanks always for all things unto God and the Father in the name of our Lord Jesus Christ; submitting yourselves one to another in the fear of God. Wives, submit yourselves unto your own husbands, as unto the Lord. For the husband is the head of the wife, even as Christ is the head of the church: and he is the saviour of the body. Therefore as the church is subject unto Christ, so let the wives be to their own husbands in every thing. Husbands, love your wives, even as Christ also loved the church, and gave himself for it; that he might sanctify and cleanse it with the washing of water by the word, that he might present it to himself a glorious church, not having spot, or wrinkle, or any such thing; but that it should be holy and without blemish. So ought men to love their wives as their own bodies. He that loveth his wife loveth himself. For no man ever yet hated his own flesh; but nourisheth and cherisheth it, even as the Lord the church: for we are members of his body, of his flesh, and of his bones. For this cause shall a man leave his father and mother, and shall be joined unto his wife, and they two shall be one flesh. This is a great mystery: but I speak concerning Christ and the church. Nevertheless let every one of you in particular so love his wife even as himself; and the wife see that she reverence her husband.
 
 *The Gospel.* St. Matthew xix. 4.
+
 **J**ESUS answered and said unto them, Have ye not read, that he which made them at the beginning made them male and female, and said, For this cause shall a man leave father and mother, and shall cleave to his wife: and they twain shall be one flesh? Wherefore they are no more twain, but one flesh. What therefore God hath joined together, let not man put asunder.
 
 #### At the Burial of the Dead.
 
 *The Collect.*
+
 **O** ETERNAL Lord God, who holdest all souls in life; Vouchsafe, we beseech thee, to thy whole Church in paradise and on earth, thy light and thy peace; and grant that we, following the good examples of those who have served thee here and are now at rest, may at the last enter with them into thine unending joy; through Jesus Christ our Lord. *Amen*.
 
 *¶ Or this.*
@@ -1625,9 +1641,11 @@ As it was in the beginning, is now, and ever shall be, \* world without end. Ame
 **O** GOD, whose mercies cannot be numbered; Accept our prayers on behalf of the soul of thy servant departed, and grant him an entrance into the land of light and joy, in the fellowship of thy saints; through Jesus Christ our Lord. *Amen.*
 
 *The Epistle.* 1 Thessalonians iv. 13.
+
 **I** WOULD not have you to be ignorant, brethren, concerning them which are asleep, that ye sorrow not, even as others which have no hope. For if we believe that Jesus died and rose again, even so them also which sleep in Jesus will God bring with him. For this we say unto you by the word of the Lord, that we which are alive and remain unto the coming of the Lord shall not prevent them which are asleep. For the Lord himself shall descend from heaven with a shout, with the voice of the archangel, and with the trump of God: and the dead in Christ shall rise first: then we which are alive and remain shall be caught up together with them in the clouds, to meet the Lord in the air: and so shall we ever be with the Lord. Wherefore comfort one another with these words.
 
 *The Gospel.* St. John vi. 37.
+
 **J**ESUS said unto them, All that the Father giveth me shall come to me; and him that cometh to me I will in no wise cast out. For I came down from heaven, not to do mine own will, but the will of him that sent me. And this is the Father's will which hath sent me, that of all which he hath given me I should lose nothing, but should raise it up again at the last day. And this is the will of him that sent me, that every one which seeth the Son, and believeth on him, may have everlasting life: and I will raise him up at the last day.
 
 
