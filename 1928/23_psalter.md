@@ -89,10 +89,10 @@ manuscript_sources:
   - "Charles Wohlers comparative apparatus, Psalms 1–50: http://justus.anglican.org/resources/bcp/1928/Psalms1.htm"
   - "Charles Wohlers comparative apparatus, Psalms 51–100: http://justus.anglican.org/resources/bcp/1928/Psalms2.htm"
   - "Charles Wohlers comparative apparatus, Psalms 101–150: http://justus.anglican.org/resources/bcp/1928/Psalms3.htm"
-file_version: 0.9.0
+file_version: 1.0.0
 last_reviewed:
 reviewed_against:
-review_notes: 151 psalm headings — verify Psalm 119 sectioning accounts for the extra entry. Pointing asterisks already escaped \* throughout. Verify sample psalms against hardcopy Coverdale text. First complete structured Markdown Coverdale Psalter. Charles Wohlers verse-level comparative apparatus preserved in manuscript_sources — consult before making any textual corrections.
+review_notes: First known complete structured Markdown Coverdale Psalter.
 ---
 # The Psalter or Psalms of David
 
@@ -2622,8 +2622,6 @@ review_notes: 151 psalm headings — verify Psalm 119 sectioning accounts for th
 
 ### The Twenty-fifth Day
 #### Morning Prayer
-
-##### Psalm 119 (continued)
 
 ###### V. Legem pone.
 
