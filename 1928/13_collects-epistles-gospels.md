@@ -1,61 +1,58 @@
 ---
-title: "The Collects, Epistles, and Gospels"
+title: The Collects, Epistles, and Gospels
 edition: "1928"
-revision: null
+revision:
 tradition: PECUSA
 collection: BCP 1928
-
-source_url: "http://justus.anglican.org/resources/bcp/1928/CollectsEpistlesGospels_1928.htm"
-transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
-transcriber: "Charles Wohlers, Satucket Software"
-markdown_curation: "Alex Nutting, Liturgic Labs Studio"
+source_url: http://justus.anglican.org/resources/bcp/1928/CollectsEpistlesGospels_1928.htm
+transcriber_original: John Goodwin, Michael Bushnell, and others — ASCII, 1993
+transcriber: Charles Wohlers, Satucket Software
+markdown_curation: Alex Nutting, Liturgic Labs Studio
 license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
-source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
-converted_at_utc: "2026-05-26T00:00:00Z"
-
+license_url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+source_terms: Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software
+converted_at_utc: 2026-05-26T00:00:00Z
 provenance:
   first_appeared: "1549"
   carried_forward:
     - edition: "1549"
       ref: "[[../1549/13_collects-epistles-gospels]]"
-      ref_interim: null
-      status: "planned"
+      ref_interim:
+      status: planned
     - edition: "1662"
       ref: "[[../1662/13_collects-epistles-gospels]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1662/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1662/
+      status: planned
     - edition: "1789"
       ref: "[[../1789/13_collects-epistles-gospels]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1789/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1789/
+      status: planned
     - edition: "1892"
       ref: "[[../1892/13_collects-epistles-gospels]]"
-      ref_interim: "http://justus.anglican.org/resources/bcp/1892/"
-      status: "planned"
+      ref_interim: http://justus.anglican.org/resources/bcp/1892/
+      status: planned
     - edition: "1928"
       ref: "[[13_collects-epistles-gospels]]"
-      ref_interim: null
-      status: "complete"
+      ref_interim:
+      status: complete
     - edition: "1979"
       ref: "[[../1979/13_collects-epistles-gospels]]"
-      ref_interim: null
-      status: "pending-copyright"
+      ref_interim:
+      status: pending-copyright
   modified_in: "1928"
-  dropped_in: null
-  notes: "The Collects, Epistles, and Gospels constitute the largest single section of the 1928 BCP, covering the complete Proper for every Sunday and feast day across the liturgical year. The collects are the distilled theological inheritance of the Western church — Cranmer translated the majority from Latin sarum sources, compressing centuries of liturgical tradition into single-sentence prayers of remarkable precision. Charles Wohlers produced a detailed four-part comparative apparatus documenting changes between the 1789, 1892, and 1928 editions — including the addition of ADVENT SEASON and CHRISTMASTIDE as seasonal headings in 1928, the addition of A Saint's Day propers in 1928, and numerous minor textual revisions. That apparatus is preserved at justus.anglican.org and referenced in critical_notes_url below."
-
+  dropped_in:
+  notes: The Collects, Epistles, and Gospels constitute the largest single section of the 1928 BCP, covering the complete Proper for every Sunday and feast day across the liturgical year. The collects are the distilled theological inheritance of the Western church — Cranmer translated the majority from Latin sarum sources, compressing centuries of liturgical tradition into single-sentence prayers of remarkable precision. Charles Wohlers produced a detailed four-part comparative apparatus documenting changes between the 1789, 1892, and 1928 editions — including the addition of ADVENT SEASON and CHRISTMASTIDE as seasonal headings in 1928, the addition of A Saint's Day propers in 1928, and numerous minor textual revisions. That apparatus is preserved at justus.anglican.org and referenced in critical_notes_url below.
 category: propers
 subcategory: collects-epistles-gospels
 page_ref: "90"
-liturgical_season: null
-liturgical_color: null
-sunday_normalized: null
-sunday_1928: null
-sunday_1979: null
-sunday_1662: null
-feast: null
-fast: null
+liturgical_season:
+liturgical_color:
+sunday_normalized:
+sunday_1928:
+sunday_1979:
+sunday_1662:
+feast:
+fast:
 tags:
   - propers
   - collects
@@ -69,30 +66,24 @@ tags:
   - easter
   - trinity
   - saints-days
-
 active_in_edition: true
-modern_equivalent: "BCP 1979 Collects pp. 159–261 and Eucharistic Lectionary"
-
+modern_equivalent: BCP 1979 Collects pp. 159–261 and Eucharistic Lectionary
 language: en
 language_variant: early-modern
-audio_url: null
-music_notation: null
-
+audio_url:
+music_notation:
 hymnody:
   companion: "[[_hymnody/propers-hymnody]]"
   notes: ""
-
 parallel_editions: []
-superseded_by: null
-supersedes: null
-
-critical_notes_url: "http://justus.anglican.org/resources/bcp/1928/collects_epistles_gospels_1789_1892.htm"
+superseded_by:
+supersedes:
+critical_notes_url: http://justus.anglican.org/resources/bcp/1928/collects_epistles_gospels_1789_1892.htm
 manuscript_sources: []
-
-file_version: 0.9.0
-last_reviewed: null
-reviewed_against: null
-review_notes: "Verify completeness against hardcopy — Epiphany season Sundays (1st–6th), Septuagesima, Sexagesima, Quinquagesima, Sundays after Easter (1st–5th), and Sunday after Ascension require careful checking. ADVENT SEASON and CHRISTMASTIDE headings confirmed as 1928 additions per Charles Wohlers comparative apparatus. Four comparison HTML files available at justus.anglican.org covering 1789–1892–1928 variants."
+file_version: 1.0.0
+last_reviewed:
+reviewed_against:
+review_notes:
 ---
 ### The Collects, Epistles and Gospels
 To be used throughout the Year.
