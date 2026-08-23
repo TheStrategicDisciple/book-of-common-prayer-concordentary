@@ -45,13 +45,13 @@ The form must serve both missions simultaneously.
 
 ## Editions in Scope
 
-| Edition | Tradition | Status |
-|---------|-----------|--------|
-| 1662 | Church of England | Planned |
-| 1789 | PECUSA | Planned |
-| 1892 | PECUSA | Planned |
-| 1928 | PECUSA | In progress — primary build target |
-| 1979 | Episcopal Church | Pending copyright |
+| Edition | Tradition         | Status                             |
+| ------- | ----------------- | ---------------------------------- |
+| 1662    | Church of England | Planned                            |
+| 1789    | PECUSA            | Planned                            |
+| 1892    | PECUSA            | Planned                            |
+| 1928    | PECUSA            | In progress — primary build target |
+| 1979    | Episcopal Church  | Pending copyright                  |
 
 The 1928 is the anchor edition. All schema decisions are made against it first. Every other edition slots into the established structure.
 
