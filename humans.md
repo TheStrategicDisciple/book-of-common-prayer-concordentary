@@ -75,7 +75,7 @@ You — reading this now
 - Plain Markdown
 - Python
 - Git
-- A physical 1892 Book of Common Prayer inscribed *"To Mabel with love, Cat. 9/21/22"*
+- A physical 1892 Book of Common Prayer inscribed *"To Mabel with love, Cat. 9/21/22", 1928, 1945, 1979, and a facsimile copy of the 1700s.*
 - Patience
 
 ---
@@ -101,4 +101,4 @@ That is the standard this project holds itself to.
 
 ---
 
-*Last updated: July 2026*
+*Last updated: August 2026*
