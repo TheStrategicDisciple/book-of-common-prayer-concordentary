@@ -308,14 +308,18 @@
       margin-top: 0.5rem;
     }
 
-    /* Prayer Lookup */
-    .prayer-search {
-      display: flex;
-      gap: 0.75rem;
-      margin-bottom: 2rem;
+    /* Prayer Lookup — accordion */
+    .prayer-search-wrap {
+      margin-bottom: 1.25rem;
     }
 
-    .prayer-search input {
+    .prayer-search-row {
+      display: flex;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .prayer-search-row input {
       flex: 1;
       font-family: var(--serif);
       font-size: 0.95rem;
@@ -327,28 +331,120 @@
       border-radius: 2px;
     }
 
-    .prayer-search input:focus {
-      border-color: var(--accent);
-    }
+    .prayer-search-row input:focus { border-color: var(--accent); }
 
-    .prayer-search button {
+    .prayer-search-row button {
       font-family: var(--sans);
-      font-size: 0.72rem;
+      font-size: 0.7rem;
       font-weight: 500;
       letter-spacing: 0.08em;
       text-transform: uppercase;
       background: var(--accent);
       color: white;
       border: none;
-      padding: 0.6rem 1.2rem;
+      padding: 0.6rem 1rem;
       cursor: pointer;
       border-radius: 2px;
     }
 
-    .prayer-placeholder {
+    .prayer-count {
+      font-family: var(--sans);
+      font-size: 0.72rem;
+      color: var(--ink-light);
+      letter-spacing: 0.04em;
+      min-height: 1.2em;
+    }
+
+    .prayer-section-divider {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      padding: 1.25rem 0 0.5rem;
+      border-bottom: 1px solid var(--rule);
+      margin-bottom: 0.25rem;
+    }
+
+    .prayer-list { list-style: none; }
+
+    .prayer-item {
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .prayer-header {
+      width: 100%;
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      background: none;
+      border: none;
+      padding: 0.85rem 0;
+      cursor: pointer;
+      text-align: left;
+    }
+
+    .prayer-header:hover .prayer-item-title { color: var(--accent); }
+
+    .prayer-item-title {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.4;
+      transition: color 0.12s;
+    }
+
+    .prayer-caret {
+      font-size: 0.75rem;
+      color: var(--ink-light);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .prayer-item.open .prayer-caret { transform: rotate(180deg); }
+
+    .prayer-body {
+      display: none;
+      padding: 0 0 1.25rem;
+    }
+
+    .prayer-item.open .prayer-body { display: block; }
+
+    .prayer-body h1, .prayer-body h2, .prayer-body h3 {
+      font-family: var(--serif);
+      font-weight: normal;
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.5rem;
+    }
+
+    .prayer-body p {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+      line-height: 1.75;
+      margin-bottom: 0.75rem;
+    }
+
+    .prayer-body em {
+      font-style: italic;
+      color: var(--ink-mid);
+    }
+
+    .prayer-body blockquote {
+      border-left: 2px solid var(--rule);
+      padding-left: 1rem;
+      margin: 0.5rem 0;
+    }
+
+    .prayer-loading {
       font-family: var(--serif);
       font-style: italic;
       color: var(--ink-light);
+      padding: 2rem 0;
       font-size: 0.95rem;
     }
 
@@ -640,13 +736,18 @@
 
   <!-- PRAYER LOOKUP -->
   <section class="tab-panel" id="panel-lookup">
-    <div class="prayer-search">
-      <input type="text" id="prayer-query" placeholder="Search by feast, season, or occasion…">
-      <button onclick="prayerSearch()">Search</button>
+    <div class="prayer-search-wrap">
+      <div class="prayer-search-row">
+        <input type="search" id="prayer-query"
+               placeholder="Search by title, occasion, or words from the prayer…"
+               autocomplete="off">
+        <button onclick="clearPrayerSearch()">Clear</button>
+      </div>
+      <p class="prayer-count" id="prayer-count"></p>
     </div>
-    <p class="prayer-placeholder" id="lookup-placeholder">
-      Prayer lookup will search the atomic collect and prayer layers once they are built.
-    </p>
+    <div id="prayer-list-wrap">
+      <p class="prayer-loading" id="prayer-loading">Loading prayers…</p>
+    </div>
   </section>
 
 </main>
@@ -803,20 +904,184 @@
       document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
       document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
       tab.classList.add('active');
-      document.getElementById('panel-' + tab.dataset.panel).classList.add('active');
+      const panelId = 'panel-' + tab.dataset.panel;
+      if (panelId) document.getElementById(panelId).classList.add('active');
+      // Lazy-load prayers on first open of the lookup tab
+      if (tab.dataset.panel === 'lookup' && !prayersLoaded) loadPrayers();
     });
   });
 
-  // ── Prayer search (placeholder) ────────────────────────────────
-  function prayerSearch() {
-    const q = document.getElementById('prayer-query').value.trim();
-    if (!q) return;
-    document.getElementById('lookup-placeholder').textContent =
-      'Search for "' + q + '" — atomic prayer layer coming soon.';
+  // ── Prayer Lookup — accordion + full-text search ──────────────
+  const PRAYER_REPO    = 'TheStrategicDisciple/book-of-common-prayer-concordentary';
+  const PRAYER_API     = `https://api.github.com/repos/${PRAYER_REPO}/contents`;
+  const PRAYER_HEADERS = { headers: { 'Accept': 'application/vnd.github.v3.raw' } };
+
+  // Prayer book order: general → occasional → personal
+  const PRAYER_SECTIONS = [
+    { path: '1928/_atomic/prayers/general',    label: 'General Prayers'    },
+    { path: '1928/_atomic/prayers/occasional', label: 'Occasional Prayers' },
+    { path: '1928/_atomic/prayers/personal',   label: 'Personal Prayers'   },
+  ];
+
+  let prayersLoaded = false;
+  let prayerSearchTimeout = null;
+
+  // ── YAML frontmatter parser (title + body only) ──────────────
+  function parsePrayerMd(md) {
+    if (!md.startsWith('---')) return { title: 'Untitled', body: md };
+    const end = md.indexOf('\n---', 3);
+    if (end === -1)             return { title: 'Untitled', body: md };
+    const yaml = md.slice(3, end);
+    const body = md.slice(end + 4).trimStart();
+
+    const get = field => {
+      const m = yaml.match(new RegExp(`^${field}:\\s*"?([^"\\n]+?)"?\\s*$`, 'm'));
+      return m ? m[1].trim() : '';
+    };
+
+    const title = get('title') || get('first_line') || 'Untitled Prayer';
+    return { title, body };
   }
 
+  // ── Build one accordion item ──────────────────────────────────
+  function buildPrayerItem(title, body) {
+    const li = document.createElement('li');
+    li.className = 'prayer-item';
+
+    // Search text: title + rendered body text (strip HTML tags)
+    const tempDiv  = document.createElement('div');
+    tempDiv.innerHTML = typeof marked !== 'undefined' ? marked.parse(body) : body;
+    const bodyText = tempDiv.textContent || '';
+    li.dataset.searchText = (title + ' ' + bodyText).toLowerCase();
+
+    li.innerHTML = `
+      <button class="prayer-header" onclick="togglePrayer(this)" aria-expanded="false">
+        <span class="prayer-item-title">${title}</span>
+        <span class="prayer-caret" aria-hidden="true">▾</span>
+      </button>
+      <div class="prayer-body" role="region">
+        <div class="md-prayer">${typeof marked !== 'undefined' ? marked.parse(body) : body}</div>
+      </div>`;
+    return li;
+  }
+
+  // ── Accordion toggle ──────────────────────────────────────────
+  function togglePrayer(btn) {
+    const item = btn.closest('.prayer-item');
+    const open = item.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open);
+  }
+
+  // ── Load all prayers from the three atomic subfolders ─────────
+  async function loadPrayers() {
+    if (prayersLoaded) return;
+    const wrap    = document.getElementById('prayer-list-wrap');
+    const loading = document.getElementById('prayer-loading');
+
+    try {
+      // Fetch all three section directory listings in parallel
+      const dirResults = await Promise.all(
+        PRAYER_SECTIONS.map(s =>
+          fetch(`${PRAYER_API}/${s.path}`)
+            .then(r => r.ok ? r.json() : [])
+            .catch(() => [])
+        )
+      );
+
+      // For each section, fetch each file's content
+      const ul = document.createElement('ul');
+      ul.className = 'prayer-list';
+      let totalCount = 0;
+
+      for (let i = 0; i < PRAYER_SECTIONS.length; i++) {
+        const section = PRAYER_SECTIONS[i];
+        const files   = dirResults[i]
+          .filter(f => f.type === 'file' && f.name.endsWith('.md'))
+          .sort((a, b) => a.name.localeCompare(b.name));
+
+        if (!files.length) continue;
+
+        // Section divider
+        const divider = document.createElement('li');
+        divider.className = 'prayer-section-divider';
+        divider.textContent = section.label;
+        ul.appendChild(divider);
+
+        // Fetch all files in this section in parallel
+        const contents = await Promise.all(
+          files.map(f =>
+            fetch(f.url, PRAYER_HEADERS)
+              .then(r => r.ok ? r.text() : null)
+              .catch(() => null)
+          )
+        );
+
+        for (const md of contents) {
+          if (!md) continue;
+          const { title, body } = parsePrayerMd(md);
+          ul.appendChild(buildPrayerItem(title, body));
+          totalCount++;
+        }
+      }
+
+      // Swap loading indicator for the list
+      loading.remove();
+      wrap.appendChild(ul);
+      prayersLoaded = true;
+
+      // Update count
+      const countEl = document.getElementById('prayer-count');
+      if (countEl) countEl.textContent = `${totalCount} prayers`;
+
+      // Apply any search already typed while loading
+      const q = document.getElementById('prayer-query').value.trim();
+      if (q) filterPrayers(q);
+
+    } catch (e) {
+      loading.textContent = 'Could not load prayers. Check connection.';
+      loading.style.color = '#c44';
+    }
+  }
+
+  // ── Real-time search filter ───────────────────────────────────
+  function filterPrayers(q) {
+    const items    = document.querySelectorAll('.prayer-item');
+    const dividers = document.querySelectorAll('.prayer-section-divider');
+    const countEl  = document.getElementById('prayer-count');
+    q = q.toLowerCase().trim();
+    let visible = 0;
+
+    items.forEach(item => {
+      const match = !q || (item.dataset.searchText || '').includes(q);
+      item.style.display = match ? '' : 'none';
+      if (match) visible++;
+    });
+
+    // Hide section dividers during search (searching across all categories)
+    dividers.forEach(d => { d.style.display = q ? 'none' : ''; });
+
+    if (countEl) {
+      countEl.textContent = q
+        ? `${visible} prayer${visible !== 1 ? 's' : ''} found`
+        : `${visible} prayers`;
+    }
+  }
+
+  function clearPrayerSearch() {
+    const input = document.getElementById('prayer-query');
+    input.value = '';
+    filterPrayers('');
+    input.focus();
+  }
+
+  document.getElementById('prayer-query').addEventListener('input', function () {
+    clearTimeout(prayerSearchTimeout);
+    const q = this.value;
+    prayerSearchTimeout = setTimeout(() => filterPrayers(q), 180);
+  });
+
   document.getElementById('prayer-query').addEventListener('keydown', e => {
-    if (e.key === 'Enter') prayerSearch();
+    if (e.key === 'Escape') clearPrayerSearch();
   });
 
   // ── Init ───────────────────────────────────────────────────────
