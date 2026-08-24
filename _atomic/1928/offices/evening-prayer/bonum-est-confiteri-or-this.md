@@ -1,0 +1,67 @@
+---
+title: "Bonum est confiteri (Or This)"
+edition: "1928"
+tradition: "PECUSA"
+collection: "BCP 1928"
+repository: "The Concordentary"
+source_url: "http://justus.anglican.org/resources/bcp/1928/EP_1928.htm"
+transcriber: "Charles Wohlers, Satucket Software"
+markdown_curation: "Alex Nutting, Liturgic Labs"
+license: "CC BY-NC-SA 4.0"
+license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+source_terms: "Redistribution permitted for non-commercial use with header intact — Charles Wohlers, Satucket Software"
+converted_at_utc: "2026-08-22T00:00:00Z"
+first_line: "It is a good thing to give thanks unto the LORD"
+provenance:
+  first_appeared: "1549"
+  carried_forward: []
+  modified_in: null
+  dropped_in: null
+  notes: "Psalm 92. Second alternative to Magnificat after First Lesson."
+category: "office"
+subcategory: "evening-prayer"
+concord_id: "canticle.bonum-est-confiteri"
+sunday_normalized: null
+sunday_1928: null
+sunday_1979: null
+sunday_1662: null
+liturgical_season: null
+liturgical_color: null
+feast: null
+fast: null
+topics:
+  - canticle
+  - bonum-est-confiteri
+  - psalm-92
+page_ref: null
+tags:
+  - daily-office
+  - evening-prayer
+  - canticle
+  - bonum-est-confiteri
+  - psalm
+active_in_edition: true
+modern_equivalent: null
+language: "en"
+language_variant: "early-modern"
+reading_level: null
+audio_url: null
+music_notation: null
+parallel_editions: []
+superseded_by: null
+supersedes: null
+critical_notes_url: null
+manuscript_sources: []
+file_version: "0.9.0"
+last_reviewed: null
+reviewed_against: null
+review_notes: ""
+---
+¶ *Or this.*
+
+#### *Bonum est confiteri*. Psalm xcii.
+
+**I**T is a good thing to give thanks unto the LORD, \* and to sing praises unto thy Name, O Most Highest;
+To tell of thy loving-kindness early in the morning, \* and of thy truth in the night season;
+Upon an instrument of ten strings, and upon the lute; \* upon a loud instrument, and upon the harp.
+For thou, LORD, hast made me glad through thy works; \* and I will rejoice in giving praise for the operations of thy hands.
