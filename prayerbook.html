@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Book of Common Prayer — The Concordentary</title>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #1a1a1a;
+      --ink-mid: #4a4a4a;
+      --ink-light: #8a8a8a;
+      --page: #fafafa;
+      --rule: #e4e4e4;
+      --accent: #4a7c4e;
+      --accent-pale: rgba(74,124,78,0.08);
+      --sans: 'Inter', system-ui, sans-serif;
+      --serif: 'IM Fell English', Georgia, serif;
+      --sidebar-w: 240px;
+      --header-h: 0px; /* set by JS after render */
+    }
+
+    html { font-size: 16px; }
+
+    body {
+      background: var(--page);
+      color: var(--ink);
+      font-family: var(--sans);
+      font-weight: 300;
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    .site-header {
+      max-width: 100%;
+      padding: 2rem 1.5rem 0;
+      border-bottom: 1px solid var(--rule);
+      background: var(--page);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .header-inner {
+      max-width: calc(var(--sidebar-w) + 720px + 3rem);
+      margin: 0 auto;
+    }
+
+    .header-top-row {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .site-wordmark {
+      font-family: var(--serif);
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-bottom: 0.5rem;
+    }
+
+    .back-link {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      text-decoration: none;
+      white-space: nowrap;
+      padding-top: 0.1rem;
+    }
+
+    .back-link:hover { color: var(--accent); }
+
+    .season-rule {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .season-rule-line {
+      height: 2px;
+      width: 2.5rem;
+      background: var(--accent);
+      flex-shrink: 0;
+      border-radius: 1px;
+    }
+
+    .season-label {
+      font-family: var(--sans);
+      font-size: 0.75rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    /* Edition switcher */
+    .edition-switcher {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      padding-bottom: 0.75rem;
+    }
+
+    .edition-switcher-label {
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin-right: 0.25rem;
+    }
+
+    .edition-btn {
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: none;
+      color: var(--ink-light);
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+      transition: color 0.15s, border-color 0.15s;
+    }
+
+    .edition-btn:hover { color: var(--ink-mid); border-color: var(--ink-mid); }
+
+    .edition-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-pale);
+    }
+
+    .edition-btn.unavailable {
+      color: var(--rule);
+      border-color: var(--rule);
+      cursor: default;
+      pointer-events: none;
+    }
+
+    /* ── Reader layout ── */
+    .reader-layout {
+      display: flex;
+      max-width: calc(var(--sidebar-w) + 720px + 3rem);
+      margin: 0 auto;
+      min-height: calc(100vh - 120px);
+    }
+
+    /* ── Sidebar ── */
+    .reader-sidebar {
+      width: var(--sidebar-w);
+      flex-shrink: 0;
+      border-right: 1px solid var(--rule);
+      padding: 1.5rem 0;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      max-height: 100vh;
+      overflow-y: auto;
+    }
+
+    .sidebar-edition-label {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      padding: 0 1.25rem 0.75rem;
+      display: block;
+    }
+
+    .toc-list {
+      list-style: none;
+    }
+
+    .toc-item a {
+      display: block;
+      padding: 0.4rem 1.25rem;
+      font-family: var(--serif);
+      font-size: 0.875rem;
+      color: var(--ink-light);
+      text-decoration: none;
+      border-left: 2px solid transparent;
+      transition: color 0.12s, border-color 0.12s, background 0.12s;
+      line-height: 1.4;
+    }
+
+    .toc-item a:hover {
+      color: var(--ink-mid);
+      background: rgba(0,0,0,0.03);
+    }
+
+    .toc-item a.active {
+      color: var(--accent);
+      border-left-color: var(--accent);
+      background: var(--accent-pale);
+    }
+
+    .toc-loading {
+      padding: 0.4rem 1.25rem;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.85rem;
+      color: var(--ink-light);
+    }
+
+    /* ── Mobile section select ── */
+    .mobile-select-wrap {
+      display: none;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid var(--rule);
+      background: var(--page);
+    }
+
+    .mobile-select {
+      width: 100%;
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      padding: 0.45rem 0.6rem;
+      border: 1px solid var(--rule);
+      border-radius: 2px;
+      background: white;
+      color: var(--ink);
+    }
+
+    /* ── Content ── */
+    .reader-content {
+      flex: 1;
+      min-width: 0;
+      padding: 2.5rem 2rem 4rem;
+    }
+
+    .content-inner {
+      max-width: 640px;
+    }
+
+    /* Welcome state */
+    .welcome-state h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.5rem, 3.5vw, 2rem);
+      font-weight: normal;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .welcome-state p {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink-light);
+      font-style: italic;
+      margin-bottom: 0.75rem;
+    }
+
+    /* Loading state */
+    .content-loading {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-light);
+      padding: 3rem 0;
+      font-size: 0.95rem;
+    }
+
+    /* Rendered markdown styles */
+    .md-body h1 {
+      font-family: var(--serif);
+      font-size: clamp(1.4rem, 3vw, 1.85rem);
+      font-weight: normal;
+      font-style: italic;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      line-height: 1.3;
+    }
+
+    .md-body h2 {
+      font-family: var(--serif);
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: var(--ink);
+      margin: 2rem 0 0.6rem;
+      line-height: 1.35;
+    }
+
+    .md-body h3 {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin: 1.75rem 0 0.5rem;
+    }
+
+    .md-body p {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.85rem;
+      line-height: 1.75;
+    }
+
+    .md-body em {
+      font-style: italic;
+      color: var(--ink-mid);
+    }
+
+    .md-body strong {
+      font-weight: normal;
+      font-style: normal;
+      color: var(--ink);
+    }
+
+    .md-body hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 2rem 0;
+    }
+
+    .md-body blockquote {
+      border-left: 2px solid var(--rule);
+      padding-left: 1.25rem;
+      margin: 1rem 0;
+    }
+
+    .md-body blockquote p {
+      color: var(--ink-mid);
+      font-style: italic;
+    }
+
+    .md-body ul, .md-body ol {
+      padding-left: 1.5rem;
+      margin-bottom: 0.85rem;
+    }
+
+    .md-body li {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+      margin-bottom: 0.25rem;
+      line-height: 1.7;
+    }
+
+    .md-body a {
+      color: var(--accent);
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
+
+    .md-body table {
+      width: 100%;
+      border-collapse: collapse;
+      font-family: var(--serif);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    .md-body th {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      text-align: left;
+    }
+
+    .md-body td {
+      padding: 0.45rem 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink);
+      vertical-align: top;
+    }
+
+    .md-body code {
+      font-size: 0.82rem;
+      background: rgba(0,0,0,0.05);
+      padding: 0.1rem 0.3rem;
+      border-radius: 2px;
+    }
+
+    /* ── Footer ── */
+    .site-footer {
+      max-width: calc(var(--sidebar-w) + 720px + 3rem);
+      margin: 0 auto 2rem;
+      padding: 1.5rem 1.5rem 0;
+      border-top: 1px solid var(--rule);
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      line-height: 1.6;
+    }
+
+    .site-footer a {
+      color: var(--ink-light);
+      text-decoration: none;
+    }
+
+    .site-footer a:hover { color: var(--accent); }
+
+    /* ── Responsive ── */
+    @media (max-width: 768px) {
+      .reader-sidebar { display: none; }
+      .mobile-select-wrap { display: block; }
+      .reader-content { padding: 1.5rem 1rem 3rem; }
+      .site-header { position: relative; }
+    }
+
+    @media (max-width: 480px) {
+      .back-link span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header" id="site-header">
+  <div class="header-inner">
+    <div class="header-top-row">
+      <div>
+        <p class="site-wordmark">The Concordentary — The Book of Common Prayer</p>
+        <div class="edition-switcher">
+          <span class="edition-switcher-label">Edition</span>
+          <button class="edition-btn unavailable" title="Coming soon">1662</button>
+          <button class="edition-btn unavailable" title="Coming soon">1789</button>
+          <button class="edition-btn unavailable" title="Coming soon">1892</button>
+          <button class="edition-btn active" data-edition="1928" id="btn-1928">1928</button>
+          <button class="edition-btn unavailable" title="Pending copyright">1979</button>
+        </div>
+      </div>
+      <a class="back-link" href="today-updated.html">← <span>Daily Office</span></a>
+    </div>
+    <div class="season-rule">
+      <div class="season-rule-line" id="season-line"></div>
+      <span class="season-label" id="season-label"></span>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile section picker -->
+<div class="mobile-select-wrap">
+  <select class="mobile-select" id="mobile-select">
+    <option value="">Select a section…</option>
+  </select>
+</div>
+
+<div class="reader-layout">
+
+  <!-- Sidebar TOC -->
+  <nav class="reader-sidebar" id="reader-sidebar">
+    <span class="sidebar-edition-label" id="sidebar-edition-label">BCP 1928</span>
+    <ul class="toc-list" id="toc-list">
+      <li><span class="toc-loading">Loading…</span></li>
+    </ul>
+  </nav>
+
+  <!-- Main content -->
+  <main class="reader-content">
+    <div class="content-inner">
+
+      <!-- Welcome state (shown before a section is selected) -->
+      <div class="welcome-state" id="welcome-state">
+        <h1>The Book of Common Prayer</h1>
+        <p>Select a section from the left to begin reading.</p>
+        <p>The full text of the 1928 BCP is available here, rendered from the
+          <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary"
+             target="_blank" rel="noopener" style="color:var(--accent);">Concordentary repository</a>.
+          Additional editions will appear in the switcher above as they come online.
+        </p>
+      </div>
+
+      <!-- Loading indicator -->
+      <p class="content-loading" id="content-loading" style="display:none;">Opening…</p>
+
+      <!-- Rendered markdown -->
+      <div class="md-body" id="md-body" style="display:none;"></div>
+
+    </div>
+  </main>
+
+</div>
+
+<footer class="site-footer">
+  <p>
+    The Concordentary · BCP 1928 (PECUSA) · Engine: computus.py, TABLE I &amp; TABLE II ·
+    <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary"
+       target="_blank" rel="noopener">GitHub</a> · CC BY-NC-SA 4.0
+  </p>
+  <p style="margin-top:0.4rem;">
+    © 2026 Alex Nutting, The Strategic Disciple LLC. All rights reserved. ·
+    Text: © Charles Wohlers, Satucket Software, used with permission under original distribution terms.
+  </p>
+</footer>
+
+<script>
+  const REPO   = 'TheStrategicDisciple/book-of-common-prayer-concordentary';
+  const API    = `https://api.github.com/repos/${REPO}/contents`;
+  const ACCEPT = { headers: { 'Accept': 'application/vnd.github.v3.raw' } };
+
+  let currentEdition = '1928';
+
+  // ── Season colors (matches today-updated.html exactly) ──────────
+  const SEASON_COLORS = {
+    'Advent':         '#5B4B8A',
+    'Christmastide':  '#B8972A',
+    'Epiphany':       '#4a7c4e',
+    'Pre-Lent':       '#4a7c4e',
+    'Lent':           '#5B4B8A',
+    'Holy Week':      '#8B1A1A',
+    'Eastertide':     '#B8972A',
+    'Whitsunday':     '#9B2335',
+    'Whitsuntide':    '#9B2335',
+    'Trinity Season': '#4a7c4e',
+  };
+
+  // ── Parse today.md for season (same logic as today-updated.html) ─
+  function parseSeason(text) {
+    for (const line of text.split('\n')) {
+      if (line.startsWith('## ')) {
+        return line.slice(3).split(' — ')[0].trim();
+      }
+    }
+    return null;
+  }
+
+  // ── Prettify filename → readable title ──────────────────────────
+  function prettify(filename) {
+    return filename
+      .replace(/\.md$/i, '')
+      .replace(/^\d+_/, '')
+      .replace(/-/g, ' ')
+      .replace(/\b\w/g, c => c.toUpperCase())
+      .replace(/\bAnd\b/g, 'and')
+      .replace(/\bOf\b/g, 'of')
+      .replace(/\bThe\b/g, 'the')
+      .replace(/\bFor\b/g, 'for')
+      .replace(/\bTo\b/g, 'to')
+      .replace(/^the /i, s => s.toUpperCase()) // Title case first word always
+      .trim();
+  }
+
+  // ── Strip YAML frontmatter ───────────────────────────────────────
+  function stripFrontmatter(md) {
+    if (!md.startsWith('---')) return md;
+    const end = md.indexOf('\n---', 3);
+    if (end === -1) return md;
+    return md.slice(end + 4).trimStart();
+  }
+
+  // ── Build TOC from GitHub API ────────────────────────────────────
+  async function loadTOC(edition) {
+    const tocList      = document.getElementById('toc-list');
+    const mobileSelect = document.getElementById('mobile-select');
+    const editionLabel = document.getElementById('sidebar-edition-label');
+
+    editionLabel.textContent = `BCP ${edition}`;
+    tocList.innerHTML  = '<li><span class="toc-loading">Loading…</span></li>';
+    mobileSelect.innerHTML = '<option value="">Select a section…</option>';
+
+    try {
+      const res = await fetch(`${API}/${edition}`, ACCEPT);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const files = await res.json();
+
+      const mdFiles = files
+        .filter(f => f.type === 'file' && f.name.toLowerCase().endsWith('.md'))
+        .sort((a, b) => a.name.localeCompare(b.name));
+
+      tocList.innerHTML = '';
+
+      mdFiles.forEach(file => {
+        const sectionId = file.name.replace(/\.md$/i, '');
+        const label     = prettify(file.name);
+
+        // Desktop TOC item
+        const li = document.createElement('li');
+        li.className = 'toc-item';
+        li.dataset.section = sectionId;
+        const a = document.createElement('a');
+        a.href = `?section=${encodeURIComponent(sectionId)}&edition=${edition}`;
+        a.textContent = label;
+        a.addEventListener('click', e => {
+          e.preventDefault();
+          loadSection(sectionId, edition);
+        });
+        li.appendChild(a);
+        tocList.appendChild(li);
+
+        // Mobile option
+        const opt = document.createElement('option');
+        opt.value = sectionId;
+        opt.textContent = label;
+        mobileSelect.appendChild(opt);
+      });
+
+      // Load from URL param if present
+      const params = new URLSearchParams(window.location.search);
+      const sp = params.get('section');
+      if (sp) loadSection(sp, edition);
+
+    } catch (e) {
+      tocList.innerHTML =
+        `<li><span class="toc-loading" style="color:#c44;">Could not load sections. Check connection.</span></li>`;
+    }
+  }
+
+  // ── Load and render a section ────────────────────────────────────
+  async function loadSection(sectionId, edition) {
+    const welcomeState    = document.getElementById('welcome-state');
+    const contentLoading  = document.getElementById('content-loading');
+    const mdBody          = document.getElementById('md-body');
+
+    welcomeState.style.display   = 'none';
+    contentLoading.style.display = 'block';
+    mdBody.style.display         = 'none';
+
+    // Update active TOC link
+    document.querySelectorAll('.toc-item a').forEach(a => a.classList.remove('active'));
+    const activeLink = document.querySelector(`.toc-item[data-section="${CSS.escape(sectionId)}"] a`);
+    if (activeLink) {
+      activeLink.classList.add('active');
+      activeLink.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+    }
+
+    // Update mobile select
+    const mobileSelect = document.getElementById('mobile-select');
+    if (mobileSelect) mobileSelect.value = sectionId;
+
+    // Push URL state
+    const url = new URL(window.location);
+    url.searchParams.set('section', sectionId);
+    url.searchParams.set('edition', edition);
+    window.history.pushState({}, '', url);
+
+    // Update page title
+    const label = prettify(sectionId);
+    document.title = `${label} — The Concordentary`;
+
+    try {
+      const res = await fetch(`${API}/${edition}/${sectionId}.md`, ACCEPT);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const raw = await res.text();
+      const md  = stripFrontmatter(raw);
+
+      contentLoading.style.display = 'none';
+      mdBody.style.display         = 'block';
+      mdBody.innerHTML             = marked.parse(md);
+
+      // Scroll content to top on section change
+      mdBody.parentElement.parentElement.scrollTo({ top: 0 });
+      window.scrollTo({ top: 0 });
+
+    } catch (e) {
+      contentLoading.style.display = 'none';
+      mdBody.style.display         = 'block';
+      mdBody.innerHTML = `<p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);">
+        Could not load this section. It may not yet be in the repository.
+      </p>`;
+    }
+  }
+
+  // ── Mobile select handler ────────────────────────────────────────
+  document.getElementById('mobile-select').addEventListener('change', function () {
+    if (this.value) loadSection(this.value, currentEdition);
+  });
+
+  // ── Browser back/forward ─────────────────────────────────────────
+  window.addEventListener('popstate', () => {
+    const params = new URLSearchParams(window.location.search);
+    const sp = params.get('section');
+    if (sp) loadSection(sp, currentEdition);
+  });
+
+  // ── Load season from today.md ────────────────────────────────────
+  async function loadSeason() {
+    try {
+      const res = await fetch(`${API}/today.md`, ACCEPT);
+      if (!res.ok) return;
+      const text   = await res.text();
+      const season = parseSeason(text);
+      const color  = SEASON_COLORS[season] || '#4a7c4e';
+      document.documentElement.style.setProperty('--accent', color);
+      document.documentElement.style.setProperty('--accent-pale', color + '14');
+      document.getElementById('season-line').style.background  = color;
+      document.getElementById('season-label').textContent = season || '';
+    } catch (e) {
+      // fail silently — default green stays
+    }
+  }
+
+  // ── Edition switcher (future editions) ──────────────────────────
+  document.querySelectorAll('.edition-btn:not(.unavailable)').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const ed = btn.dataset.edition;
+      if (!ed) return;
+      currentEdition = ed;
+      document.querySelectorAll('.edition-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      loadTOC(ed);
+    });
+  });
+
+  // ── Init ─────────────────────────────────────────────────────────
+  (async () => {
+    await loadSeason();
+
+    const params = new URLSearchParams(window.location.search);
+    const edParam = params.get('edition');
+    if (edParam && edParam !== '1979') {
+      currentEdition = edParam;
+      document.querySelectorAll('.edition-btn:not(.unavailable)').forEach(b => {
+        b.classList.toggle('active', b.dataset.edition === edParam);
+      });
+    }
+
+    await loadTOC(currentEdition);
+  })();
+</script>
+
+</body>
+</html>

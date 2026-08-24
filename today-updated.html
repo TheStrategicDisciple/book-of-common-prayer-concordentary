@@ -463,6 +463,8 @@
   <button class="tab" role="tab" data-panel="readings">Readings</button>
   <button class="tab" role="tab" data-panel="hymn">Hymn</button>
   <button class="tab" role="tab" data-panel="lookup">Prayer Lookup</button>
+  <a class="tab" href="prayerbook.html" role="tab" style="text-decoration:none;">Read Full BCP ↗</a>
+  <a class="tab" href="kalendar-kompanion.html" role="tab" style="text-decoration:none;">Kalendar Kompanion ↗</a>
 </nav>
 
 <main class="main">
@@ -495,14 +497,21 @@
       <div class="computus-block">
         <h3>Computus</h3>
         <div class="computus-grid" id="computus-grid"></div>
-        <p style="margin-top:1.25rem;font-size:0.75rem;color:var(--ink-light);line-height:1.6;">
-          Curious how these dates are calculated? The
-          <a href="kalendar-kompanion.html" target="_blank" rel="noopener"
-             style="color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;">Kalendar Kompanion</a>
-          walks through every step — Golden Number, Dominical Letter, Paschal Full Moon,
-          and Easter — using the BCP's own tables, so you can follow the logic behind
-          every date shown here.
-        </p>
+        <a href="kalendar-kompanion.html" target="_blank" rel="noopener"
+           style="display:block;margin-top:1.5rem;padding:1rem 1.25rem;border:1px solid var(--rule);border-left:3px solid var(--accent);text-decoration:none;transition:border-color 0.15s,background 0.15s;"
+           onmouseover="this.style.background='var(--accent-pale)';this.style.borderColor='var(--accent)'"
+           onmouseout="this.style.background='transparent';this.style.borderLeft='3px solid var(--accent)'">
+          <p style="font-family:var(--sans);font-size:0.62rem;font-weight:500;letter-spacing:0.12em;text-transform:uppercase;color:var(--accent);margin-bottom:0.35rem;">
+            Understand the Computus
+          </p>
+          <p style="font-family:var(--serif);font-size:0.95rem;color:var(--ink);margin-bottom:0.25rem;line-height:1.45;">
+            Kalendar Kompanion ↗
+          </p>
+          <p style="font-family:var(--serif);font-size:0.8rem;font-style:italic;color:var(--ink-light);line-height:1.5;margin:0;">
+            Walks through every step — Golden Number, Dominical Letter, Paschal Full Moon,
+            and Easter — using the BCP's own tables.
+          </p>
+        </a>
       </div>
     </div>
   </section>
@@ -519,10 +528,18 @@
     </div>
     <div class="office-section">
       <h3>The Order for Morning Prayer</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
-        Full text available in the 1928 BCP repository —
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;margin-bottom:1rem;">
+        Read the full order in the Prayer Book reader, or view the source file on GitHub.
+      </p>
+      <p style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+        <a href="prayerbook.html?section=07_morning-prayer&edition=1928"
+           style="font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:white;background:var(--accent);padding:0.5rem 1rem;text-decoration:none;border-radius:2px;">
+          Open in Reader →
+        </a>
         <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/07_morning-prayer.md"
-           style="color:var(--accent);" target="_blank" rel="noopener">07_morning-prayer.md</a>
+           style="font-family:var(--sans);font-size:0.7rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;" target="_blank" rel="noopener">
+          07_morning-prayer.md ↗
+        </a>
       </p>
     </div>
   </section>
@@ -549,10 +566,18 @@
     </div>
     <div class="office-section">
       <h3>The Order for Evening Prayer</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
-        Full text available in the 1928 BCP repository —
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;margin-bottom:1rem;">
+        Read the full order in the Prayer Book reader, or view the source file on GitHub.
+      </p>
+      <p style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+        <a href="prayerbook.html?section=08_evening-prayer&edition=1928"
+           style="font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:white;background:var(--accent);padding:0.5rem 1rem;text-decoration:none;border-radius:2px;">
+          Open in Reader →
+        </a>
         <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/08_evening-prayer.md"
-           style="color:var(--accent);" target="_blank" rel="noopener">08_evening-prayer.md</a>
+           style="font-family:var(--sans);font-size:0.7rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;" target="_blank" rel="noopener">
+          08_evening-prayer.md ↗
+        </a>
       </p>
     </div>
   </section>
@@ -571,10 +596,18 @@
   <section class="tab-panel" id="panel-family">
     <div class="office-section">
       <h3>Forms of Prayer to be used in Families</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
-        Full text available in the 1928 BCP repository —
+      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;margin-bottom:1rem;">
+        Read the full text in the Prayer Book reader, or view the source file on GitHub.
+      </p>
+      <p style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
+        <a href="prayerbook.html?section=28_family-prayer&edition=1928"
+           style="font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:white;background:var(--accent);padding:0.5rem 1rem;text-decoration:none;border-radius:2px;">
+          Open in Reader →
+        </a>
         <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/28_family-prayer.md"
-           style="color:var(--accent);" target="_blank" rel="noopener">28_family-prayer.md</a>
+           style="font-family:var(--sans);font-size:0.7rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;" target="_blank" rel="noopener">
+          28_family-prayer.md ↗
+        </a>
       </p>
     </div>
   </section>
