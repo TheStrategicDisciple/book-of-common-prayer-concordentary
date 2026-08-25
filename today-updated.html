@@ -1186,12 +1186,7 @@
   function renderLesson(elId, ref, url) {
     const el = document.getElementById(elId);
     if (!el) return;
-    if (!ref || ref === '—') {
-      el.innerHTML = `Not applicable <a href="#" onclick="switchToTab('readings');return false;"
-        style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;
-               font-family:var(--sans);font-size:0.7em;letter-spacing:0.04em;">see note</a>`;
-      return;
-    }
+    if (!ref || ref === '—') { el.textContent = '—'; return; }
     if (url && url.startsWith('http')) {
       el.innerHTML = `<a href="${url}" target="_blank" rel="noopener"
         style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;">${ref} ↗</a>`;
