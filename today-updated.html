@@ -997,65 +997,54 @@
   }
 
   // ── Load all prayers from the three atomic subfolders ─────────
+  // Known prayer subfolders in display order.
+  // Each is tried; empty/missing folders are silently skipped.
+  // Add new folder names here as editions are added.
+  const PRAYER_SECTIONS_KNOWN = [
+    { name: 'general',       label: 'General Prayers'              },
+    { name: 'civic',         label: 'Prayers for Civic Occasions'  },
+    { name: 'national',      label: 'National Prayers'             },
+    { name: 'occasional',    label: 'Occasional Prayers'           },
+    { name: 'personal',      label: 'Personal Prayers'             },
+    { name: 'thanksgiving',  label: 'Thanksgivings'                },
+    { name: 'thanksgivings', label: 'Thanksgivings'                },
+    { name: 'family',        label: 'Family Prayers'               },
+  ];
+
   async function loadPrayers() {
     if (prayersLoaded) return;
     const wrap    = document.getElementById('prayer-list-wrap');
     const loading = document.getElementById('prayer-loading');
 
     try {
-      // Step 1: discover all subfolders under prayers/
-      const prayersRoot = await fetch(
-        `${PRAYER_API}/1928/_atomic/prayers`
-      ).then(r => r.ok ? r.json() : []).catch(() => []);
-
-      const subfolders = prayersRoot
-        .filter(f => f.type === 'dir')
-        .sort((a, b) => {
-          // Sort by preferred order, unknown folders go to end
-          const ai = PRAYER_SECTION_ORDER.indexOf(a.name.toLowerCase());
-          const bi = PRAYER_SECTION_ORDER.indexOf(b.name.toLowerCase());
-          const an = ai === -1 ? 999 : ai;
-          const bn = bi === -1 ? 999 : bi;
-          return an - bn || a.name.localeCompare(b.name);
-        });
-
-      // Fallback: if root listing fails or has no dirs, use known folders
-      const sections = subfolders.length > 0
-        ? subfolders.map(f => ({ path: `1928/_atomic/prayers/${f.name}`, label: prettifyFolderName(f.name) }))
-        : PRAYER_SECTION_ORDER.slice(0, 3).map(n => ({
-            path: `1928/_atomic/prayers/${n}`,
-            label: prettifyFolderName(n)
-          }));
-
-      // Step 2: fetch directory listings for all sections in parallel
+      // Fetch all known folder listings in parallel — no root discovery call needed.
+      // Folders that don't exist return [] and are skipped.
       const dirResults = await Promise.all(
-        sections.map(s =>
-          fetch(`${PRAYER_API}/${s.path}`)
+        PRAYER_SECTIONS_KNOWN.map(s =>
+          fetch(`${PRAYER_API}/1928/_atomic/prayers/${s.name}`)
             .then(r => r.ok ? r.json() : [])
             .catch(() => [])
         )
       );
 
-      // Step 3: build accordion
       const ul = document.createElement('ul');
       ul.className = 'prayer-list';
       let totalCount = 0;
 
-      for (let i = 0; i < sections.length; i++) {
-        const section = sections[i];
-        const files   = dirResults[i]
+      for (let i = 0; i < PRAYER_SECTIONS_KNOWN.length; i++) {
+        const section = PRAYER_SECTIONS_KNOWN[i];
+        const files   = (Array.isArray(dirResults[i]) ? dirResults[i] : [])
           .filter(f => f.type === 'file' && f.name.endsWith('.md'))
           .sort((a, b) => a.name.localeCompare(b.name));
 
-        if (!files.length) continue;
+        if (!files.length) continue; // folder doesn't exist or is empty — skip silently
 
-        // Section divider
         const divider = document.createElement('li');
         divider.className = 'prayer-section-divider';
         divider.textContent = section.label;
         ul.appendChild(divider);
 
-        // Fetch files via download_url (raw.githubusercontent.com — no API quota)
+        // Fetch file content via download_url (raw.githubusercontent.com — no API quota)
         const contents = await Promise.all(
           files.map(f =>
             fetch(f.download_url || f.url)
