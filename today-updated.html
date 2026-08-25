@@ -525,6 +525,107 @@
       pointer-events: none;
     }
 
+    /* ── Inline office renderer ── */
+    .office-daily-vars {
+      margin-bottom: 1rem;
+    }
+
+    .office-var-row {
+      display: flex;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.4rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+
+    .office-var-row:last-child { border-bottom: none; }
+
+    .office-var-label {
+      font-family: var(--sans);
+      font-size: 0.65rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      width: 5rem;
+      flex-shrink: 0;
+    }
+
+    .office-var-value {
+      font-family: var(--serif);
+      font-size: 0.95rem;
+      color: var(--ink);
+    }
+
+    .office-rule {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1.25rem 0;
+    }
+
+    .office-loading {
+      font-family: var(--serif);
+      font-style: italic;
+      color: var(--ink-light);
+      font-size: 0.9rem;
+    }
+
+    .office-rendered h1 {
+      font-family: var(--serif);
+      font-size: 1.5rem;
+      font-weight: normal;
+      font-style: italic;
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.75rem;
+      border-bottom: 1px solid var(--rule);
+      color: var(--ink);
+    }
+
+    .office-rendered h2 {
+      font-family: var(--serif);
+      font-size: 1.15rem;
+      font-weight: normal;
+      margin: 1.75rem 0 0.5rem;
+      color: var(--ink);
+    }
+
+    .office-rendered h3 {
+      font-family: var(--sans);
+      font-size: 0.62rem;
+      font-weight: 500;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      margin: 1.5rem 0 0.4rem;
+    }
+
+    .office-rendered p {
+      font-family: var(--serif);
+      font-size: 1rem;
+      color: var(--ink);
+      line-height: 1.75;
+      margin-bottom: 0.85rem;
+    }
+
+    .office-rendered em {
+      font-style: italic;
+      color: var(--ink-mid);
+    }
+
+    .office-rendered hr {
+      border: none;
+      border-top: 1px solid var(--rule);
+      margin: 1.5rem 0;
+    }
+
+    .office-rendered blockquote {
+      border-left: 2px solid var(--rule);
+      padding-left: 1rem;
+      margin: 0.75rem 0;
+    }
+
+    .office-rendered blockquote p { color: var(--ink-mid); }
+
   </style>
 </head>
 <body>
@@ -578,14 +679,6 @@
           <h3>Feast</h3>
           <p id="today-feast"></p>
         </div>
-        <div class="today-block">
-          <h3>Psalms — Morning</h3>
-          <p id="psalms-morning"></p>
-        </div>
-        <div class="today-block">
-          <h3>Psalms — Evening</h3>
-          <p id="psalms-evening"></p>
-        </div>
       </div>
 
       <ul class="coming-up-list" id="coming-up-list"></ul>
@@ -614,29 +707,23 @@
 
   <!-- MORNING PRAYER -->
   <section class="tab-panel" id="panel-morning">
-    <div class="office-section">
-      <h3>Appointed Psalms</h3>
-      <div class="psalm-row">
-        <span>Morning</span>
-        <span id="mp-psalms-morning">—</span>
+    <div class="office-section office-daily-vars">
+      <div class="office-var-row">
+        <span class="office-var-label">Psalms</span>
+        <span class="office-var-value" id="mp-psalms-morning">—</span>
       </div>
-      <p class="psalm-source" id="mp-psalm-source"></p>
+      <div class="office-var-row" id="mp-collect-row" style="display:none">
+        <span class="office-var-label">Collect</span>
+        <span class="office-var-value" id="mp-collect-name"></span>
+      </div>
+      <div class="office-var-row">
+        <span class="office-var-label">Lessons</span>
+        <span class="office-var-value" id="mp-lessons">Lectionary integration coming</span>
+      </div>
     </div>
-    <div class="office-section">
-      <h3>The Order for Morning Prayer</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;margin-bottom:1rem;">
-        Read the full order in the Prayer Book reader, or view the source file on GitHub.
-      </p>
-      <p style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
-        <a href="prayerbook.html?section=07_morning-prayer&edition=1928"
-           style="font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:white;background:var(--accent);padding:0.5rem 1rem;text-decoration:none;border-radius:2px;">
-          Open in Reader →
-        </a>
-        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/07_morning-prayer.md"
-           style="font-family:var(--sans);font-size:0.7rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;" target="_blank" rel="noopener">
-          07_morning-prayer.md ↗
-        </a>
-      </p>
+    <div class="office-rule"></div>
+    <div id="mp-office-text" class="office-rendered">
+      <p class="office-loading">Loading Morning Prayer…</p>
     </div>
   </section>
 
@@ -652,29 +739,19 @@
 
   <!-- EVENING PRAYER -->
   <section class="tab-panel" id="panel-evening">
-    <div class="office-section">
-      <h3>Appointed Psalms</h3>
-      <div class="psalm-row">
-        <span>Evening</span>
-        <span id="ep-psalms-evening">—</span>
+    <div class="office-section office-daily-vars">
+      <div class="office-var-row">
+        <span class="office-var-label">Psalms</span>
+        <span class="office-var-value" id="ep-psalms-evening">—</span>
       </div>
-      <p class="psalm-source" id="ep-psalm-source"></p>
+      <div class="office-var-row">
+        <span class="office-var-label">Lessons</span>
+        <span class="office-var-value" id="ep-lessons">Lectionary integration coming</span>
+      </div>
     </div>
-    <div class="office-section">
-      <h3>The Order for Evening Prayer</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;margin-bottom:1rem;">
-        Read the full order in the Prayer Book reader, or view the source file on GitHub.
-      </p>
-      <p style="display:flex;gap:1rem;flex-wrap:wrap;align-items:center;">
-        <a href="prayerbook.html?section=08_evening-prayer&edition=1928"
-           style="font-family:var(--sans);font-size:0.72rem;font-weight:500;letter-spacing:0.07em;text-transform:uppercase;color:white;background:var(--accent);padding:0.5rem 1rem;text-decoration:none;border-radius:2px;">
-          Open in Reader →
-        </a>
-        <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/08_evening-prayer.md"
-           style="font-family:var(--sans);font-size:0.7rem;color:var(--ink-light);text-decoration:underline;text-underline-offset:2px;" target="_blank" rel="noopener">
-          08_evening-prayer.md ↗
-        </a>
-      </p>
+    <div class="office-rule"></div>
+    <div id="ep-office-text" class="office-rendered">
+      <p class="office-loading">Loading Evening Prayer…</p>
     </div>
   </section>
 
@@ -711,14 +788,47 @@
   <!-- READINGS -->
   <section class="tab-panel" id="panel-readings">
     <div class="office-section">
-      <h3>Daily Lectionary</h3>
-      <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);font-size:0.95rem;">
-        Daily readings will appear here once the lectionary atomic layer is complete.
-        <br><br>
-        Source: <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/1928/04_lectionary-christian-year.md"
-           style="color:var(--accent);" target="_blank" rel="noopener">04_lectionary-christian-year.md</a>
-        (1945 revision)
-      </p>
+      <h3>Appointed Psalms</h3>
+      <div class="office-daily-vars">
+        <div class="office-var-row">
+          <span class="office-var-label">Morning</span>
+          <span class="office-var-value" id="readings-psalms-morning">—</span>
+        </div>
+        <div class="office-var-row">
+          <span class="office-var-label">Evening</span>
+          <span class="office-var-value" id="readings-psalms-evening">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="office-rule"></div>
+    <div class="office-section">
+      <h3>Morning Lessons</h3>
+      <div class="office-daily-vars" id="readings-morning-lessons">
+        <div class="office-var-row">
+          <span class="office-var-label">1st Lesson</span>
+          <span class="office-var-value" id="lesson-m1">—</span>
+        </div>
+        <div class="office-var-row">
+          <span class="office-var-label">2nd Lesson</span>
+          <span class="office-var-value" id="lesson-m2">—</span>
+        </div>
+      </div>
+    </div>
+    <div class="office-rule"></div>
+    <div class="office-section">
+      <h3>Evening Lessons</h3>
+      <div class="office-daily-vars">
+        <div class="office-var-row">
+          <span class="office-var-label">1st Lesson</span>
+          <span class="office-var-value" id="lesson-e1">—</span>
+        </div>
+        <div class="office-var-row">
+          <span class="office-var-label">2nd Lesson</span>
+          <span class="office-var-value" id="lesson-e2">—</span>
+        </div>
+      </div>
+      <p id="lectionary-note" style="display:none;font-family:var(--serif);font-style:italic;
+         color:var(--ink-light);font-size:0.85rem;margin-top:0.75rem;line-height:1.5;"></p>
     </div>
   </section>
 
@@ -762,6 +872,99 @@
 </footer>
 
 <script>
+  const RAW_BASE = 'https://raw.githubusercontent.com/TheStrategicDisciple/book-of-common-prayer-concordentary/main';
+
+  // ── Load and render office text inline ────────────────────────
+  let mpLoaded = false;
+  let epLoaded = false;
+
+  // ── Render lesson links from today.md data ────────────────────
+  function renderLesson(elId, ref, url) {
+    const el = document.getElementById(elId);
+    if (!el) return;
+    if (!ref || ref === '—') { el.textContent = '—'; return; }
+    if (url && url.startsWith('http')) {
+      el.innerHTML = `<a href="${url}" target="_blank" rel="noopener"
+        style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;">${ref} ↗</a>`;
+    } else {
+      el.textContent = ref;
+    }
+  }
+
+  function renderLessons(data) {
+    renderLesson('lesson-m1', data.lesson_m1, data.lesson_m1_url);
+    renderLesson('lesson-m2', data.lesson_m2, data.lesson_m2_url);
+    renderLesson('lesson-e1', data.lesson_e1, data.lesson_e1_url);
+    renderLesson('lesson-e2', data.lesson_e2, data.lesson_e2_url);
+
+    const mpLessons = document.getElementById('mp-lessons');
+    const epLessons = document.getElementById('ep-lessons');
+    if (mpLessons && (data.lesson_m1 || data.lesson_m2)) {
+      const refs = [data.lesson_m1, data.lesson_m2].filter(r => r && r !== '—');
+      mpLessons.textContent = refs.join(', ') || '—';
+    }
+    if (epLessons && (data.lesson_e1 || data.lesson_e2)) {
+      const refs = [data.lesson_e1, data.lesson_e2].filter(r => r && r !== '—');
+      epLessons.textContent = refs.join(', ') || '—';
+    }
+
+    if (data.lectionaryNote) {
+      const noteEl = document.getElementById('lectionary-note');
+      if (noteEl) { noteEl.textContent = data.lectionaryNote; noteEl.style.display = 'block'; }
+    }
+  }
+
+  // ── Load today's collect into Morning Prayer tab ───────────────
+  async function loadCollect(collectPath) {
+    const row    = document.getElementById('mp-collect-row');
+    const nameEl = document.getElementById('mp-collect-name');
+    if (!row || !nameEl) return;
+    try {
+      const res = await fetch(`${RAW_BASE}/${collectPath}`);
+      if (!res.ok) return;
+      const raw  = await res.text();
+      // Extract title from YAML frontmatter
+      const m = raw.match(/^title:\s*"?([^"\n]+)"?\s*$/m);
+      const title = m ? m[1].trim() : 'Collect of the Day';
+      nameEl.textContent = title;
+      row.style.display = 'flex';
+    } catch(e) {
+      // Fail silently — collect row stays hidden
+    }
+  }
+
+
+    if (!md.startsWith('---')) return md;
+    const end = md.indexOf('\n---', 3);
+    if (end === -1) return md;
+    return md.slice(end + 4).trimStart();
+  }
+
+  async function loadOffice(file, containerId, flag) {
+    const el = document.getElementById(containerId);
+    if (!el) return;
+    try {
+      const res = await fetch(`${RAW_BASE}/1928/${file}`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const raw = await res.text();
+      const md  = stripObsidianSyntax(stripFrontmatter(raw));
+      el.innerHTML = marked.parse(md);
+    } catch(e) {
+      const errMsg = e.message.includes('403')
+        ? 'Rate limit — wait a moment and try again.'
+        : 'Could not load office text.';
+      el.innerHTML = `
+        <p class="office-loading">${errMsg}</p>
+        <button onclick="loadOffice('${file}','${containerId}')"
+          style="margin-top:0.5rem;font-family:var(--sans);font-size:0.7rem;
+                 font-weight:500;letter-spacing:0.08em;text-transform:uppercase;
+                 background:var(--accent);color:white;border:none;
+                 padding:0.4rem 0.9rem;cursor:pointer;border-radius:2px;">
+          Try again
+        </button>`;
+    }
+  }
+
   // ── Season colors ──────────────────────────────────────────────
   const SEASON_COLORS = {
     'Advent':        '#5B4B8A',   // violet
@@ -795,7 +998,12 @@
       if (line.startsWith('**Paschal Full Moon:**'))data.pfm = line.replace('**Paschal Full Moon:**','').trim();
       if (line.startsWith('**Easter '))            data.easter = line.replace(/\*\*Easter \d+:\*\*/,'').trim();
       if (line.startsWith('**RCL Year:**'))        data.rcl = line.replace('**RCL Year:**','').trim();
-      if (line.startsWith('**Feast:**'))           data.feast = (data.feast ? data.feast + ' · ' : '') + line.replace('**Feast:**','').trim();
+      if (line.startsWith('**Collect:**'))    data.collectPath = line.replace('**Collect:**','').trim();
+      if (line.startsWith('**Morning 1:**'))  { const p = line.replace('**Morning 1:**','').trim().split(' | '); data.lesson_m1 = p[0]; data.lesson_m1_url = p[1]; }
+      if (line.startsWith('**Morning 2:**'))  { const p = line.replace('**Morning 2:**','').trim().split(' | '); data.lesson_m2 = p[0]; data.lesson_m2_url = p[1]; }
+      if (line.startsWith('**Evening 1:**'))  { const p = line.replace('**Evening 1:**','').trim().split(' | '); data.lesson_e1 = p[0]; data.lesson_e1_url = p[1]; }
+      if (line.startsWith('**Evening 2:**'))  { const p = line.replace('**Evening 2:**','').trim().split(' | '); data.lesson_e2 = p[0]; data.lesson_e2_url = p[1]; }
+      if (line.startsWith('**Lectionary Note:**')) data.lectionaryNote = line.replace('**Lectionary Note:**','').trim();
     }
 
     // Coming up
@@ -869,11 +1077,19 @@
       `<div class="computus-item"><label>${label}</label><value>${val}</value></div>`
     ).join('');
 
-    // Office panels — populate psalms
-    document.getElementById('mp-psalms-morning').textContent = data.psalmsMorning || '—';
-    document.getElementById('mp-psalm-source').textContent = data.psalmSource || '';
-    document.getElementById('ep-psalms-evening').textContent = data.psalmsEvening || '—';
-    document.getElementById('ep-psalm-source').textContent = data.psalmSource || '';
+    // Office panels — psalms in MP, EP, and Readings tabs
+    document.getElementById('mp-psalms-morning').textContent  = data.psalmsMorning || '—';
+    document.getElementById('ep-psalms-evening').textContent  = data.psalmsEvening || '—';
+    document.getElementById('readings-psalms-morning').textContent = data.psalmsMorning || '—';
+    document.getElementById('readings-psalms-evening').textContent = data.psalmsEvening || '—';
+
+    // Lessons — Readings tab
+    renderLessons(data);
+
+    // Collect — Morning Prayer tab
+    if (data.collectPath && data.collectPath !== '—') {
+      loadCollect(data.collectPath);
+    }
 
     // Page title
     document.title = (data.date || 'Daily Office') + ' — The Concordentary';
@@ -904,7 +1120,15 @@
       tab.classList.add('active');
       const panelId = 'panel-' + tab.dataset.panel;
       if (panelId) document.getElementById(panelId).classList.add('active');
-      // Lazy-load prayers on first open of the lookup tab
+      // Lazy-load offices and prayers on first open
+      if (tab.dataset.panel === 'morning' && !mpLoaded) {
+        mpLoaded = true;
+        loadOffice('07_morning-prayer.md', 'mp-office-text');
+      }
+      if (tab.dataset.panel === 'evening' && !epLoaded) {
+        epLoaded = true;
+        loadOffice('08_evening-prayer.md', 'ep-office-text');
+      }
       if (tab.dataset.panel === 'lookup' && !prayersLoaded) loadPrayers();
     });
   });
