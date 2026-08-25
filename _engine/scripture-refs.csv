@@ -1,0 +1,94 @@
+abbreviation,full_name,bg_name,bg_version,apocrypha,testament,notes
+Gen.,Genesis,Genesis,KJV,false,OT,
+Exod.,Exodus,Exodus,KJV,false,OT,
+Lev.,Leviticus,Leviticus,KJV,false,OT,
+Num.,Numbers,Numbers,KJV,false,OT,
+Deut.,Deuteronomy,Deuteronomy,KJV,false,OT,
+Joshua,Joshua,Joshua,KJV,false,OT,
+Judges,Judges,Judges,KJV,false,OT,
+Ruth,Ruth,Ruth,KJV,false,OT,
+I Sam.,1 Samuel,1+Samuel,KJV,false,OT,
+II Sam.,2 Samuel,2+Samuel,KJV,false,OT,
+I Kgs.,1 Kings,1+Kings,KJV,false,OT,
+II Kgs.,2 Kings,2+Kings,KJV,false,OT,
+I Chron.,1 Chronicles,1+Chronicles,KJV,false,OT,
+II Chron.,2 Chronicles,2+Chronicles,KJV,false,OT,
+Ezra,Ezra,Ezra,KJV,false,OT,
+Neh.,Nehemiah,Nehemiah,KJV,false,OT,
+Esth.,Esther,Esther,KJV,false,OT,
+Job,Job,Job,KJV,false,OT,
+Prov.,Proverbs,Proverbs,KJV,false,OT,
+Eccles.,Ecclesiastes,Ecclesiastes,KJV,false,OT,Not to be confused with Ecclus. (Ecclesiasticus/Sirach — Apocrypha)
+Isa.,Isaiah,Isaiah,KJV,false,OT,
+Jer.,Jeremiah,Jeremiah,KJV,false,OT,
+Lam.,Lamentations,Lamentations,KJV,false,OT,
+Ezek.,Ezekiel,Ezekiel,KJV,false,OT,
+Dan.,Daniel,Daniel,KJV,false,OT,
+Hosea,Hosea,Hosea,KJV,false,OT,
+Joel,Joel,Joel,KJV,false,OT,
+Amos,Amos,Amos,KJV,false,OT,
+Jonah,Jonah,Jonah,KJV,false,OT,
+Micah,Micah,Micah,KJV,false,OT,
+Nah.,Nahum,Nahum,KJV,false,OT,
+Hab.,Habakkuk,Habakkuk,KJV,false,OT,
+Zeph.,Zephaniah,Zephaniah,KJV,false,OT,
+Haggai,Haggai,Haggai,KJV,false,OT,
+Zech.,Zechariah,Zechariah,KJV,false,OT,
+Mal.,Malachi,Malachi,KJV,false,OT,
+Matt.,Matthew,Matthew,KJV,false,NT,Lectionary abbreviation
+St. Matthew,Matthew,Matthew,KJV,false,NT,Propers file uses 'St.' prefix for Gospels
+Mark,Mark,Mark,KJV,false,NT,Lectionary abbreviation
+St. Mark,Mark,Mark,KJV,false,NT,Propers file uses 'St.' prefix for Gospels
+Luke,Luke,Luke,KJV,false,NT,Lectionary abbreviation
+St. Luke,Luke,Luke,KJV,false,NT,Propers file uses 'St.' prefix for Gospels
+John,John,John,KJV,false,NT,Lectionary abbreviation
+St. John,John,John,KJV,false,NT,Propers file uses 'St.' prefix for Gospels
+Acts,Acts,Acts,KJV,false,NT,
+Rom.,Romans,Romans,KJV,false,NT,
+I Cor.,1 Corinthians,1+Corinthians,KJV,false,NT,
+II Cor.,2 Corinthians,2+Corinthians,KJV,false,NT,
+Gal.,Galatians,Galatians,KJV,false,NT,
+Ephes.,Ephesians,Ephesians,KJV,false,NT,
+Phil.,Philippians,Philippians,KJV,false,NT,
+Col.,Colossians,Colossians,KJV,false,NT,
+I Thess.,1 Thessalonians,1+Thessalonians,KJV,false,NT,
+II Thess.,2 Thessalonians,2+Thessalonians,KJV,false,NT,
+I Tim.,1 Timothy,1+Timothy,KJV,false,NT,
+II Tim.,2 Timothy,2+Timothy,KJV,false,NT,
+Titus,Titus,Titus,KJV,false,NT,
+Philemon,Philemon,Philemon,KJV,false,NT,No chapter number — entire book in one chapter
+Heb.,Hebrews,Hebrews,KJV,false,NT,
+James,James,James,KJV,false,NT,
+I Peter,1 Peter,1+Peter,KJV,false,NT,Lectionary form (full word)
+I Pet.,1 Peter,1+Peter,KJV,false,NT,Alternate abbreviation form
+II Peter,2 Peter,2+Peter,KJV,false,NT,
+II Pet.,2 Peter,2+Peter,KJV,false,NT,Alternate abbreviation form
+I John,1 John,1+John,KJV,false,NT,
+II John,2 John,2+John,KJV,false,NT,
+III John,3 John,3+John,KJV,false,NT,
+Jude,Jude,Jude,KJV,false,NT,
+Rev.,Revelation,Revelation,KJV,false,NT,
+I Esd.,1 Esdras,1+Esdras,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+II Esd.,2 Esdras,2+Esdras,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+Tobit,Tobit,Tobit,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+Judith,Judith,Judith,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+Ecclus.,Sirach,Sirach,NRSVUE,true,Apocrypha,"Ecclesiasticus — not in KJV; use NRSVUE. NOT the same as Eccles. (Ecclesiastes, canonical OT)"
+Wisdom,Wisdom of Solomon,Wisdom+of+Solomon,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+Baruch,Baruch,Baruch,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+I Macc.,1 Maccabees,1+Maccabees,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+II Macc.,2 Maccabees,2+Maccabees,NRSVUE,true,Apocrypha,Not in KJV — use NRSVUE
+Romans,Romans,Romans,KJV,false,NT,Full name form used in propers file (13_collects-epistles-gospels.md)
+Corinthians,Corinthians,Corinthians,KJV,false,NT,Rare — usually prefixed I/II; included for safety
+Galatians,Galatians,Galatians,KJV,false,NT,Full name form used in propers file
+Ephesians,Ephesians,Ephesians,KJV,false,NT,Full name form used in propers file
+Philippians,Philippians,Philippians,KJV,false,NT,Full name form used in propers file
+Colossians,Colossians,Colossians,KJV,false,NT,Full name form used in propers file
+Thessalonians,Thessalonians,Thessalonians,KJV,false,NT,Rare — usually prefixed I/II; included for safety
+Timothy,Timothy,Timothy,KJV,false,NT,Rare — usually prefixed I/II; included for safety
+Hebrews,Hebrews,Hebrews,KJV,false,NT,Full name form used in propers file
+Revelation,Revelation,Revelation,KJV,false,NT,Full name form used in propers file
+Isaiah,Isaiah,Isaiah,KJV,false,OT,Full name form used in propers file
+Jeremiah,Jeremiah,Jeremiah,KJV,false,OT,Full name form used in propers file
+Joel,Joel,Joel,KJV,false,OT,Same as abbreviated form
+Malachi,Malachi,Malachi,KJV,false,OT,Same as abbreviated form
+Titus,Titus,Titus,KJV,false,NT,Same as abbreviated form (already in table — duplicate safe)
