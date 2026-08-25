@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Daily Office — The Concordentary</title>
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -927,6 +926,15 @@
   let prayersLoaded = false;
   let prayerSearchTimeout = null;
 
+  // ── Obsidian syntax stripper ──────────────────────────────────
+  function stripObsidianSyntax(md) {
+    md = md.replace(/!\[\[[^\]]*\]\]/g, '');
+    md = md.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2');
+    md = md.replace(/\[\[([^\]]+)\]\]/g, '$1');
+    md = md.replace(/(?<!\w)#([a-zA-Z][a-zA-Z0-9_/-]*)/g, '$1');
+    return md;
+  }
+
   // ── YAML frontmatter parser (title + body only) ──────────────
   function parsePrayerMd(md) {
     if (!md.startsWith('---')) return { title: 'Untitled', body: md };
@@ -941,7 +949,7 @@
     };
 
     const title = get('title') || get('first_line') || 'Untitled Prayer';
-    return { title, body };
+    return { title, body: stripObsidianSyntax(body) };
   }
 
   // ── Build one accordion item ──────────────────────────────────
@@ -1008,10 +1016,10 @@
         divider.textContent = section.label;
         ul.appendChild(divider);
 
-        // Fetch all files in this section in parallel
+        // Fetch files via download_url (raw.githubusercontent.com — no API quota)
         const contents = await Promise.all(
           files.map(f =>
-            fetch(f.url, PRAYER_HEADERS)
+            fetch(f.download_url || f.url)
               .then(r => r.ok ? r.text() : null)
               .catch(() => null)
           )

@@ -568,7 +568,77 @@
     return md.slice(end + 4).trimStart();
   }
 
-  // ── Build TOC from GitHub API ────────────────────────────────────
+  // ── Strip Obsidian-specific syntax before rendering ──────────────
+  // The source .md files contain Obsidian wikilinks and embeds
+  // that marked.js does not understand and would render as literal text.
+  function stripObsidianSyntax(md) {
+    // ![[embedded files]] — remove entirely
+    md = md.replace(/!\[\[[^\]]*\]\]/g, '');
+    // [[Page|Display text]] — keep display text only
+    md = md.replace(/\[\[([^\]|]+)\|([^\]]+)\]\]/g, '$2');
+    // [[Page]] — keep page name as plain text
+    md = md.replace(/\[\[([^\]]+)\]\]/g, '$1');
+    // Obsidian tags (#tag) — remove the # so they render as plain words
+    md = md.replace(/(?<!\w)#([a-zA-Z][a-zA-Z0-9_/-]*)/g, '$1');
+    return md;
+  }
+
+  // ── Hardcoded 1928 TOC (fallback when API is rate-limited) ───────
+  const FALLBACK_TOC_1928 = [
+    '01_front-matter',
+    '02_concerning-the-service',
+    '03_psalms-and-lessons-tables',
+    '04_lectionary-christian-year',
+    '05_calendar',
+    '06_tables-and-rules',
+    '07_morning-prayer',
+    '08_evening-prayer',
+    '09_prayers-and-thanksgivings',
+    '10_the-litany',
+    '11_penitential-office',
+    '12_holy-communion',
+    '13_collects-epistles-gospels',
+    '14_baptism',
+    '15_offices-of-instruction',
+    '16_confirmation',
+    '17_matrimony',
+    '18_churching-of-women',
+    '19_visitation-of-the-sick',
+    '20_communion-of-the-sick',
+    '21_burial-of-the-dead',
+    '22_burial-of-a-child',
+    '23_psalter',
+    '24_the-ordinal',
+    '25_consecration-of-a-church',
+    '26_institution-of-ministers',
+    '27_catechism',
+    '28_family-prayer',
+    '29_articles-of-religion',
+  ];
+
+  // ── Build TOC from GitHub API (with hardcoded fallback) ──────────
+  function buildTOCFromList(sectionIds, edition, mobileSelect, tocList) {
+    sectionIds.forEach(sectionId => {
+      const label = prettify(sectionId + '.md');
+      const li = document.createElement('li');
+      li.className = 'toc-item';
+      li.dataset.section = sectionId;
+      const a = document.createElement('a');
+      a.href = `?section=${encodeURIComponent(sectionId)}&edition=${edition}`;
+      a.textContent = label;
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        loadSection(sectionId, edition);
+      });
+      li.appendChild(a);
+      tocList.appendChild(li);
+      const opt = document.createElement('option');
+      opt.value = sectionId;
+      opt.textContent = label;
+      mobileSelect.appendChild(opt);
+    });
+  }
+
   async function loadTOC(edition) {
     const tocList      = document.getElementById('toc-list');
     const mobileSelect = document.getElementById('mobile-select');
@@ -580,49 +650,44 @@
 
     try {
       const res = await fetch(`${API}/${edition}`, ACCEPT);
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
-      const files = await res.json();
 
+      // 403 = rate limited — use fallback immediately, don't error
+      if (res.status === 403) throw new Error('rate_limited');
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const files = await res.json();
       const mdFiles = files
         .filter(f => f.type === 'file' && f.name.toLowerCase().endsWith('.md'))
         .sort((a, b) => a.name.localeCompare(b.name));
 
       tocList.innerHTML = '';
-
-      mdFiles.forEach(file => {
-        const sectionId = file.name.replace(/\.md$/i, '');
-        const label     = prettify(file.name);
-
-        // Desktop TOC item
-        const li = document.createElement('li');
-        li.className = 'toc-item';
-        li.dataset.section = sectionId;
-        const a = document.createElement('a');
-        a.href = `?section=${encodeURIComponent(sectionId)}&edition=${edition}`;
-        a.textContent = label;
-        a.addEventListener('click', e => {
-          e.preventDefault();
-          loadSection(sectionId, edition);
-        });
-        li.appendChild(a);
-        tocList.appendChild(li);
-
-        // Mobile option
-        const opt = document.createElement('option');
-        opt.value = sectionId;
-        opt.textContent = label;
-        mobileSelect.appendChild(opt);
-      });
-
-      // Load from URL param if present
-      const params = new URLSearchParams(window.location.search);
-      const sp = params.get('section');
-      if (sp) loadSection(sp, edition);
+      buildTOCFromList(mdFiles.map(f => f.name.replace(/\.md$/i, '')), edition, mobileSelect, tocList);
 
     } catch (e) {
-      tocList.innerHTML =
-        `<li><span class="toc-loading" style="color:#c44;">Could not load sections. Check connection.</span></li>`;
+      // Fallback: use hardcoded list for 1928, show gentle message for others
+      tocList.innerHTML = '';
+      const fallback = edition === '1928' ? FALLBACK_TOC_1928 : null;
+      if (fallback) {
+        buildTOCFromList(fallback, edition, mobileSelect, tocList);
+        const note = document.createElement('li');
+        note.innerHTML = `<span class="toc-loading" style="font-size:0.65rem;padding-top:0.5rem;display:block;">
+          ${e.message === 'rate_limited' ? 'GitHub API rate limit — sections loaded from cache.' : 'Loaded from local list.'}
+        </span>`;
+        tocList.appendChild(note);
+      } else {
+        tocList.innerHTML = `<li><span class="toc-loading" style="color:#c44;">
+          ${e.message === 'rate_limited'
+            ? 'GitHub API rate limit reached — wait a moment and refresh.'
+            : 'Could not load sections. Check connection.'}
+        </span></li>`;
+      }
+      return; // Don't try to load section from URL param if fallback
     }
+
+    // Load from URL param if present
+    const params = new URLSearchParams(window.location.search);
+    const sp = params.get('section');
+    if (sp) loadSection(sp, edition);
   }
 
   // ── Load and render a section ────────────────────────────────────
@@ -661,7 +726,7 @@
       const res = await fetch(`${API}/${edition}/${sectionId}.md`, ACCEPT);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const raw = await res.text();
-      const md  = stripFrontmatter(raw);
+      const md  = stripObsidianSyntax(stripFrontmatter(raw));
 
       contentLoading.style.display = 'none';
       mdBody.style.display         = 'block';
