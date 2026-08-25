@@ -1472,14 +1472,12 @@
   // ── Folder name → readable label ─────────────────────────────
   function prettifyFolderName(name) {
     const overrides = {
-      'general':       'General Prayers',
-      'civic':         'Prayers for Civic Occasions',
-      'national':      'National Prayers',
-      'occasional':    'Occasional Prayers',
-      'personal':      'Personal Prayers',
-      'thanksgiving':  'Thanksgivings',
-      'thanksgivings': 'Thanksgivings',
-      'family':        'Family Prayers',
+      'general':     'General Prayers',
+      'civic':       'Prayers for Civic Occasions',
+      'occasional':  'Occasional Prayers',
+      'personal':    'Personal Prayers',
+      'bidding':     'Bidding Prayers',
+      'post-sermon': 'Post-Sermon Prayers',
     };
     return overrides[name.toLowerCase()]
       || name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) + ' Prayers';
@@ -1541,18 +1539,14 @@
   }
 
   // ── Load all prayers from the three atomic subfolders ─────────
-  // Known prayer subfolders in display order.
-  // Each is tried; empty/missing folders are silently skipped.
-  // Add new folder names here as editions are added.
+  // Known prayer subfolders in display order — matches 1928/_atomic/prayers/ exactly.
   const PRAYER_SECTIONS_KNOWN = [
-    { name: 'general',       label: 'General Prayers'              },
-    { name: 'civic',         label: 'Prayers for Civic Occasions'  },
-    { name: 'national',      label: 'National Prayers'             },
-    { name: 'occasional',    label: 'Occasional Prayers'           },
-    { name: 'personal',      label: 'Personal Prayers'             },
-    { name: 'thanksgiving',  label: 'Thanksgivings'                },
-    { name: 'thanksgivings', label: 'Thanksgivings'                },
-    { name: 'family',        label: 'Family Prayers'               },
+    { name: 'general',      label: 'General Prayers'          },
+    { name: 'civic',        label: 'Prayers for Civic Occasions' },
+    { name: 'occasional',   label: 'Occasional Prayers'       },
+    { name: 'personal',     label: 'Personal Prayers'         },
+    { name: 'bidding',      label: 'Bidding Prayers'          },
+    { name: 'post-sermon',  label: 'Post-Sermon Prayers'      },
   ];
 
   async function loadPrayers() {
