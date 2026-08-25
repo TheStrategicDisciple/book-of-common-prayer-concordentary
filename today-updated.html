@@ -1206,15 +1206,27 @@
     renderLesson('lesson-e1', data.lesson_e1, data.lesson_e1_url);
     renderLesson('lesson-e2', data.lesson_e2, data.lesson_e2_url);
 
+    // MP/EP tabs — brief lesson summary or "not applicable" with Readings link
+    const seeNote = data.lectionaryNote
+      ? ` <a href="#" onclick="switchToTab('readings');return false;"
+           style="color:var(--accent);text-decoration:underline;text-underline-offset:2px;
+                  font-family:var(--sans);font-size:0.7em;letter-spacing:0.04em;">see note</a>`
+      : '';
+
     const mpLessons = document.getElementById('mp-lessons');
-    const epLessons = document.getElementById('ep-lessons');
-    if (mpLessons && (data.lesson_m1 || data.lesson_m2)) {
-      const refs = [data.lesson_m1, data.lesson_m2].filter(r => r && r !== '—');
-      mpLessons.textContent = refs.join(', ') || '—';
+    if (mpLessons) {
+      const mRefs = [data.lesson_m1, data.lesson_m2].filter(r => r && r !== '—');
+      mpLessons.innerHTML = mRefs.length
+        ? mRefs.join(', ')
+        : `Not applicable${seeNote}`;
     }
-    if (epLessons && (data.lesson_e1 || data.lesson_e2)) {
-      const refs = [data.lesson_e1, data.lesson_e2].filter(r => r && r !== '—');
-      epLessons.textContent = refs.join(', ') || '—';
+
+    const epLessons = document.getElementById('ep-lessons');
+    if (epLessons) {
+      const eRefs = [data.lesson_e1, data.lesson_e2].filter(r => r && r !== '—');
+      epLessons.innerHTML = eRefs.length
+        ? eRefs.join(', ')
+        : `Not applicable${seeNote}`;
     }
 
     if (data.lectionaryNote) {
