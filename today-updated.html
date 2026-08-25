@@ -934,6 +934,7 @@
   }
 
 
+  function stripFrontmatter(md) {
     if (!md.startsWith('---')) return md;
     const end = md.indexOf('\n---', 3);
     if (end === -1) return md;
@@ -998,6 +999,7 @@
       if (line.startsWith('**Paschal Full Moon:**'))data.pfm = line.replace('**Paschal Full Moon:**','').trim();
       if (line.startsWith('**Easter '))            data.easter = line.replace(/\*\*Easter \d+:\*\*/,'').trim();
       if (line.startsWith('**RCL Year:**'))        data.rcl = line.replace('**RCL Year:**','').trim();
+      if (line.startsWith('**Feast:**'))           data.feast = (data.feast ? data.feast + ' · ' : '') + line.replace('**Feast:**','').trim();
       if (line.startsWith('**Collect:**'))    data.collectPath = line.replace('**Collect:**','').trim();
       if (line.startsWith('**Morning 1:**'))  { const p = line.replace('**Morning 1:**','').trim().split(' | '); data.lesson_m1 = p[0]; data.lesson_m1_url = p[1]; }
       if (line.startsWith('**Morning 2:**'))  { const p = line.replace('**Morning 2:**','').trim().split(' | '); data.lesson_m2 = p[0]; data.lesson_m2_url = p[1]; }
