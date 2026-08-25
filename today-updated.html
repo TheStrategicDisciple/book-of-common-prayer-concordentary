@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Daily Office — The Concordentary</title>
   <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/9.1.6/marked.min.js"></script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -413,9 +414,10 @@
 
     .prayer-item.open .prayer-body { display: block; }
 
-    .prayer-body h1, .prayer-body h2, .prayer-body h3 {
+    .prayer-body h1, .prayer-body h2, .prayer-body h3, .prayer-body h4 {
       font-family: var(--serif);
       font-weight: normal;
+      font-style: italic;
       font-size: 1rem;
       color: var(--ink);
       margin-bottom: 0.5rem;
@@ -951,9 +953,12 @@
       const md  = stripObsidianSyntax(stripFrontmatter(raw));
       el.innerHTML = marked.parse(md);
     } catch(e) {
+      console.error('loadOffice error:', file, e.message, e);
       const errMsg = e.message.includes('403')
         ? 'Rate limit — wait a moment and try again.'
-        : 'Could not load office text.';
+        : e.message.includes('404')
+        ? `File not found: 1928/${file}`
+        : `Could not load office text (${e.message})`;
       el.innerHTML = `
         <p class="office-loading">${errMsg}</p>
         <button onclick="loadOffice('${file}','${containerId}')"
