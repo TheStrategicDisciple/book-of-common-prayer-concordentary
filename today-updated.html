@@ -880,14 +880,12 @@
   }
 
   // ── Fetch today.md ─────────────────────────────────────────────
-  // GitHub Contents API supports CORS; raw.githubusercontent.com does not
-  const API_URL = 'https://api.github.com/repos/TheStrategicDisciple/book-of-common-prayer-concordentary/contents/today.md';
+  // raw.githubusercontent.com: CORS-enabled, no API quota, public repos only
+  const API_URL = 'https://raw.githubusercontent.com/TheStrategicDisciple/book-of-common-prayer-concordentary/main/today.md';
 
   async function loadToday() {
     try {
-      const res = await fetch(API_URL, {
-        headers: { 'Accept': 'application/vnd.github.v3.raw' }
-      });
+      const res = await fetch(API_URL);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const text = await res.text();
       const data = parseTodayMd(text);
@@ -916,15 +914,32 @@
   const PRAYER_API     = `https://api.github.com/repos/${PRAYER_REPO}/contents`;
   const PRAYER_HEADERS = { headers: { 'Accept': 'application/vnd.github.v3.raw' } };
 
-  // Prayer book order: general → occasional → personal
-  const PRAYER_SECTIONS = [
-    { path: '1928/_atomic/prayers/general',    label: 'General Prayers'    },
-    { path: '1928/_atomic/prayers/occasional', label: 'Occasional Prayers' },
-    { path: '1928/_atomic/prayers/personal',   label: 'Personal Prayers'   },
+  // Prayer sections are discovered dynamically from the repo
+  // so any subfolder the code session created automatically appears.
+  // Preferred display order — unlisted folders append at the end.
+  const PRAYER_SECTION_ORDER = [
+    'general', 'civic', 'national', 'occasional', 'personal',
+    'thanksgiving', 'thanksgivings', 'family'
   ];
 
   let prayersLoaded = false;
   let prayerSearchTimeout = null;
+
+  // ── Folder name → readable label ─────────────────────────────
+  function prettifyFolderName(name) {
+    const overrides = {
+      'general':       'General Prayers',
+      'civic':         'Prayers for Civic Occasions',
+      'national':      'National Prayers',
+      'occasional':    'Occasional Prayers',
+      'personal':      'Personal Prayers',
+      'thanksgiving':  'Thanksgivings',
+      'thanksgivings': 'Thanksgivings',
+      'family':        'Family Prayers',
+    };
+    return overrides[name.toLowerCase()]
+      || name.replace(/-/g, ' ').replace(/\b\w/g, c => c.toUpperCase()) + ' Prayers';
+  }
 
   // ── Obsidian syntax stripper ──────────────────────────────────
   function stripObsidianSyntax(md) {
@@ -988,22 +1003,46 @@
     const loading = document.getElementById('prayer-loading');
 
     try {
-      // Fetch all three section directory listings in parallel
+      // Step 1: discover all subfolders under prayers/
+      const prayersRoot = await fetch(
+        `${PRAYER_API}/1928/_atomic/prayers`
+      ).then(r => r.ok ? r.json() : []).catch(() => []);
+
+      const subfolders = prayersRoot
+        .filter(f => f.type === 'dir')
+        .sort((a, b) => {
+          // Sort by preferred order, unknown folders go to end
+          const ai = PRAYER_SECTION_ORDER.indexOf(a.name.toLowerCase());
+          const bi = PRAYER_SECTION_ORDER.indexOf(b.name.toLowerCase());
+          const an = ai === -1 ? 999 : ai;
+          const bn = bi === -1 ? 999 : bi;
+          return an - bn || a.name.localeCompare(b.name);
+        });
+
+      // Fallback: if root listing fails or has no dirs, use known folders
+      const sections = subfolders.length > 0
+        ? subfolders.map(f => ({ path: `1928/_atomic/prayers/${f.name}`, label: prettifyFolderName(f.name) }))
+        : PRAYER_SECTION_ORDER.slice(0, 3).map(n => ({
+            path: `1928/_atomic/prayers/${n}`,
+            label: prettifyFolderName(n)
+          }));
+
+      // Step 2: fetch directory listings for all sections in parallel
       const dirResults = await Promise.all(
-        PRAYER_SECTIONS.map(s =>
+        sections.map(s =>
           fetch(`${PRAYER_API}/${s.path}`)
             .then(r => r.ok ? r.json() : [])
             .catch(() => [])
         )
       );
 
-      // For each section, fetch each file's content
+      // Step 3: build accordion
       const ul = document.createElement('ul');
       ul.className = 'prayer-list';
       let totalCount = 0;
 
-      for (let i = 0; i < PRAYER_SECTIONS.length; i++) {
-        const section = PRAYER_SECTIONS[i];
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i];
         const files   = dirResults[i]
           .filter(f => f.type === 'file' && f.name.endsWith('.md'))
           .sort((a, b) => a.name.localeCompare(b.name));

@@ -516,6 +516,7 @@
 <script>
   const REPO   = 'TheStrategicDisciple/book-of-common-prayer-concordentary';
   const API    = `https://api.github.com/repos/${REPO}/contents`;
+  const RAW    = `https://raw.githubusercontent.com/${REPO}/main`;
   const ACCEPT = { headers: { 'Accept': 'application/vnd.github.v3.raw' } };
 
   let currentEdition = '1928';
@@ -671,7 +672,7 @@
         buildTOCFromList(fallback, edition, mobileSelect, tocList);
         const note = document.createElement('li');
         note.innerHTML = `<span class="toc-loading" style="font-size:0.65rem;padding-top:0.5rem;display:block;">
-          ${e.message === 'rate_limited' ? 'GitHub API rate limit — sections loaded from cache.' : 'Loaded from local list.'}
+          ${e.message === 'rate_limited' ? 'GitHub API rate limited — using local section list.' : 'Loaded from local list.'}
         </span>`;
         tocList.appendChild(note);
       } else {
@@ -723,7 +724,8 @@
     document.title = `${label} — The Concordentary`;
 
     try {
-      const res = await fetch(`${API}/${edition}/${sectionId}.md`, ACCEPT);
+      // Fetch directly from raw.githubusercontent.com — no API quota
+      const res = await fetch(`${RAW}/${edition}/${sectionId}.md`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const raw = await res.text();
       const md  = stripObsidianSyntax(stripFrontmatter(raw));
@@ -737,11 +739,30 @@
       window.scrollTo({ top: 0 });
 
     } catch (e) {
+      console.error(`loadSection failed [${sectionId}]:`, e.message, e);
       contentLoading.style.display = 'none';
       mdBody.style.display         = 'block';
-      mdBody.innerHTML = `<p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);">
-        Could not load this section. It may not yet be in the repository.
-      </p>`;
+
+      let errMsg = 'Could not load this section.';
+      if (e.message.includes('403') || e.message.includes('rate')) {
+        errMsg = 'GitHub rate limit reached — wait a moment and try again.';
+      } else if (e.message.includes('404')) {
+        errMsg = 'This section is not yet in the repository.';
+      } else if (e.message.includes('Failed to fetch') || e.message.includes('NetworkError')) {
+        errMsg = 'Network error — check your connection.';
+      }
+
+      mdBody.innerHTML = `
+        <p style="font-family:var(--serif);font-style:italic;color:var(--ink-light);margin-bottom:1rem;">
+          ${errMsg}
+        </p>
+        <button onclick="loadSection('${sectionId}','${edition}')"
+          style="font-family:var(--sans);font-size:0.72rem;font-weight:500;
+                 letter-spacing:0.08em;text-transform:uppercase;
+                 background:var(--accent);color:white;border:none;
+                 padding:0.5rem 1rem;cursor:pointer;border-radius:2px;">
+          Try again
+        </button>`;
     }
   }
 
