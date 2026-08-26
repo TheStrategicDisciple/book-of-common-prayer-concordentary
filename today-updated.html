@@ -476,6 +476,61 @@
     }
 
     .site-footer a:hover { color: var(--accent); }
+
+    /* License collapsible */
+    .license-toggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-family: var(--sans);
+      font-size: 0.7rem;
+      color: var(--ink-light);
+      padding: 0;
+      display: inline-flex;
+      align-items: baseline;
+      gap: 0.3rem;
+      transition: color 0.12s;
+    }
+
+    .license-toggle:hover { color: var(--accent); }
+
+    .license-caret {
+      font-size: 0.62rem;
+      transition: transform 0.2s;
+      display: inline-block;
+    }
+
+    .license-panel {
+      display: none;
+      margin-top: 0.75rem;
+      padding: 1rem;
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--accent);
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      line-height: 1.7;
+      color: var(--ink-mid);
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    .license-panel p {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      color: var(--ink-mid);
+      margin-bottom: 0.5rem;
+    }
+
+    .license-panel h1, .license-panel h2, .license-panel h3 {
+      font-family: var(--sans);
+      font-size: 0.68rem;
+      font-weight: 500;
+      color: var(--ink);
+      margin-bottom: 0.35rem;
+      margin-top: 0.75rem;
+    }
+
+    .license-panel a { color: var(--accent); }
   .edition-switcher {
       max-width: 720px;
       margin: 0 auto;
@@ -980,9 +1035,17 @@
 
 <footer class="site-footer">
   <p>
-   The Concordentary  ·  BCP 1928 (PECUSA)  ·  Engine: computus.py, TABLE I &amp; TABLE II  ·  <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary" target="_blank" rel="noopener">GitHub</a>  ·  CC BY-NC-SA 4.0
+   The Concordentary  ·  BCP 1928 (PECUSA)  ·  Engine: computus.py, TABLE I &amp; TABLE II  ·  <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary" target="_blank" rel="noopener">GitHub</a>
+   &nbsp;·&nbsp;
+   <button class="license-toggle" onclick="toggleLicense(this)" aria-expanded="false">
+     Use Terms &amp; License
+     <span class="license-caret" aria-hidden="true">▾</span>
+   </button>
   </p>
-  <p style="margin-top:0.4rem;">
+  <div class="license-panel" id="license-panel">
+    <em style="color:var(--ink-light);">Loading license…</em>
+  </div>
+  <p style="margin-top:0.6rem;">
    © 2026 Alex Nutting, The Strategic Disciple LLC. All rights reserved.  ·  Text: © Charles Wohlers, Satucket Software, used with permission under original distribution terms.
   </p>
 </footer>
@@ -1282,6 +1345,44 @@
                  padding:0.4rem 0.9rem;cursor:pointer;border-radius:2px;">
           Try again
         </button>`;
+    }
+  }
+
+  // ── License collapsible ───────────────────────────────────────
+  let licenseLoaded = false;
+
+  async function toggleLicense(btn) {
+    const panel = document.getElementById('license-panel');
+    const caret = btn.querySelector('.license-caret');
+    const isOpen = panel.style.display !== 'none' && panel.style.display !== '';
+
+    if (isOpen) {
+      panel.style.display = 'none';
+      caret.style.transform = '';
+      btn.setAttribute('aria-expanded', 'false');
+      return;
+    }
+
+    panel.style.display = 'block';
+    caret.style.transform = 'rotate(180deg)';
+    btn.setAttribute('aria-expanded', 'true');
+
+    if (licenseLoaded) return;
+    licenseLoaded = true;
+
+    try {
+      const res = await fetch(`${RAW_BASE}/LICENSE.md`);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const text = await res.text();
+      panel.innerHTML = typeof marked !== 'undefined'
+        ? marked.parse(text)
+        : text.replace(/\n/g, '<br>');
+    } catch(e) {
+      panel.innerHTML = `
+        <p>Could not load license. View directly on
+          <a href="https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/LICENSE.md"
+             target="_blank" rel="noopener">GitHub ↗</a>
+        </p>`;
     }
   }
 
