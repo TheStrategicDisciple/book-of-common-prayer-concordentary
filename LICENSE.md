@@ -103,6 +103,4 @@ thestrategicdisciple@gmail.com
 https://concordentary.org
 
 *This license was last reviewed August 2026. It is subject to revision
-as the project develops. Consult an attorney familiar with open source
-and intellectual property law before relying on these terms for any
-commercial or legal purpose.*
+as the project develops.*
