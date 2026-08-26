@@ -254,19 +254,9 @@ The script reads. It does not generate. The data does the work.
 
 **Base:** `repo.thestrategicdisciple.com/today`
 
-Each active edition gets its own path mirroring its `{edition}today.md` output:
+The webpage renders `today.md` generated daily by the GitHub Action. No database. The git commit history is the canonical record — version-controlled liturgical diary from day one.
 
-| Path | Source file | Status |
-|---|---|---|
-| `/today/1928` | `1928today.md` | Active (primary) |
-| `/today/1892` | `1892today.md` | Planned |
-| `/today/1662` | `1662today.md` | Planned |
-| `/today/1789` | `1789today.md` | Planned |
-| `/today/1979` | `1979today.md` | Pending copyright |
-
-The webpage renders the markdown. No database. The git commit history is the canonical record — version-controlled liturgical diary from day one.
-
-Animated SVG in liturgical color sits above the text (green pulse in Ordinary Time, deep purple in Advent, stark white in Easter). See `_data/calendar.json` for season-to-color mappings.
+Animated SVG in liturgical color sits above the text. See `_data/calendar.json` for season-to-color mappings.
 
 **Cost: $0.** Cron job, free NIST API, Python reading Markdown from an existing repo.
 
