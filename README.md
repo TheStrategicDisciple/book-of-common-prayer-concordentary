@@ -21,7 +21,7 @@ This is an attempt to carry it forward.
 1928/         Primary active edition (most complete)
 1979/         Episcopal Church edition (pending copyright clearance)
 
-_atomic/      Cross-edition extracts — collects, epistles, gospels, canticles, prayers
+_atomic/      Atomized liturgical units — offices, propers, psalter, prayers
 _engine/      Computus engine and daily office scripts
 _data/        Calendar data, hymn curation, validation records
 _study/       Formation notes, one per canonical file
@@ -46,9 +46,9 @@ The Concordentary continues that work — adapting the same material into struct
 
 **BCP text content** — transcription and digitization by Charles Wohlers, Satucket Software. Original texts are public domain. Distributed per the notice in `HEADER`.
 
-**Markdown conversion, YAML schema, provenance apparatus, engine, and editorial curation** — © 2026 Alex Nutting, The Strategic Disciple LLC. Licensed CC BY-NC-SA 4.0.
+**Markdown conversion, YAML schema, provenance apparatus, engine, and editorial curation** — © 2026 Alex Nutting, The Strategic Disciple LLC. All Rights Reserved. See LICENSE.
 
-You may redistribute this material electronically provided no fee is charged and the header remains intact. See `LICENSE`, `HEADER`, and `CITE.md`.
+BCP source text is redistributed per the Wohlers distribution notice in HEADER. All original works are All Rights Reserved. See LICENSE for full terms.
 
 ---
 

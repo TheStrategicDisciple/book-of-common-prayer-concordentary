@@ -182,8 +182,8 @@ source_url: ""
 transcriber_original: "John Goodwin, Michael Bushnell, and others — ASCII, 1993"
 transcriber: "Charles Wohlers, Satucket Software"
 markdown_curation: "Alex Nutting, Liturgic Labs Studio"
-license: CC BY-NC-SA 4.0
-license_url: "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+license: "See LICENSE"
+license_url: "https://github.com/TheStrategicDisciple/book-of-common-prayer-concordentary/blob/main/LICENSE.md"
 source_terms: "Non-commercial redistribution permitted with header intact — Charles Wohlers, Satucket Software"
 converted_at_utc: ""
 
@@ -279,7 +279,7 @@ The Concordentary does not erase absences. It documents them.
 ├── humans.md               ← human story
 ├── robots.md               ← AI intent statement
 ├── HEADER                  ← Wohlers distribution notice
-├── LICENSE                 ← CC BY-NC-SA 4.0
+├── LICENSE                 ← Repository license (see LICENSE.md)
 ├── today.md                ← generated daily by GitHub Action
 │
 ├── 1662/
@@ -292,15 +292,10 @@ The Concordentary does not erase absences. It documents them.
 ├── 1979/
 │
 ├── _atomic/
-│   ├── offices/
-│   ├── collects/
-│   ├── epistles/
-│   ├── gospels/
-│   ├── canticles/
-│   ├── creeds/
-│   ├── litany/
-│   ├── prayers/
-│   └── psalter/
+│   ├── offices/            ← Daily office atoms (morning-prayer/, evening-prayer/, family-prayer/)
+│   ├── propers/            ← Collects, epistles, gospels by liturgical day
+│   ├── psalter/            ← One file per psalm (001.md–150.md)
+│   └── prayers/            ← Prayers and Thanksgivings by category
 │
 ├── _engine/
 │   └── computus.py
@@ -367,15 +362,12 @@ Search results for "1928 BCP": Wikipedia describing the wrong book. A site froze
 
 ## Licensing
 
-**CC BY-NC-SA 4.0**
+**BCP source text:** Redistributed per Wohlers original terms — no fee, header intact. Texts are public domain.
 
-- *"No fee charged"* → Non-Commercial (NC)
-- *"This header remains"* → Attribution (BY)
-- Spirit carried forward → Share-Alike (SA)
+**All original works:** © 2026 Alex Nutting, The Strategic Disciple LLC. All Rights Reserved.
+This includes the structure, schema, editorial decisions, provenance apparatus, formation notes, hymnody curation, and Concordentary architecture.
 
-The BCP texts themselves are public domain. The structure, schema, editorial decisions, provenance apparatus, formation notes, hymnody curation, and Concordentary architecture are the intellectual work of this project, licensed CC BY-NC-SA 4.0.
-
-Institutions or developers seeking alternative licensing: thestrategicdisciple@gmail.com
+See LICENSE for full terms. Institutions or developers seeking licensing: thestrategicdisciple@gmail.com
 
 ---
 

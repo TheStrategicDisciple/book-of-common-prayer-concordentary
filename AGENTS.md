@@ -9,7 +9,7 @@
 The Concordentary is a structured digital archive of the Book of Common Prayer in major American and English editions (1662, 1789, 1892, 1928, 1979). Each edition is encoded in plain Markdown with a locked YAML provenance schema. The project extends and preserves the digitization work of Charles Wohlers (Satucket Software, justus.anglican.org), adding scholarly structure, cross-edition traceability, and a liturgical calendar engine.
 
 **Maintainer:** Alex Nutting / The Strategic Disciple LLC  
-**License:** CC BY-NC-SA 4.0 (texts public domain; structure, schema, and editorial apparatus licensed)  
+**License:** See LICENSE  
 **Canonical URL:** repo.thestrategicdisciple.com  
 
 ---
@@ -37,11 +37,11 @@ The Concordentary is a structured digital archive of the Book of Common Prayer i
 │   └── ... (29 files total, see file index below)
 ├── 1979/                   ← Episcopal Church edition (pending copyright clearance)
 │
-├── _atomic/                ← Cross-edition extracts (canticles, collects, creeds, prayers)
-│   ├── canticles/
-│   ├── collects/
-│   ├── creeds/
-│   └── prayers/
+├── _atomic/                ← Atomized liturgical units by type
+│   ├── offices/            ← Daily office atoms (morning-prayer/, evening-prayer/, family-prayer/)
+│   ├── propers/            ← Collects, epistles, gospels by liturgical day
+│   ├── psalter/            ← One file per psalm (001.md–150.md)
+│   └── prayers/            ← Prayers and Thanksgivings (general/, civic/, occasional/, personal/, bidding/, post-sermon/)
 │
 ├── _study/                 ← Formation notes, one per canonical file
 ├── _hymnody/               ← Musical curation, linked from canonical files
@@ -84,7 +84,7 @@ collection: "Digital Concord of Prayer"
 transcriber: "Charles Wohlers, Satucket Software"
 markdown_curation: "Alex Nutting"
 source_url: ""               # Wohlers' HTML source
-license: "CC BY-NC-SA 4.0"
+license: "See LICENSE"
 
 provenance:
   first_appeared: ""         # Edition year the rite first appears
@@ -238,9 +238,9 @@ Output is identical to the live cron format. Use to verify known dates — Adven
 
 ```
 Today is Monday, June 8, 2026.
-You are in Ordinary Time.
+You are in Trinity Season.
 This is the Second Sunday after Pentecost.
-Proper 6.
+Twelfth Sunday after Trinity.
 Liturgical color: Green.
 Psalm: 92.
 Collect: "O God, whose never-failing providence..."
@@ -275,7 +275,7 @@ Animated SVG in liturgical color sits above the text (green pulse in Ordinary Ti
 ## Common Agent Tasks
 
 ### Find a specific collect
-Search `_atomic/collects/` first. If not extracted yet, search the edition folder by liturgical season or Sunday name.
+Search `_atomic/propers/collects/` for Sunday and feast collects, or `_atomic/prayers/` for general prayers. If not yet extracted, search the edition folder by liturgical season or Sunday name.
 
 ### Compare a rite across editions
 Files use the same filename across edition folders. Load `1892/01_morning-prayer.md` and `1928/01_morning-prayer.md` side by side. Check `provenance.carried_forward` for notes on what changed and when.
@@ -296,7 +296,7 @@ python _engine/computus.py --validate --start 2026 --end 2030
 Compare output against 1979 BCP printed Easter dates. See validation harness section above.
 
 ### Work on the today.md generator
-Requires the computus engine validated and all target edition Markdown files complete. Currently in private beta — build and test privately through fall/winter 2026–27 before any public output.
+Requires the computus engine validated and all target edition Markdown files complete. The daily GitHub Action generates today.md for the 1928 edition. Additional editions follow as they are completed.
 
 ---
 
